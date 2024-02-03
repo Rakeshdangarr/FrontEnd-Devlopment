@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Qus no 10</title>
+
+    <style>
+
+        table, th, td{
+            border: 2px solid blue;
+            border-collapse: collapse;
+        }
+        table{
+            width: 50%;
+        }
+    </style>
+   
+</head>
+
+<body>
+    <b>Qus:</b>How can we club two or more rows or columns into a single row or column in an HTML
+    table? With Example.
+     <br><br>
+
+    <b>Ans:</b><br><br>
+
+    <h2>Rowspan</h2>
+
+    <p>The rowspan attribute in HTML specifies the number of rows a cell should span. <br>
+         That is if a row spans two rows, it means it will take up the space of two rows in that table</p>
+
+    <h2>Colspan</h2>
+
+    <p>Colspan is an HTML attribute that allows you to span a row or column across multiple cells. This means that instead of having multiple columns,<br>
+         the cells will merge and the content will span multiple columns.</p>
+
+         <h3>Example of Rawspan & colspan :</h3><br>
+
+         <br><br>
+
+    <table cellpedding="8px" cellspacing="4px" align="left">
+
+        <tr>
+            
+            <th colspan="6">Colspan cell</th>
+
+        </tr>
+        <tr align="center">
+                            <th rowspan="6">Rowspan cell</th>
+                            <th>Head Cell 1</th>
+                            <th>Head Cell 2</th>
+                            <th>Head Cell 3</th>
+                            <th>Head Cell 4</th>
+        </tr>
+        <tr align="center">
+            <td>Cell 1</td>
+            <td>Cell 3</td>
+            <td>Cell 5</td>
+            <td>Cell 7</td>
+        </tr>
+
+        <tr align="center"> 
+            <td>Cell 2</td>
+            <td>Cell 4</td>
+            <td>Cell 6</td>
+            <td>Cell 8</td>
+
+        </tr>
+       
+    </table>
+
+</body>
+</html>

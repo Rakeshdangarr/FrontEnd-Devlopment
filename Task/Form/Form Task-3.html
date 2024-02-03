@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+    <title>Form Task 3</title>
+<style>
+
+.div01{
+    float: left;
+    margin-left: 100px;
+    width: 15%;
+}
+
+.div02 {
+    float: right;
+    margin-left: 0px;
+    width: 75%;
+}
+
+</style>
+
+</head>
+
+<body>
+    <span > *denotes a required</span><br><br><br>
+
+        <form action="" method="post">
+
+            <div class="div01">
+
+                <label for="name">First Name</label><br><br>
+
+                <label for="last name"> Last name</label><br><br>
+
+                <label for="Father Name">Fathe name</label><br><br>
+<br>
+                <label for="dob">Date of Birt</label><br><br>
+
+                <label for="tel">Tel</label><br><br>
+
+                <label for="High school name">High School Name</label><br><br>
+
+                <label for="adress">Permanent Adress</label><br><br>
+<br>
+                <label for="level">Your level</label><br><br>
+
+                <label for="email">Email</label><br><br>
+                
+                <label for="program">Dgree Program</label>
+
+</div>
+
+<div class="div02">
+    <input type="text" name="name" id="name" pattern="[A-Z, a-z]">*<br><br>
+
+    <input type="text" name="name" id="name" pattern="[A-Z, a-z]">*<br><br>
+
+    <input type="text" name="name" id="name" pattern="[A-Z, a-z]"><br><br>
+
+    <input type="date" name="name" id="date" value="mm/dd/yyyy" required>*<br><br>
+
+    <input type="tel" name="Phone" id="Phone" required pattern="[0-9] {10}"><br><br>
+
+    <input type="text" name="name" id="name" pattern="[A-Z, a-z]">*<br><br>
+
+    <input type="text" name="name" id="name" pattern="[A-Z, a-z]">*<br><br>
+
+    <select name="level" id="">
+
+            <option value="1st year">1st year</option>
+
+            <option value="2nd year">2nd year</option>
+
+            <option value="3rd year">3rd year</option>
+    </select><br><br>
+
+    <input type="email" name="email" id="email" required pattern="[A-Z, a-z,0-9,@]">*<br><br>
+
+    <select name="level" id="">
+
+        <option value="BS in Pre-Med Physics">BS in Pre-Med Physics</option>
+
+        <option value="BS in Pre-Med science">BS in Pre-Med science</option>
+
+        <option value="BS in Pre-Med Maths">BS in Pre-Med Maths</option>
+
+    </select><br><br>
+
+    <input type="submit" value="Register">
+
+</div>
+
+    </form>
+</body>
+</html>

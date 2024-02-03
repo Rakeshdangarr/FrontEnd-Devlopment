@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>relative absolute task</title>
+<style>
+    .slider{
+        background-color: lightblue;
+        position: relative;
+        text-align: center;
+    }
+    
+    .info{
+        background-color: orange;
+        font-family: cursive;
+        font-size:35px;
+        position: absolute;
+        color: transparent;
+        background-clip: text;
+        -webkit-background-clip: text;
+        position: fixed;
+        
+       }
+
+    .slider .info{
+        top: 35%;
+        left: 30%;
+    }
+    .button{
+        background-color: brown;
+        font-size: 20px;
+    }
+</style>
+</head>
+<body>
+    <div class="slider">
+        <div class="image">
+            <img src="https://images.unsplash.com/photo-1633464129147-777bdcc97c1d?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHNob2VzJTIwc2hvcHxlbnwwfHwwfHx8MA%3D%3D" alt="slider image">
+        </div>
+        <div class="info">
+            <h1>online shopping</h1>
+            <h2>find your shoes pair now</h2>
+            <button class="button">Sneakers</button>
+        </div>
+    </div>
+</body>
+</html>

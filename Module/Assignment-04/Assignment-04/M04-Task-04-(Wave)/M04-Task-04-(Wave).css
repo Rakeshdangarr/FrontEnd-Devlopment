@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main{
+    height: 80vh;
+    width: 100%;
+    background-image: url(https://images.unsplash.com/photo-1510519138101-570d1dca3d66?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZGFyayUyMG9mZmljZXxlbnwwfHwwfHx8MA%3D%3D);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+    padding-top: 7%;
+}
+
+.main h2{
+    text-align: center;
+    color: white;
+}
+
+.main h4{
+    text-align: center;
+    font-size: 10px;
+    color: white;
+    padding-top: 1%;
+}
+
+.main svg{
+    position: absolute;
+    bottom: 0;
+}
+
+button{
+    height: 06vh;
+    width: 6vw;
+    border: 2px solid orangered;
+    border-radius: 50%;
+    overflow: hidden;
+    position: absolute;
+}
+
+button img{
+    height: 100%;
+    width: 100%;
+
+}
+
+.i1{
+    left: 20%;
+    top: 40%;
+}
+
+.i2{
+    left: 40%;
+    top: 54%;
+}
+
+.i3{
+    left: 64%;
+    top: 69%;
+}
+
+.i4{
+    left: 84%;
+    top: 55%;
+}

@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript(js) lacture-02</title>
+    <style>
+      * {
+        font-size: large;
+      }
+      div {
+        height: auto;
+        background-color: lightgreen;
+        color: darkorange;
+        font-size: large;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Variables</h1>
+    <ul>
+      <li>The var statement declares a variable.</li>
+      <li>Variables are containers for storing information.</li>
+      <li>
+        Creating a variable in JavaScript is called "declaring" a variable
+      </li>
+      <li>To assign a value to the variable, use the equal sign:</li>
+      <b>example</b>
+      <br />
+      var petName;
+      <br />
+      petName = "rocky"; (note:you can also create any variable without using
+      var statement.)
+      <br />
+      var petName = "rocky";
+    </ul>
+    <b>note:</b>
+    <ul>
+      <li>js run top to bottom</li>
+      <li>variable start with alfabet not number</li>
+    </ul>
+    <br />
+    <h1>types of Variables</h1>
+    <p>There are three ways to declare a variable in JavaScript:</p>
+    <ol>
+      <li>
+        <b>var:</b>This is the oldest way to declare a variable. It is still
+        supported, but it is not recommended to use it anymore.
+      </li>
+      <li>
+        <b>let:</b>This is a newer way to declare a variable. It is
+        block-scoped, which means that it is only accessible within the block in
+        which it is declared.
+      </li>
+      <li>
+        <b>const:</b>This is a newer way to declare a constant. A constant is a
+        variable whose value cannot be changed.
+      </li>
+    </ol>
+    <h1>different data types in JavaScript:</h1>
+    <ul>
+      <li>
+        <b>Number:</b>This data type represents numeric values. It can be an
+        integer, a floating-point number, or a special value like NaN or
+        Infinity. <br />
+        <b>(example: var age = 25;)</b>
+      </li>
+      <li>
+        <b>String:</b>This data type represents text. It can be a single
+        character, a word, or a sentence. <br />
+        <b>(example: var name = "John Doe";)</b>
+      </li>
+      <li>
+        <b>Boolean:</b>This data type represents true or false values. It is
+        often used to control the flow of a program. <br />
+        <b>(example: var isLoggedIn = true;)</b>
+      </li>
+      <li>
+        <b>Array:</b>This data type stores a collection of values. The values
+        can be of any data type, including numbers, strings, booleans, and other
+        arrays. <br />
+        <b>(example : var numbers = [1, 2, 3, 4, 5];)</b>
+      </li>
+      <li>
+        <b>Object:</b>This data type stores a collection of key-value pairs. The
+        keys can be strings or numbers, and the values can be of any data type.
+        <br />
+        <b>(example:var person = { name: "John Doe", age: 25 };)</b>
+      </li>
+      <li>
+        <b>Null:</b>This data type represents the absence of a value. It is
+        often used to indicate that a variable has not yet been initialized.
+        <br />
+        <b>(example: var emptyVariable = null;)</b>
+      </li>
+      <li>
+        <b>Undefined:</b>This data type represents a value that has not yet been
+        assigned. It is often used to indicate that a variable has not yet been
+        declared <br />
+        <b>(example: var undeclaredVariable;)</b>
+      </li>
+    </ul>
+    <h1>what is syntex</h1>
+    <p>
+      Syntax in JavaScript is the set of rules that define a correctly
+      structured JavaScript program. It is similar to the grammar of a language,
+      and it determines how the code should be written and how the browser
+      should interpret it.
+    </p>
+    <br />
+    <b>Here are some of the basic rules of JavaScript syntax:</b>
+    <ul>
+      <li>
+        Statements end with semicolons.: This tells the browser that the
+        statement is complete.
+      </li>
+      <li>
+        Curly braces are used to mark blocks of code.: This can be used to group
+        statements together, or to define a function
+      </li>
+      <li>
+        JavaScript is case-sensitive.: This means that the keywords var, let,
+        and const are different from the keywords VAR, LET, and CONST
+      </li>
+      <li>
+        Comments are used to explain the code.: Comments are ignored by the
+        browser, but they can be helpful for other programmers who are reading
+        the code.
+      </li>
+    </ul>
+    <h1>what is assinment oparator?</h1>
+    <p>
+      Assignment (=) The assignment ( = ) operator is used to assign a value to
+      a variable or property. The assignment expression itself has a value,
+      which is the assigned value
+    </p>
+    <br />
+    <h1>what is keyword</h1>
+    <p>
+      Keywords are reserved words in JavaScript which cannot be used as variable
+      names, function names, object names, or any other identifier. They are
+      used to define the structure of a JavaScript program and to perform
+      specific actions. There are a total of 63 keywords in JavaScript.
+    </p>
+    <h2>Some examples of JavaScript keywords are:</h2>
+    <ul>
+      <li><b>var</b> is used to declare a variable.</li>
+      <li><b>function</b> is used to declare a function.</li>
+      <li><b>if</b> is used to create an if statement.</li>
+      <li><b>else</b> is used to create an else statement.</li>
+      <li><b>for</b> is used to create a for loop.</li>
+      <li><b>while</b> is used to create a while loop.</li>
+      <li><b>return</b> is used to return a value from a function.</li>
+      <li><b>break</b> is used to break out of a loop.</li>
+      <li>
+        <b>continue</b> is used to continue to the next iteration of a loop.
+      </li>
+    </ul>
+    <h1>what is comparison operator in javascript</h1>
+    <p>
+      Comparison operators are used to compare two values and return a Boolean
+      value, either true or false. The following table lists the different
+      comparison operators in JavaScript:
+    </p>
+    <b>Operator |Description with example</b>
+    <ul>
+      <li>== |Equal to</li>
+      <div>
+        console.log(10 == 10); // true <br />
+        console.log(10 == "10"); // true
+      </div>
+      <li>!= |Not equal to</li>
+      <div>
+        console.log(10 != 10); // false <br />
+        console.log(10 != "10"); // false
+      </div>
+      <li>=== |Strict equal to (compares both value and type)</li>
+      <div>
+        console.log(10 === 10); // true <br />
+        console.log(10 === "10"); // false
+      </div>
+      <li>!== |Strict not equal to (compares both value and type)</li>
+      <div>
+        console.log(10 !== 10); // false <br />
+        console.log(10 !== "10"); // true
+      </div>
+      <li>> |Greater than</li>
+      <div>
+        console.log(10 > 5); // true <br />
+        console.log(10 > 10); // false
+      </div>
+      <li>&lt; |Less than</li>
+      <div>
+        console.log(10 &lt; 5); // false <br />
+        console.log(10 &lt; 10); // false
+      </div>
+      <li>>= |Greater than or equal to</li>
+      <div>
+        console.log(10 >= 5); // true <br />
+        console.log(10 >= 10); // true
+      </div>
+      <li>&lt;= |Less than or equal to</li>
+      <div>
+        console.log(10 &lt;= 5); // false <br />
+        console.log(10 &lt;= 10); // true
+      </div>
+    </ul>
+    <h1>Javascript Popup Box</h1>
+    <p>There is three type of popup box in javascript.</p>
+    <ol>
+      <li>Alert box</li>
+      <li>Confirm Box</li>
+      <li>Prompt Box</li>
+    </ol>
+    <h2>Alert box</h2>
+    <p>
+      An alert box is often used if you want to make sure information comes
+      through to the user. When an alert box pops up, the user will have to
+      click "OK" to proceed.
+    </p>
+    <div>
+      <b>Example</b> <br />
+      &lt;html xmlns="http://www.w3.org/1999/xhtml"&gt; <br />
+      &lt;head&gt; <br />
+      &lt;title&gt;Example of alert box&lt;/title&gt; <br />
+      &lt;script type="text/javascript"&gt; <br />
+      alert("Hello! I am an alert box! "); <br />
+      &lt;/script&gt; <br />
+      &lt;/head&gt; <br />
+      &lt;body&gt; <br />
+      &lt;/body&gt; <br />
+      &lt;/html&gt; <br />
+      <p>
+        <b>Output</b> <br />
+        This code show alert box like figure, in browser when page open.We can
+        also run javascript function on Events like Button Onclick event.
+      </p>
+    </div>
+    <h2>Confirm Box</h2>
+    <p>
+      A confirm box is often used if you want the user to verify or accept
+      something. When a confirm box pops up, the user will have to click either
+      "OK" or "Cancel" to proceed. If the user clicks "OK", the box returns
+      true. If the user clicks "Cancel", the box returns false.
+    </p>
+    <div>
+      <b>Example</b> <br />
+      &lt;html xmlns="http://www.w3.org/1999/xhtml"&gt; <br />
+      &lt;head&gt; <br />
+      &lt;title&gt;Example of confirm box&lt;/title&gt; <br />
+      &lt;script type="text/javascript"&gt; <br />
+      function confirmit(){if(confirm("Are You Sure?")) <br />
+      {alert("You Click On Ok!");}else {alert("You Click On Cancel! ");}} <br />
+      &lt;/script&gt;<br />
+      &lt;/head&gt;<br />
+      &lt;body&gt; <br />
+      &lt;input type="button" value="Click Me!" onclick="confirmit()"/&gt;
+      <br />
+      &lt;/body&gt; <br />
+      &lt;/html&gt;
+    </div>
+    <h2>Prompt Box</h2>
+    <p>
+      A prompt box is often used if you want the user to input a value before
+      entering a page. When a prompt box pops up, the user will have to click
+      either "OK" or "Cancel" to proceed after entering an input value. If the
+      user clicks "OK" the box returns the input value. If the user clicks
+      "Cancel" the box returns null.
+    </p>
+    <div>
+      <b>example</b> &lt;html&gt; <br />
+      &lt;head&gt; <br />
+      &lt;script type="text/javascript"&gt; <br />
+      function PromtpBox(){var name=prompt("Enter Your Name","here"); <br />
+      alert("Your Name is:\t"+name);} <br />
+      &lt;/script&gt; <br />
+      &lt;/head&gt; <br />
+      &lt;body&gt; <br />
+      &lt;input type="button" value="Click Me!" onclick="PromtpBox()"/&gt;
+      <br />
+      &lt;/body&gt; <br />
+      &lt;/html&gt; <br />
+      <b
+        >After type you name when you click on Ok then name is store in variable
+        name and show in alert box, but if you click on cancel than it show null
+        value in alert box.
+      </b>
+    </div>
+  </body>
+</html>

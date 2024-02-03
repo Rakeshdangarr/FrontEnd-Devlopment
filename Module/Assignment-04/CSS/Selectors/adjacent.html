@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adjacent Sibling Selector</title>
+    <style>
+        h3 + p{
+            color: red;
+        }
+        h1{
+            color: blueviolet;
+            text-align: left;
+            text-decoration: underlin blue solid 1px;
+            font-size: 35px;
+
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Adjacent Sibling Selector</h1><br>
+    
+    <p>The "+" selector is used to select an element that is directly after another specific element.</p>
+
+<p>The following example selects the first p element that are placed immediately after heading elements:</p>
+
+<h2>Example</h2>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum, reprehenderit.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum, reprehenderit.</p>
+    <h3>Heading 1</h3>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum, reprehenderit.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum, reprehenderit.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum, reprehenderit.</p>
+
+    <div><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum, reprehenderit.</p></div>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum, reprehenderit.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum, reprehenderit.</p>
+</body>
+</html>

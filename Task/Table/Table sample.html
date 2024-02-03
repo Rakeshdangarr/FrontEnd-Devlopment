@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+        table, th, td{
+            border: 2px solid rgb(150, 160, 255);
+            border-collapse: collapse;
+        }
+ table {
+    width: 100%;
+ }   
+ thead {background: #eee;
+    .fail {color: #b00;}
+    #fail {background-color: #b00;}
+    caption {
+        text-decoration: overline underline;
+            text-decoration-style: dotted;
+            text-decoration-color: rgb(150, 100, 300);
+    }
+    </style>
+</head> 
+<body>
+    <table cellpadding="5px" cellspacing="3px">
+        <caption >student results</caption>
+        <thead>
+            <tr>
+                <th>No</th>
+                <th>Name</th>
+                <th>Total</th>
+                <th>Result</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Rakesh</td>
+                <td rowspan="2">250</td>
+                <td rowspan="2">pass</td>                
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>mukesh</td>
+                <!--<td>250</td>-->
+                <!--<td>pass</td>-->                
+            </tr><tr>
+                <td>3</td>
+                <td>Ramesh</td>
+                <td>210</td>
+                <td>pass</td>                
+            </tr><tr>
+                <td>4</td>
+                <td>ranjit</td>
+                <td>100</td>
+                <td class="fail" id="fail">Fail</td>                
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="4">total : 4</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=2, initial-scale=1.0">
+    <title>Relative-Absolute</title>
+    <style>
+        .container{
+            width: auto;
+            height: 500px;
+            background-color: green;
+            position: relative;
+        }
+
+        .container .item{
+            height: 150px;
+            width: 150px;
+            border: 3px groove cadetblue;
+            background: coral;
+            position: absolute;
+        }
+
+        .container .i-1{
+            /* z-index: 1; */
+            top: 0;
+            left: 0;
+        }
+
+        .container .i-2{
+            top: 0;
+            right: 0;
+            
+        }
+
+        .container .i-3{
+            bottom: 0;
+            left: 0;
+        }
+
+        .container .i-4{
+            bottom: 0;
+            right: 0;
+        }
+
+        .container .i-5{
+            top: 35%;
+            left: 45%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Relative-Absolute</h1>
+    <div class="container">
+        <div class="item i-1">1</div>
+        <div class="item i-2">2</div>
+        <div class="item i-3">3</div>
+        <div class="item i-4">4</div>
+        <div class="item i-5">5</div>
+
+    </div>
+</body>
+</html>
