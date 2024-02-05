@@ -215,13 +215,13 @@ line-height: 16px; /* 100% */
 .main{
     width: 100%;
     height: auto;
-    /* display: flex; */
+    display: flex;
     border: 1px solid #F0EBFA;
 background: #FBFAFE;
 }
 
 .main .review{
-    position: relative;https://helios-i.mashable.com/imagery/articles/047UsVLCrupUmmsuitpn1nw/hero-image.fill.size_1248x702.v1623374965.png
+    position: relative;
     width: 50%;
 }
 
@@ -232,7 +232,7 @@ background: #FBFAFE;
 
 
 .main .review .table1{
-    width: 45%;
+    width: 80%;
     height: auto;
     border-radius: 4px;
 border: 1px solid #E1E5EA;
@@ -291,14 +291,14 @@ text-align: justify;
 }
 
 .main .review .table2{
-    width: 15%;
+    width: 40%;
     height: auto;
     border-radius: 4px;
 border: 1px solid #E1E5EA;
 background: #FFF;
 padding-left: 1px;
 position: absolute;
-right: 55%;
+right: 10%;
 top: 25%;
 }
 
@@ -307,7 +307,10 @@ top: 25%;
     gap: 10px;
 }
 
-
+.main .review .table2 .silva ul img{
+    width: 29px;
+    height: 20px;
+}
 
 .main .review .table2 .silva ul li{
     list-style: none;
@@ -367,14 +370,17 @@ line-height: 25px;
 }
 
 .main .adv{
-    width: 49%;
+    width: 30%;
     height: auto;
-    padding-left: 8%;
+    padding-left: 1%;
     margin-top: 5%;
+    /* display: flex; */
+    
 }
 
 .main .adv .ad{
     margin-top: 10px;
+    
 }
 
 .main .adv .ad h3{
@@ -467,12 +473,12 @@ line-height: 24px; /* 150% */
     width: 100%;
     border: 1px solid #F0EBFA;
 background: #FBFAFE;
-/* display: flex; */
+display: flex;
 }
 
 .info3 .we{
     height: auto;
-    width: 50%;
+    width: 30%;
     margin: 5%;
     
 }
@@ -513,6 +519,7 @@ line-height: 16px; /* 100% */
 .info3 .gra{
     width: 50%;
     height: auto;
+    display: flex;
 }
 
 .info3 .gra img{
