@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    /* padding: 1000; */
+    /* box-sizing: border-box; */
+  }
+
+
+  .background {
+    height: 1000px;
+    width: 89%;
+    border: 2px solid red;
+    display: flex;
+    gap: 10%;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: top;
+    align-items: left;
+    margin: 5%;
+    background-repeat: no-repeat;
+    background-image: url(https://www.soup.io/wp-content/uploads/2022/03/5-Benefits-of-Payroll-Software-in-Modern-Workplace-01-1200x900.jpeg);
+    filter: blur(100%);
+    background-size: 100%,80%;
+    filter: blur(8px);
+    -webkit-filter: blur();
+  }
+  .background .title {
+    height: auto;
+    width: 25%;
+    border: 2px solid red;
+    margin 10%;
+    text-align: center;
+    margin-top: 10%;
+    position: relative;
+  }
+  .background .title ul li {
+    list-style-type: none;
+    margin-top: 10%;
+  }
+  .background .introduction{
+    height: 30vh;
+    border: 2px solid red;
+    text-align: center;
+    margin-top: 10%;
+    /* padding: 5%; */
+    position: absolute;
+    top: 20%;
+    left: 60%;
+    background-color: rgb(248, 243, 243);
+    backdrop-filter: blur(15px);
+  }
+  .background .introduction h4{
+    margin-bottom: 10%;
+    color: 306dab;
+  }
+  .background .title .social{
+    margin-top: 25%;
+    margin-right: 5%;
+    gap: 10px;
+
+  }
+  .background .title .copyright{
+    margin-top: 10%;
+  }
+  .about{
+    height: auto;
+    width: 35%;
+    border: 2px solid red;
+    left: 10%;
+    position: absolute;
+  }
+  .profile{
+    height: auto;
+    width: 35%;
+    border: 2px solid red;
+    position: absolute;
+  }
+  .work{
+    height: auto;
+    width: 100%;
+    border: 2px solid red;
+    /* position: absolute; */
+    /* display: flex; */
+  }

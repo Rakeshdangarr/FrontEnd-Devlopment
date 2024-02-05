@@ -1,19 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Module-5 Qus-02</title>
-</head>
-<body>
-    <b>Qus:</b>  How to embed audio and video in a webpage? <br>
+  </head>
+  <body>
+    <b>Qus:</b> How to embed audio and video in a webpage? <br />
 
-        <b>Ans:</b>
-        To embed audio in HTML, we use the &lt; audio &gt; tag. Before HTML5, audio cannot be added to web pages in the Internet Explorer era. To play audio, we used web plugins like Flash. After the release of HTML5, it is possible. This tag supports Chrome, Firefox, Safari, Opera, and Edge in three audio formats – MP3, WAV, OGG. Only Safari browser doesn’t support OGG audio format. <br>
+    <b>Ans:</b>
+    <h1>Audio</h1>
+    To embed audio in HTML, we use the &lt; audio &gt; tag. Before HTML5, audio
+    cannot be added to web pages in the Internet Explorer era. To play audio, we
+    used web plugins like Flash. After the release of HTML5, it is possible.
+    This tag supports Chrome, Firefox, Safari, Opera, and Edge in three audio
+    formats – MP3, WAV, OGG. Only Safari browser doesn’t support OGG audio
+    format. <br />
 
-            <h4>Example</h4>
-            &lt; audio &gt; <br>
-                &lt; source src="file name" type "audio file type" <br>
-            &lt; audio &gt;
-</body>
+    <h4>Example</h4>
+    &lt; audio &gt; <br />
+    &lt; source src="file name" type "audio file type" <br />
+    &lt; audio &gt; <br />
+    <h2>Audio Attribute Specification</h2>
+    <br />
+    The HTML5 audio tag can have a number of attributes to control the look and
+    feel and various functionalities of the control −
+    <ul>
+      <li>
+        <b> autoplay</b> <br />
+        This Boolean attribute if specified, the audio will automatically begin
+        to play back as soon as it can do so without stopping to finish loading
+        the data.
+      </li>
+      <li>
+        <b>autobuffer</b> <br />This Boolean attribute if specified, the audio
+        will automatically begin buffering even if it's not set to automatically
+        play.
+      </li>
+      <li>
+        <b>controls</b> <br />If this attribute is present, it will allow the
+        user to control audio playback, including volume, seeking, and
+        pause/resume playback.
+      </li>
+      <li>
+        <b> loop</b> <br />This Boolean attribute if specified, will allow audio
+        automatically seek back to the start after reaching at the end.
+      </li>
+      <li>
+        <b> preload</b> <br />This attribute specifies that the audio will be
+        loaded at page load, and ready to run. Ignored if autoplay is present.
+      </li>
+      <li>
+        <b> src</b> <br />The URL of the audio to embed. This is optional; you
+        may instead use the &lt;source /&gt; element within the video block to
+        specify the video to embed.
+      </li>
+    </ul>
+    <h1>Video</h1>
+    as per use audio tag in html as well as we can use &lt;video&gt; tag and
+    play video.The current HTML5 draft specification does not specify which
+    video formats browsers should support in the video tag.You can use
+    <source />
+    tag to specify media along with media type and many other attributes. A
+    video element allows multiple source elements and browser will use the first
+    recognized format <br />
+    <h4>Example</h4>
+    <br />
+    &lt; Video &gt; <br />
+    &lt; source src="file name" type "audio file type" <br />
+    &lt; video &gt;
+    <h2>Video Attribute Specification</h2>
+    The HTML5 video tag can have a number of attributes to control the look and
+    feel and various functionalities of the control −
+    <ul>
+      <li>
+        <b> autoplay</b> <br />This Boolean attribute if specified, the video
+        will automatically begin to play back as soon as it can do so without
+        stopping to finish loading the data.
+      </li>
+      <li>
+        <b> autobuffer</b> <br />This Boolean attribute if specified, the video
+        will automatically begin buffering even if it's not set to automatically
+        play.
+      </li>
+      <li>
+        <b> controls</b> <br />If this attribute is present, it will allow the
+        user to control video playback, including volume, seeking, and
+        pause/resume playback.
+      </li>
+      <li>
+        <b> height</b><br />This attribute specifies the height of the video's
+        display area, in CSS pixels.
+      </li>
+      <li>
+        <b> loop</b><br />This Boolean attribute if specified, will allow video
+        automatically seek back to the start after reaching at the end.
+      </li>
+      <li>
+        <b> preload</b><br />This attribute specifies that the video will be
+        loaded at page load, and ready to run. Ignored if autoplay is present.
+      </li>
+      <li>
+        <b>poster</b><br />This is a URL of an image to show until the user
+        plays or seeks.
+      </li>
+      <li>
+        <b> src</b><br />The URL of the video to embed. This is optional; you
+        may instead use the &lt;source /&gt; element within the video block to
+        specify the video to embed.
+      </li>
+      <li>
+        <b> width</b> <br />This attribute specifies the width of the video's
+        display area, in CSS pixels.
+      </li>
+    </ul>
+  </body>
 </html>
