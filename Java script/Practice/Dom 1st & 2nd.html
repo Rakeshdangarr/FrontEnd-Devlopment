@@ -41,6 +41,17 @@
         <p>this second p tag</p>
         <p>this is third p tag</p>`;
       console.log(thisElement);
+      // console.log(child3);
+      // child3.style.color = "red";
+
+      let customColor = "aquamarine";
+      // child3.style.backgroundColor = "red";
+      let child3Style =
+        "color:${customColor}; background-color:white;font-size:26px";
+      child3.style.csstext = child3Style;
+
+      let textInThatElement = thisElement.innerText;
+      console.log(textInThatElement);
     </script>
   </body>
 </html>

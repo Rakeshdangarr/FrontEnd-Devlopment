@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="main">
+      <!-- <div class="card">
+        <img src="" alt="">
+        <div class="card-info">
+            <div class="name"></div>
+            <div class="post"></div>
+            <div class="email"></div>
+        </div>
+    </div> -->
+    </div>
+
+    <!-- -------------java start -------------->
+
+    <script>
+      //   let newCard = document.createElement("div");
+      //   newCard.setAttribute("class", "card");
+
+      //   newCard.innerHTML = cardTemplate;
+      //   console.log(newCard);
+
+      let mainElement = document.getElementById("main");
+
+      let newCard = document.createElement("div");
+      newCard.setAttribute("class", "card");
+
+      let imgElement = document.createElement("img");
+      imgElement.setAttribute(
+        "src",
+        "https://images.pexels.com/photos/3930111/pexels-photo-3930111.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      );
+
+      let cardInfoElement = document.createElement("div");
+      cardInfoElement.setAttribute("class", "card-info");
+
+      let nameElement = document.createElement("div");
+      nameElement.setAttribute("class", "name");
+      nameElement.innerText = "milan";
+
+      let professionElement = document.createElement("div");
+      professionElement.setAttribute("class", "post");
+      professionElement.innerText = "DE";
+
+      let emailElement = document.createElement("div");
+      emailElement.setAttribute("class", "email");
+      emailElement.innerText = "milan@kateshiya.com";
+
+      cardInfoElement.append(nameElement);
+      cardInfoElement.append(professionElement);
+      cardInfoElement.append(emailElement);
+      newCard.append(imgElement);
+      newCard.append(cardInfoElement);
+
+      console.log(newCard);
+      mainElement.append(newCard);
+
+      //   makeCard(
+      //     "Milan Kateshiya",
+      //     "Cool Front End Developer",
+      //     "milanCool.developer@gmail.com",
+      //     "https://images.pexels.com/photos/3930111/pexels-photo-3930111.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      //   );
+    </script>
+  </body>
+</html>
