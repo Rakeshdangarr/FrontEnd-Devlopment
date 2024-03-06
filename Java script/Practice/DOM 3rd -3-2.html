@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM 3rd 03/02/24</title>
+  </head>
+  <body>
+    <div class="parent">Parent</div>
+    <script>
+      let parent = document.getElementsByClassName("parent")[0];
+      let child = document.createElement("div");
+      let child2 = document.createElement("div");
+
+      child.innerText = "something";
+      child2.innerText = "child2";
+      console.log(child);
+      parent.append(child);
+      parent.prepend(child2);
+    </script>
+  </body>
+</html>

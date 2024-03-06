@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Evenet listner 08/02/24</title>
+    <style>
+      .box {
+        width: 500px;
+        height: 500px;
+        background-color: aqua;
+      }
+    </style>
+  </head>
+  <body>
+    <button>button 1</button>
+    <button>button 2</button>
+    <button>button 3</button>
+
+    <div class="box"></div>
+
+    <!-- java start -->
+
+    <script>
+      let clickBtn = document.getElementsByTagName("button")[0];
+      let clickBtn2 = document.getElementsByTagName("button")[1];
+      let box = document.getElementsByTagName("button")[0];
+      //   console.log(clickBtn);
+
+      clickBtn.addEventListener("click", function (event) {
+        // event.preventDefault();
+        console.log("button 1 clicked");
+      });
+
+      clickBtn.addEventListener("focus", function (event) {
+        //   event.preventDefault();
+        console.log("button 1 focused");
+      });
+
+      clickBtn.addEventListener("dblclick", function (event) {
+        // event.preventDefault();
+        console.log("button 1 double clicked");
+      });
+
+      document.addEventListener("mouseover", function (event) {
+        // event.preventDefault();
+        // console.log('Button 1 mouseover');
+        console.log(event.target);
+      });
+      clickBtn.addEventListener("focusout", function (event) {
+        // event.preventDefault();
+        console.log("Button 1 focus out");
+      });
+      document.addEventListener("keypress", function (event) {
+        // event.preventDefault();
+        console.log("keypressed on document");
+        console.log(event.key);
+      });
+      document.addEventListener("scroll", function (event) {
+        // event.preventDefault();
+        console.log("Button 1 scrolled");
+        // console.log(event.key);
+      });
+    </script>
+  </body>
+</html>
