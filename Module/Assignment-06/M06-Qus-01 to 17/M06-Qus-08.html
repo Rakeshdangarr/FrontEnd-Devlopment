@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Module-06 Qus-08</title>
+    <style>
+      div {
+        padding: 10px;
+        margin: 10px;
+        background-color: lightblue;
+        border: 2px solid darkgreen;
+        font-size: large;
+      }
+    </style>
+  </head>
+  <body>
+    <b>Qus:</b> What is === operator? <br />
+
+    <b>Ans:</b>
+    <h1>Strict equality (===)</h1>
+    <p>
+      The strict equality (===) operator checks whether its two operands are
+      equal, returning a Boolean result. Unlike the equality operator, the
+      strict equality operator always considers operands of different types to
+      be different.
+    </p>
+    <h2>Description</h2>
+    <p>
+      The strict equality operators (=== and !==) provide the IsStrictlyEqual
+      semantic.
+    </p>
+    <ul>
+      <li>If the operands are of different types, return false.</li>
+      <li>
+        If both operands are objects, return true only if they refer to the same
+        object.
+      </li>
+      <li>
+        If both operands are null or both operands are undefined, return true.
+      </li>
+      <li>If either operand is NaN, return false.</li>
+      <li>
+        Otherwise, compare the two operand's values:
+        <ul>
+          <li>
+            Numbers must have the same numeric values. +0 and -0 are considered
+            to be the same value.
+          </li>
+          <li>Strings must have the same characters in the same order.</li>
+          <li>Booleans must be both true or both false.</li>
+        </ul>
+      </li>
+    </ul>
+    <p>
+      The most notable difference between this operator and the equality (==)
+      operator is that if the operands are of different types, the == operator
+      attempts to convert them to the same type before comparing.
+    </p>
+    <h2>Examples</h2>
+    <div>
+      <b>Comparing operands of the same type</b> <br />
+      "hello" === "hello"; // true <br />
+      "hello" === "hola"; // false <br />
+
+      3 === 3; // true <br />
+      3 === 4; // false <br />
+
+      true === true; // true <br />
+      true === false; // false <br />
+
+      null === null; // true <br />
+
+      <b>Comparing operands of different types</b> <br />
+      "3" === 3; // false <br />
+      true === 1; // false <br />
+      null === undefined; // false <br />
+      3 === new Number(3); // false <br />
+
+      <b>Comparing objects</b> <br />
+      const object1 = { <br />
+      key: "value", <br />
+      }; <br />
+
+      const object2 = { <br />
+      key: "value", <br />
+      }; <br />
+
+      console.log(object1 === object2); // false <br />
+      console.log(object1 === object1); // true <br />
+    </div>
+  </body>
+</html>

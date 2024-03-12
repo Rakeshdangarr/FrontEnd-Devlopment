@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Module-06 Qus-06</title>
+    <style>
+      div {
+        padding: 10px;
+        margin: 10px;
+        background-color: lightblue;
+        border: 2px solid darkgreen;
+        font-size: large;
+      }
+    </style>
+  </head>
+  <body>
+    <b>Qus:</b> Write the code for adding new elements dynamically?
+    <br />
+    <b>Ans:</b> <br />
+    <h3>JavaScript code for adding new elements in a dynamic way</h3>
+    <p>
+      Javascript is a very important language when it comes to learning how the
+      browser works. Often there are times we would like to add dynamic
+      elements/content to our web pages. This post deals with all of that.
+    </p>
+    <p>
+      Creation of new element: New elements can be created in JS by using the
+      <mark>createElement()</mark> method.
+    </p>
+    <h2>Syntax:</h2>
+    <div>
+      document.createElement("&lt;tagName&gt;"); <br />
+      // Where &lt;tagName&gt; can be any HTML <br />
+      // tagName like div, ul, button, etc. <br />
+
+      // newDiv element has been created <br />
+      For Eg: let newDiv = document.createElement("div"); <br />
+    </div>
+    <ul>
+      <li>
+        Once the element has been created, let’s move on to the setting of
+        attributes of the newly created element.
+      </li>
+      <li>
+        Setting the attributes of the created element: Attributes can be set
+        using setAttribute() method.
+      </li>
+    </ul>
+    <b>The syntax and example are as follows:</b>
+    <div>
+      Element.setAttribute(name, value); <br />
+      // Where Element is the name of web element. <br />
+      // Here, we have created newDiv. <br />
+      // Where name is the attribute name and <br />
+      // value is the value that needs to be set <br />
+
+      For Eg: newDiv.setAttribute("class","container");
+      <br />
+    </div>
+  </body>
+</html>

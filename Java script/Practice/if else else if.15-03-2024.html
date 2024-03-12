@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>if else else if 15/03/2024</title>
+  </head>
+  <body>
+    <script>
+      // if (condition) {
+      //   // code
+      // } else {
+      //   // code
+      // }
+
+      a = 10;
+      b = 20;
+      milan = 19;
+
+      day = "wednesday";
+      console.log(b);
+
+      if (milan >= 18) {
+        console.log("you can get license");
+      } else {
+        console.log("you cant get license");
+      }
+
+      if (day == "sunday") {
+        console.log("Today is holiday");
+      } else {
+        if (day == "tuesday" || day == "thursday" || day == "saturday") {
+          console.log("Today is your lecture");
+        } else {
+          console.log("Today is your lab day");
+        }
+        console.log("Today is not holiday");
+      }
+
+      passengerAge = 20;
+      passengerExtra = "mp";
+      if (passengerAge <= 8) {
+        if (passengerAge <= 3) {
+          console.log("you can get free journey");
+        } else {
+          console.log("you can get half ticket");
+        }
+      } else {
+        if (passengerExtra == "divyang") {
+          console.log("you can pay 10 Rs less than full amout");
+        } else if (passengerExtra == "MLA") {
+          console.log("You can pay 50 rs less than full amount");
+        } else if (passengerExtra == "mp") {
+          console.log("you can pay 70 rs less than full amount");
+        } else {
+          console.log("you have pay full amount");
+        }
+      }
+    </script>
+  </body>
+</html>

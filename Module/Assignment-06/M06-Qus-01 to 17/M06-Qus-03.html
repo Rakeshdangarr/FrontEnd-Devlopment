@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Module-06 Qus-03</title>
+    <style>
+      div {
+        padding: 10px;
+        margin: 10px;
+        background-color: lightblue;
+        border: 2px solid darkgreen;
+        font-size: large;
+      }
+    </style>
+  </head>
+  <body>
+    <b>Qus:</b> What is negative Infinity? <br />
+
+    <b>Ans:</b>
+    <h1>negstive Infinity</h1>
+    <p>
+      The Number.NEGATIVE_INFINITY value behaves slightly differently than
+      mathematical infinity:
+    </p>
+    <ul>
+      <li>
+        Any positive value, including POSITIVE_INFINITY, multiplied by
+        NEGATIVE_INFINITY is NEGATIVE_INFINITY.
+      </li>
+      <li>
+        Any negative value, including NEGATIVE_INFINITY, multiplied by
+        NEGATIVE_INFINITY is POSITIVE_INFINITY.
+      </li>
+      <li>Zero multiplied by NEGATIVE_INFINITY is NaN.</li>
+      <li>NaN multiplied by NEGATIVE_INFINITY is NaN.</li>
+      <li>
+        NEGATIVE_INFINITY, divided by any negative value except
+        NEGATIVE_INFINITY, is POSITIVE_INFINITY.
+      </li>
+      <li>
+        NEGATIVE_INFINITY, divided by any positive value except
+        POSITIVE_INFINITY, is NEGATIVE_INFINITY.
+      </li>
+      <li>
+        NEGATIVE_INFINITY, divided by either NEGATIVE_INFINITY or
+        POSITIVE_INFINITY, is NaN.
+      </li>
+      <li>
+        x > Number.NEGATIVE_INFINITY is true for any number x that isn't
+        NEGATIVE_INFINITY.
+      </li>
+    </ul>
+    <p>
+      You might use the Number.NEGATIVE_INFINITY property to indicate an error
+      condition that returns a finite number in case of success. Note, however,
+      that NaN would be more appropriate in such a case.
+    </p>
+    <p>
+      Because NEGATIVE_INFINITY is a static property of Number, you always use
+      it as Number.NEGATIVE_INFINITY, rather than as a property of a number
+      value.
+    </p>
+    <h2>Examples</h2>
+    <b>Using NEGATIVE_INFINITY</b>
+    <p>
+      In the following example, the variable smallNumber is assigned a value
+      that is smaller than the minimum value. When the if statement executes,
+      smallNumber has the value -Infinity, so smallNumber is set to a more
+      manageable value before continuing.
+    </p>
+    <div>
+      let smallNumber = -Number.MAX_VALUE * 2; <br />
+
+      if (smallNumber === Number.NEGATIVE_INFINITY) { <br />
+      smallNumber = returnFinite(); <br />
+      }
+    </div>
+  </body>
+</html>

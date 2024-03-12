@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Module-06 Qus-07</title>
+    <style>
+      tr,
+      th,
+      td {
+        border: 2px solid black;
+      }
+      div {
+        padding: 10px;
+        margin: 10px;
+        background-color: lightblue;
+        border: 2px solid darkgreen;
+        font-size: large;
+      }
+    </style>
+  </head>
+  <body>
+    <b>Qus:</b> What is the difference between ViewState and SessionState?
+    <br />
+    <b>Ans:</b> <br />
+    <h1>View state</h1>
+    <p>
+      State management concerned with the client-side uses View state. It stores
+      the information in text fields, checkboxes, and radio buttons within a
+      hidden field of a web page, not shared between the other web pages of the
+      website.
+    </p>
+    <p>
+      During a POST event, it'll retain this information only accessible by
+      elements of the same web page; however, loss of this information occurs as
+      soon as another page is loaded.
+    </p>
+    <h1>Session state</h1>
+    <p>
+      Server-side state management utilizes user sessions to maintain
+      information and its flow shared between the website's web pages. The web
+      server stores the client session information and uses cookies to store
+      keys associated with a particular client.
+    </p>
+    <p>
+      Session expiration can clear a user's information. A timeout occurs due to
+      a user's inactivity on a webpage, and the session expires to prevent data
+      loss to non-authentic users.
+    </p>
+    <b
+      >Although View state and Session state are both used for state management,
+      the contrast between the two is high.</b
+    >
+    <table cellspacing="5px" cellpading="5px">
+      <tr>
+        <th>ViewState</th>
+
+        <th>SessionState</th>
+      </tr>
+      <tr>
+        <td>
+          <ul>
+            <li>Maintained at page level only.</li>
+
+            <li>
+              View state can only be visible from a single page and not multiple
+              pages.
+            </li>
+
+            <li>
+              It will retain values in the event of a postback operation
+              occurring.
+            </li>
+
+            <li>Information is stored on the client’s end only.</li>
+            <li>
+              used to allow the persistence of page-instance-specific data.
+            </li>
+            <li>ViewState values are lost/cleared when new page is loaded.</li>
+            <li>
+              Usage: It can be used to store information that you wish to access
+              from same web page.
+            </li>
+          </ul>
+        </td>
+        <td>
+          <ul>
+            <li>Maintained at session level.</li>
+
+            <li>
+              Session state value availability is across all pages available in
+              a user session.
+            </li>
+
+            <li>
+              In session state, user data remains in the server. Data is
+              available to user until the browser is closed or there is session
+              expiration.
+            </li>
+
+            <li>Information is stored on the server.</li>
+
+            <li>
+              used for the persistence of user-specific data on the server’s
+              end.
+            </li>
+            <li>
+              SessionState can be cleared by programmer or user or in case of
+              timeouts.
+            </li>
+            <li>
+              Usage: It can be used to store information that you wish to access
+              on different web pages.
+            </li>
+          </ul>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>

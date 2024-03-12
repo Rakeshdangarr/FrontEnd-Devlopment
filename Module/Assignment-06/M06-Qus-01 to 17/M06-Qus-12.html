@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Module-06 Qus-12</title>
+    <style>
+      div {
+        padding: 10px;
+        margin: 10px;
+        background-color: lightblue;
+        border: 2px solid darkgreen;
+        font-size: large;
+      }
+    </style>
+  </head>
+  <body>
+    <b>Qus:</b> How can you convert the string of any base to an integer in
+    JavaScript? <br />
+
+    <b>Ans:</b>
+    <h1>Convert a String to an Integer in JavaScript</h1>
+
+    <p>
+      In JavaScript, converting a string to an integer means transforming a
+      string that represents a numeric value into an actual integer data type.
+      This is useful when you need to perform arithmetic operations or
+      comparisons on numeric values stored as strings.
+    </p>
+
+    <p>
+      In this JavaScript string to integer article, You’ll learn all the methods
+      used to convert string to integer in Javascript like parseInt JavaScript,
+      Number method javascript, Unary operator, Math.floor method etc which are
+      as follow.
+    </p>
+
+    <h2>Table of Content</h2>
+    <ul>
+      <li>Convert a String to an Integer using parseInt() Method</li>
+      <li>Convert a String to an Integer using Number() method</li>
+      <li>Convert a String to an Integer using Unary Operator</li>
+      <li>Convert a String to an Integer using Math.floor() Method</li>
+      <li>Convert a String to an Integer using JavaScript Bitwise Operator</li>
+    </ul>
+
+    <h1>parseInt() Method in JavaScript</h1>
+    <p>
+      The parseInt() method accepts the string and radix parameter and converts
+      it into an integer.
+    </p>
+    <div>
+      <b>Syntax:</b> <br />
+      <p>parseInt( Value, radix )</p>
+      <br />
+      <b>Example</b> <br />
+      <p>
+        Here, we are using JavaScript parseInt() method to convert string to an
+        integer.
+      </p>
+      <br />
+      <p>
+        let a = "100";<br />
+
+        console.log("Type of a before conversion: " + typeof a);<br />
+        console.log("Type of a after conversion: " + typeof parseInt(a)); <br />
+      </p>
+      <b>Output</b> <br />
+      Type of a before conversion: string <br />
+      Type of a after conversion: number <br />
+      <b>Explanation:</b>
+      <p>
+        The code initializes a variable a with the string “100”, prints its type
+        before and after converting it to an integer using parseInt()
+      </p>
+    </div>
+    <h1>Number() Method in JavaScript</h1>
+    <p>
+      The number() method is used to convert primitive data type to a number, if
+      it is not convertible it returns NAN.
+    </p>
+    <div>
+      <b>syntax</b> <br />
+
+      <p>Number( value )</p>
+      <br />
+      <b>Example</b> <br />
+      <p>
+        Here, we are using JavaScript Number() method to convert string to an
+        integer.
+      </p>
+      <br />
+      <p>
+        let age = "23"; <br />
+        let name = "Manya"; <br /><br />
+
+        console.log( <br />
+        "Type of name and age before conversion: ", <br />
+        typeof age, typeof name <br />
+        );<br /><br />
+
+        console.log(<br />
+        "Type of name and age after conversion: ", <br />
+        typeof Number(age), typeof Number(name)<br />
+        );<br />
+      </p>
+      <b>Output</b> <br />
+      <p>
+        Type of name and age before conversion: string string <br />
+        Type of name and age after conversion: number number <br />
+      </p>
+      <b>Explanation</b> <br />
+      <p>
+        The code initializes variables age and name with string values
+        representing age and a name respectively. It then displays their types
+        before and after conversion to numbers using Number().
+      </p>
+    </div>
+    <h1>Unary Operator in JavaScript</h1>
+    <p>
+      The Unary operator(+) is used to convert a string, boolean, and non-string
+      to a number.
+    </p>
+    <div>
+      <b>Syntax:</b> <br />
+      <p>+operand;</p>
+      <b>Example</b> <br />
+      <p>The unary operator to convert a string into an number.</p>
+      <br />
+      <p>
+        let age = "23"; <br />
+        let name = "Manya";<br />
+        const number = '100';<br /><br />
+
+        console.log(<br />
+        "Type of name, age and number before conversion: ", <br />
+        typeof age, typeof name, typeof number<br />
+        );<br /><br />
+
+        console.log(<br />
+        "Type of name, age and number after conversion: ", <br />
+        typeof +age, typeof +name, typeof +number<br />
+        );<br />
+      </p>
+      <b>Output</b> <br />
+      <p>
+        Type of name, age and number before conversion: string string string
+        <br />
+        Type of name, age and number after conversion: number number number
+        <br />
+      </p>
+      <b>Explanation</b> <br />
+      <p>
+        The code initializes variables age, name, and number with string values
+        representing age, a name, and a constant number respectively. It then
+        displays their types before and after conversion to numbers using the
+        unary plus operator +.
+      </p>
+    </div>
+    <h1>Math.floor() Method in JavaScript</h1>
+    <p>The Math.floor() method is used to convert a string into number.</p>
+    <div>
+      <b>syntax</b> <br />
+      <p>Math.floor( numStr )</p>
+      <b>Example</b><br />
+      <p>The Math.floor() method is used to convert a string into an number.</p>
+      <p>
+        let numStr = "101.45"; <br />
+
+        let numInt = Math.floor(parseFloat(numStr)); <br />
+
+        console.log("Type of Number Before Conversion: " + typeof numStr);<br />
+
+        console.log("Type of Number After Conversion: " + typeof numInt);<br />
+      </p>
+      <b>Example</b><br />
+      <p>
+        Type of Number Before Conversion: string <br />
+        Type of Number After Conversion: number <br />
+      </p>
+      <b>Explanation</b> <br />
+      <p>
+        Here, parseFloat() is used to convert the string numStr to a
+        floating-point number before applying Math.floor(). This ensures that
+        the result is a number.
+      </p>
+    </div>
+    <h1>Bitwise Operator in JavaScript</h1>
+    <p>
+      Using bitwise operators like | 0 or << 0 can also perform
+      string-to-integer conversion in a concise manner.
+    </p>
+    <br />
+    <div>
+      <b>syntax</b> <br />
+      <p>
+        numStr | 0; // or<br />
+        numStr << 0; <br />
+      </p>
+      <b>Example</b> <br />
+      <p>
+        The Bitwise Operator can also be used to convert a string into an
+        number.
+      </p>
+      <p>
+        let numStr = "101.45"; <br />
+
+        let numInt = numStr | 0;<br />
+
+        console.log("Type of Number Before Conversion: "<br />
+        + typeof numStr);<br />
+
+        console.log("Type of Number After Conversion: "<br />
+        + typeof parseInt(numInt));<br />
+      </p>
+      <b>Output</b> <br />
+
+      <p>
+        Type of Number Before Conversion: string <br />
+        Type of Number After Conversion: number <br />
+      </p>
+      <b>Explanation</b> <br />
+      <p>
+        The code initializes a variable numStr with the string “101.45”. It then
+        uses a bitwise OR operation (|) to implicitly convert numStr to an
+        integer, truncating its decimal part. Finally, it displays the type of
+        numInt before and after conversion.
+      </p>
+    </div>
+    <h1>Error Handling in Converting Strings to Integers in JavaScript</h1>
+    <p>
+      When converting strings to integers, it’s crucial to handle potential
+      errors to ensure your code functions correctly. Here are some common
+      errors and how to handle them:
+    </p>
+    <ul>
+      <li>
+        Non-numeric characters: If the string contains non-numeric characters,
+        parseInt() and Number() might return NaN (Not a Number). You can check
+        for this using isNaN() and gracefully handle invalid inputs.
+      </li>
+      <li>
+        Leading and trailing whitespace: Whitespace at the beginning or end of
+        the string might be ignored by some methods. Use methods like trim() to
+        remove whitespace before conversion.
+      </li>
+      <li>
+        Radix issues: Specifying the wrong radix in parseInt() can lead to
+        unexpected results. Validate the radix based on the context (e.g., for
+        hexadecimal strings, use radix 16).
+      </li>
+      <li>
+        Overflow and underflow: Converting very large or very small numbers
+        might result in overflow or underflow. Consider using libraries like
+        bignumber.js to handle numbers outside JavaScript’s native range.
+      </li>
+    </ul>
+  </body>
+</html>

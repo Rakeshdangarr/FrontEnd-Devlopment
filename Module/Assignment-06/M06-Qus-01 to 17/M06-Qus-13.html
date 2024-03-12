@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Module-06 Qus-13</title>
+    <style>
+      div {
+        padding: 10px;
+        margin: 10px;
+        background-color: lightblue;
+        border: 2px solid darkgreen;
+        font-size: large;
+      }
+    </style>
+  </head>
+  <body>
+    <b>Qus:</b> What is the function of the delete operator? <br />
+
+    <b>Ans:</b>
+    <p>
+      The delete operator removes a property from an object. If the property's
+      value is an object and there are no more references to the object, the
+      object held by that property is eventually released automatically.
+    </p>
+    <br />
+    <p>
+      The delete operator has the same precedence as other unary operators like
+      typeof. Therefore, it accepts any expression formed by higher-precedence
+      operators. However, the following forms lead to early syntax errors in
+      strict mode:
+    </p>
+    <div>
+      <p>
+        delete identifier; <br />
+        delete object.#privateProperty; <br />
+      </p>
+    </div>
+    <p>
+      Because classes are automatically in strict mode, and private properties
+      can only be legally referenced in class bodies, this means private
+      properties can never be deleted. While delete identifier may work if
+      identifier refers to a configurable property of the global object, you
+      should avoid this form and prefix it with globalThis instead.
+    </p>
+    <p>
+      While other expressions are accepted, they don't lead to meaningful
+      behaviors:
+    </p>
+    <div>
+      <p>
+        delete console.log(1); <br />
+        // Logs 1, returns true, but nothing deleted <br />
+      </p>
+    </div>
+    <p>
+      The delete operator removes a given property from an object. On successful
+      deletion, it will return true, else false will be returned. Unlike what
+      common belief suggests (perhaps due to other programming languages like
+      delete in C++), the delete operator has nothing to do with directly
+      freeing memory. Memory management is done indirectly via breaking
+      references. See the memory management page for more details.
+    </p>
+    <b>It is important to consider the following scenarios:</b>
+    <ul>
+      <li>
+        If the property which you are trying to delete does not exist, delete
+        will not have any effect and will return true.
+      </li>
+
+      <li>
+        delete only has an effect on own properties. If a property with the same
+        name exists on the object's prototype chain, then after deletion, the
+        object will use the property from the prototype chain.
+      </li>
+      <li>
+        Non-configurable properties cannot be removed. This includes properties
+        of built-in objects like Math, Array, Object and properties that are
+        created as non-configurable with methods like Object.defineProperty().
+      </li>
+      <li>
+        Deleting variables, including function parameters, never works. delete
+        variable will throw a SyntaxError in strict mode, and will have no
+        effect in non-strict mode.
+        <ul>
+          <li>
+            Any variable declared with var cannot be deleted from the global
+            scope or from a function's scope, because while they may be attached
+            to the global object, they are not configurable.
+          </li>
+          <li>
+            Any variable declared with let or const cannot be deleted from the
+            scope within which they were defined, because they are not attached
+            to an object.
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </body>
+</html>

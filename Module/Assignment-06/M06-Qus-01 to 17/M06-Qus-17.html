@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Module-06 Qus-17</title>
+    <style>
+      div {
+        padding: 10px;
+        margin: 10px;
+        background-color: lightblue;
+        border: 2px solid darkgreen;
+        font-size: large;
+      }
+    </style>
+  </head>
+  <body>
+    <b>Qus:</b> What are the disadvantages of using innerHTML in JavaScript?
+    <br />
+
+    <b>Ans:</b>
+    <p>
+      The innerHTML property is a part of the Document Object Model (DOM) that
+      is used to set or return the HTML content of an element. Where the return
+      value represents the text content of the HTML element. It allows
+      JavaScript code to manipulate a website being displayed. More
+      specifically, it sets or returns the HTML content (the inner HTML) of an
+      element. The innerHTML property is widely used to modify the contents of a
+      webpage as it is the easiest way of modifying DOM. But there are some
+      disadvantages to using innerHTML in JavaScript.
+    </p>
+    <b>Disadvantages of using innerHTML property in JavaScript:</b>
+    <ul>
+      <li>
+        <b>The use of innerHTML very slow:</b>The process of using innerHTML is
+        much slower as its contents as slowly built, also already parsed
+        contents and elements are also re-parsed which takes time.
+      </li>
+      <li>
+        <b>Preserves event handlers attached to any DOM elements: </b>The event
+        handlers do not get attached to the new elements created by setting
+        innerHTML automatically. To do so one has to keep track of the event
+        handlers and attach it to new elements manually. This may cause a memory
+        leak on some browsers.
+      </li>
+      <li>
+        <b>Content is replaced everywhere:</b> Either you add, append, delete or
+        modify contents on a webpage using innerHTML, all contents is replaced,
+        also all the DOM nodes inside that element are reparsed and recreated.
+      </li>
+      <li>
+        <b>Appending to innerHTML is not supported:</b>Usually, += is used for
+        appending in JavaScript. But on appending to an Html tag using
+        innerHTML, the whole tag is re-parsed.
+      </li>
+    </ul>
+    <div>
+      <h2>Example:</h2>
+      <p>
+        &lt;p id="geek">Geeks&lt;/p&gt; <br />
+        title = document.getElementById('#geek') <br />
+
+        // The whole "geek" tag is reparsed <br />
+        title.innerHTML += '&lt;p&gt; forGeeks &lt;/p&gt;' <br />
+      </p>
+    </div>
+    <ul>
+      <li>
+        <b>Old content replaced issue:</b>The old content is replaced even if
+        object.innerHTML = object.innerHTML + ‘html’ is used instead of
+        object.innerHTML += ‘html’. There is no way of appending without
+        reparsing the whole innerHTML. Therefore, working with innerHTML becomes
+        very slow. String concatenation just does not scale when dynamic DOM
+        elements need to be created as the plus’ and quote openings and closings
+        becomes difficult to track.
+      </li>
+      <li>
+        <b>Can break the document:</b>There is no proper validation provided by
+        innerHTML, so any valid HTML code can be used. This may break the
+        document of JavaScript. Even broken HTML can be used, which may lead to
+        unexpected problems.
+      </li>
+      <li>
+        <b>Can also be used for Cross-site Scripting(XSS):</b>The fact that
+        innerHTML can add text and elements to the webpage, can easily be used
+        by malicious users to manipulate and display undesirable or harmful
+        elements within other HTML element tags. Cross-site Scripting may also
+        lead to loss, leak and change of sensitive information.
+      </li>
+    </ul>
+  </body>
+</html>
