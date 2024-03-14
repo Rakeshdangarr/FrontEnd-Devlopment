@@ -13,52 +13,62 @@
         <h2>List of new semantic elements</h2>
         <h5>The semantic elements added in HTML5 are:</h5>
         <ul>
-            <li><h5> &lt; article &gt; </h5> </li>
-            This article element represents a self- contained composition in a document, page, 
-application, or site and that is intended to be independently distributable or reusable, e.g. In 
-syndication <br> <br>
+            <h1> &lt; article &gt;</h1>
+            <p>
+                The &lt; article &gt; HTML element represents a self-contained composition in a document, page, application, or site, which is intended to be independently distributable or reusable (e.g., in syndication). Examples include: a forum post, a magazine or newspaper article, or a blog entry, a product card, a user-submitted comment, an interactive widget or gadget, or any other independent item of content.
+            </p><br> <br>
+            
+            <ul>
+                <li>Each &lt; article &gt; should be identified, typically by including a heading (&lt;h1&gt; - &lt;h6&gt;   element) as a child of the &lt; article &gt; element.</li>
+                    <li>When an &lt; article &gt; element is nested, the inner element represents an article related to the outer element. For example, the comments of a blog post can be &lt; article &gt; elements nested in the &lt; article &gt; representing the blog post.</li>
+                        <li>Author information of an &lt; article &gt; element can be provided through the <address> element, but it doesn't apply to nested &lt; article &gt; elements.</li>
+                            <li>The publication date and time of an &lt; article &gt; element can be described using the datetime attribute of a &lt;time&gt; element.
+                            </li>
+            </ul>
 
-            <li> <b> &lt; aside &gt; </b></li>
-                The aside element represents a section of a page that consists of content that is 
-tangentially related to the content around the aside element, and which could be considered 
-separate from that content. <br> <br>
+            <h1>&lt; aside &gt;</h1>
+               <p>The &lt; aside &gt; HTML element represents a portion of a document whose content is only indirectly related to the document's main content. Asides are frequently presented as sidebars or call-out boxes.</p>
+                
+                <p>This example uses &lt;aside&gt; to mark up a paragraph in an article. The paragraph is only indirectly related to the main article content:</p>
 
-            <li> <b> &lt; Hgroup &gt; </b></li>
+            <h1>&lt; Hgroup &gt;</h1>
             The hgroup element represents the heading of a section. The element is used to 
             group a set of h1-h6 elements when the heading has multiple levels, such as subheading, 
             alternative titles, or taglines. <br><br>
+            
 
-            <li><b> &lt; figure &gt; </b> </li>The figure element represents some flow content, optionally with a caption that is 
+            <h1>&lt; figure &gt;</h1>
+             figure element represents some flow content, optionally with a caption that is 
             self contained and is typically referenced as a single unit from the main flow of the document. <br><br>
 
-            <li><b> &lt; footer &gt; </b> </li>
+            <h1>&lt; footer &gt;</h1>
             The footer element represents a footer for its nearest ancestor sectioning content or 
 sectioning root element.A footer typically contains information about its section such a s who 
 wrote it. Links to related documents. Copyright data and the like. <br><br>
 
-            <li><b> &lt; header &gt; </b> </li>
+            <h1>&lt; header &gt;</h1>
             The header element represents a group of introductory or navigational aids. A 
 header element is intended to usually contain the section’s heading (an h1-h6 element or an 
 hgroup element),but this is not required. <br><br>
 
-            <li><b> &lt; nav &gt; </b></li>
+            <h1>&lt; nav &gt;</h1>
             The nav element represents a section of a page that links to other pages or to parts 
 within the page a section with navigation links.Not all links of a document must be in a &lt; nav &gt; 
 element. The &lt; nav &gt; element is intended only for major block of navigation links.Browsers, 
 such as screen readers for disabled users, can use this element to determine whether to omit 
 the initial rendering of this content. <br><br>
 
-            <li><b> &lt; section &gt;</b> </li>
+            <h1>&lt; section &gt;</h1>
             The section element represents a generic section of a document applicationA 
 section in this context is a thematic grouping content typically with a heading.. <br><br>
 
-            <li><b> &lt; time &gt; </b> </li>
+            <h1>&lt; time &gt;</h1>
             The time element represents either a time on a 24 hour clock or a precise date in the 
 proleptic gregorian calendar, optionally with a time and a time zone offset. this element is 
 intended as a way to encode modern dates and times in a machine readable way so that, for 
 example, user agents can offer to add birthday reminders or scheduled events to the user's 
 calendar <br><br>
-            <li><b> &lt;Video&gt;</b></li>
+            <h1>&lt;Video&gt;</h1></h1>
             Is a media element whose media data is ostensibly video data, possibly with 
 associated audio data.  <br><br>
 

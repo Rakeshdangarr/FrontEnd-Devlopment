@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Module-06 Qus-</title>
+    <style>
+      div {
+        padding: 10px;
+        margin: 10px;
+        background-color: lightblue;
+        border: 2px solid darkgreen;
+        font-size: large;
+      }
+    </style>
+  </head>
+  <body>
+    <b>Qus:</b> What is Condition Statement?
+    <br />
+
+    <b>Ans:</b>
+    <h1>Conditional Statements in JavaScript</h1>
+    <p>
+      <b>JavaScript Conditional statements</b>allow you to execute specific
+      blocks of code based on conditions. If the condition meets then a
+      particular block of action will be executed otherwise it will execute
+      another block of action that satisfies that particular condition.
+    </p>
+    <p>
+      There are several methods that can be used to perform Conditional
+      Statements in JavaScript.
+    </p>
+    <ul>
+      <li>
+        <b>if statement:</b>Executes a block of code if a specified condition is
+        true.
+      </li>
+      <li>
+        <b>else statement:</b> Executes a block of code if the same condition of
+        the preceding if statement is false.
+      </li>
+      <li>
+        <b>else if statement:</b>Adds more conditions to the if statement,
+        allowing for multiple alternative conditions to be tested.
+      </li>
+      <li>
+        <b>switch statement:</b>Evaluates an expression, then executes the case
+        statement that matches the expression’s value.
+      </li>
+      <li>
+        <b>ternary operator (conditional operator): </b> Provides a concise way
+        to write if-else statements in a single line.
+      </li>
+    </ul>
+
+    <h1>JavaScript Conditional statements Examples:</h1>
+    <ol>
+      <h2><li>
+        Using if Statement</h2>
+        The if statement is used to evaluate a particular condition. If the
+        condition holds true, the associated code block is executed.
+        <div>
+          <b>Syntax:</b> <br />
+          <p>
+            if ( condition ) {<br />
+            // If the condition is met, <br />
+            //code will get executed.<br />
+            } <br />
+          </p>
+          <b>
+            Example: In this example, we are using the if statement to find
+            given number is even or odd.
+          </b>
+          <p>
+            let num = 20; <br />
+            <br />
+            if (num % 2 === 0) {<br />
+            console.log("Given number is even number.");<br />
+            }<br />
+            <br />
+            if (num % 2 !== 0) {<br />
+            console.log("Given number is odd number.");<br />
+            };<br />
+          </p>
+          <b> Output </b>
+          <p>Given number is even number.</p>
+          <b
+            >Explanation: This JavaScript code determines if the variable `num`
+            is even or odd using the modulo operator `%`. If `num` is divisible
+            by 2 without a remainder, it logs “Given number is even number.”
+            Otherwise, it logs “Given number is odd number.”</b
+          >
+        </div>
+      </li>
+      <h2><li>Using if-else Statement</h2></li>
+      <p>
+        The if-else statement will perform some action for a specific condition.
+        Here we are using the else statement in which the else statement is
+        written after the if statement and it has no condition in their code
+        block.
+      </p>
+      <div>
+        <b>Syntax:</b> <br />
+        <p>
+          if (condition1) { <br />
+          // Executes when condition1 is true<br />
+          if (condition2) {<br />
+          // Executes when condition2 is true<br />
+          }<br />
+          }<br />
+        </p>
+        <b
+          >Example: In this example, we are using if-else conditional statement
+          to check the driving licence eligibility date.</b
+        >
+        <p>
+          let age = 25; <br />
+          <br />
+          if (age >= 18) { <br />
+          console.log("You are eligible of driving licence") <br />
+          } else { <br />
+          console.log("You are not eligible for driving licence") <br />
+          }; <br />
+        </p>
+        <b> Output </b> <br />
+        <p>You are eligible of driving licence</p>
+        <b
+          >Explanation: This JavaScript code checks if the variable `age` is
+          greater than or equal to 18. If true, it logs “You are eligible for a
+          driving license.” Otherwise, it logs “You are not eligible for a
+          driving license.” This indicates eligibility for driving based on
+          age.</b
+        >
+      </div>
+      <h2> <li>else if Statement</h2></li>
+      <p>
+        The else if statement in JavaScript allows handling multiple possible
+        conditions and outputs, evaluating more than two options based on
+        whether the conditions are true or false.
+      </p>
+
+      <div>
+        <b>Syntax</b> <br />
+        <p>
+          if (1st condition) { <br />
+          // Code for 1st condition <br />
+          } else if (2nd condition) { <br />
+          // ode for 2nd condition <br />
+          } else if (3rd condition) { <br />
+          // Code for 3rd condition <br />
+          } else { <br />
+          // ode that will execute if all <br />
+          // above conditions are false <br />
+          } <br />
+        </p>
+        <b
+          >Example: In this example, we are using the above-explained
+          approach.</b
+        >
+        <p>
+          const num = 0; <br />
+          <br />
+          if (num > 0) { <br />
+          console.log("Given number is positive."); <br />
+          } else if (num < 0) { <br />
+          console.log("Given number is negative."); <br />
+          } else { <br />
+          console.log("Given number is zero."); <br />
+          }; <br />
+        </p>
+        <b>output</b>
+        <p>Given number is zero.</p>
+        <b
+          >Explanation: This JavaScript code determines whether the constant
+          `num` is positive, negative, or zero. If `num` is greater than 0, it
+          logs “Given number is positive.” If `num` is less than 0, it logs
+          “Given number is negative.” If neither condition is met (i.e., `num`
+          is zero), it logs “Given number is zero.”</b
+        >
+      </div>
+      <h2> <li><h2>Using Switch Statement (JavaScript Switch Case)</li></h2>
+      <p>
+        As the number of conditions increases, you can use multiple else-if
+        statements in JavaScript. but when we dealing with many conditions, the
+        switch statement may be a more preferred option.
+      </p>
+      <div>
+        <b>Syntax:</b>
+        <p>
+          switch (expression) { <br />
+          case value1: <br />
+          statement1; <br />
+          break; <br />
+          case value2: <br />
+          statement2; <br />
+          break; <br />
+          . . . <br />
+          case valueN: <br />
+          statementN; <br />
+          break; <br />
+          default: <br />
+          statementDefault; <br />
+          }; <br />
+        </p>
+        <b
+          >Example: In this example, we find a branch name Based on the
+          student’s marks, this switch statement assigns a specific engineering
+          branch to the variable Branch. The output displays the student’s
+          branch name,</b
+        >
+        <p>
+          const marks = 85; <br>
+ <br>
+let Branch; <br>
+ <br>
+switch (true) { <br>
+	case marks >= 90: <br>
+		Branch = "Computer science engineering"; <br>
+		break; <br>
+	case marks >= 80: <br>
+		Branch = "Mechanical engineering"; <br>
+		break; <br>
+	case marks >= 70: <br>
+		Branch = "Chemical engineering"; <br>
+		break; <br>
+	case marks >= 60: <br>
+		Branch = "Electronics and communication"; <br>
+		break; <br>
+	case marks >= 50: <br>
+		Branch = "Civil engineering"; <br>
+		break; <br>
+	default: <br>
+		Branch = "Bio technology"; <br>
+		break; <br>
+} <br>
+
+console.log(`Student Branch name is : ${Branch}`); <br>
+
+        </p>
+        <b>Explanation:
+
+          This JavaScript code assigns a branch of engineering to a student based on their marks. It uses a switch statement with cases for different mark ranges. The student’s branch is determined according to their marks and logged to the console.</b>
+      </div>
+      <h2><li> Using Ternary Operator ( ?: )</li></h2>
+      <p>The conditional operator, also referred to as the ternary operator (?:), is a shortcut for expressing conditional statements in JavaScript.</p>
+      <div>
+        <b>Syntax:</b>
+        <p>condition ? value if true : value if false</p>
+        <b>Example: In this example, we use the ternary operator to check if the user’s age is 18 or older. It prints eligibility for voting based on the condition.</b>
+        <p>
+          let age = 21;<br>
+<br>
+const result =<br>
+	(age >= 18) ? "You are eligible to vote."<br>
+		: "You are not eligible to vote.";<br>
+
+console.log(result);<br>
+<br>
+        </p>
+        <b>Output</b>
+        <p>
+          You are eligible to vote.
+
+        </p>
+        <b>Explanation: This JavaScript code checks if the variable `age` is greater than or equal to 18. If true, it assigns the string “You are eligible to vote.” to the variable `result`. Otherwise, it assigns “You are not eligible to vote.” The value of `result` is then logged to the console.</b>
+      </div>
+    </ol>
+  </body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Module-06 Qus-</title>
+    <style>
+      tr,
+      th,
+      td {
+        border: 2px solid black;
+      }
+      div {
+        padding: 10px;
+        margin: 10px;
+        background-color: lightblue;
+        border: 2px solid darkgreen;
+        font-size: large;
+      }
+    </style>
+  </head>
+  <body>
+    <b>Qus:</b> What the deference between undefined and undeclare in
+    JavaScript?
+
+    <br />
+
+    <b>Ans:</b>
+    <div>
+      <table cellspacing="5px" cellpading="5px">
+        <tr>
+          <th>undeclared</th>
+
+          <th>undefined</th>
+        </tr>
+        <tr>
+          <td>
+            <ul>
+              <li>
+                These are the variables that do not exist in the memory heap.
+              </li>
+
+              <li>
+                The variables are considered to be undeclared because of
+                programmer does not write them with var, let, or const.
+              </li>
+
+              <li>
+                If we try to access them in the code execution phase then
+                javascript will throw a Reference error.
+              </li>
+            </ul>
+          </td>
+          <td>
+            <ul>
+              <li>
+                These variables are the ones that do exist in memory but nothing
+                is being assigned to them explicitly by the programmer.
+              </li>
+
+              <li>
+                The variables are considered to be undefined because it is
+                assigned by javascript to them.
+              </li>
+
+              <li>
+                If we try to access these variables we’ll get the undefined as
+                value.
+              </li>
+            </ul>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>
