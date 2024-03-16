@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Module-06 Qus-22</title>
+    <title>Module-06 Qus-24</title>
     <style>
       div {
         padding: 10px;
@@ -15,30 +15,30 @@
     </style>
   </head>
   <body>
-    <b>Qus:</b> Check Number Is Positive or Negative in JavaScript?
+    <b>Qus:</b>Write to check whether a number is negative, positive or zero?
     <br />
 
     <b>Ans:</b>
-    <div>
-      <b> Output </b> <br />
-      <p>number is Negative</p>
-      <br />
 
+    <div>
       &lt;script&gt; <br />
-      let checkNumber = -1; <br />
+      let checkNumber = parseInt(prompt("input Whether a number: ")); <br />
       <br />
-      if (checkNumber >= 0) { <br />
-      console.log("number is positive"); <br />
-      } else { <br />
-      console.log("number is Negative"); <br />
-      } <br />
-      &lt;script&gt; <br />
+      if (checkNumber > 0) {<br />
+      console.log("number is positive");<br />
+      }<br />
+      else if (checkNumber == 0) {<br />
+      console.log("number is Zero");<br />
+      } else {<br />
+      console.log("number is Negative");<br />
+      }<br />
+      &lt;/script&gt; <br />
 
       <h2>you will get your output as per you input value in prompt box</h2>
     </div>
 
     <script>
-      let checkNumber = parseInt(prompt("input value you want check!"));
+      let checkNumber = parseInt(prompt("input Whether a number: "));
 
       if (checkNumber > 0) {
         console.log("number is positive");
