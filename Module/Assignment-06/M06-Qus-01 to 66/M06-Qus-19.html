@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Module-06 Qus-19</title>
+    <style>
+      div {
+        padding: 10px;
+        margin: 10px;
+        background-color: lightblue;
+        border: 2px solid darkgreen;
+        font-size: large;
+      }
+    </style>
+  </head>
+  <body>
+    <b>Qus:</b> What is the use of is Nan function?
+    <br />
+
+    <b>Ans:</b>
+    <h2>isNaN()</h2>
+    <p>
+      The <mark>isNaN()</mark> function determines whether a value is
+      <mark> NaN</mark>, first converting the value to a number if necessary.
+      Because coercion inside the<mark> isNaN()</mark> function can be
+      surprising, you may prefer to use Number <mark> .isNaN()</mark>
+    </p>
+    <h3>Syntax</h3>
+    <p>isNaN(value)</p>
+    <h3>Parameters</h3>
+    <b>value</b>
+    <p>The value to be tested.</p>
+
+    <b>Return value</b>
+    <p>
+      <b>true</b> if the given value is <b>NaN</b> after being
+      <b>converted to a number;</b> otherwise, <b>false.</b>
+    </p>
+    <h3>Description</h3>
+    <ul>
+      <li>isNaN() is a function property of the global object.</li>
+      <li>
+        For number values, isNaN() tests if the number is the value NaN. When
+        the argument to the isNaN() function is not of type Number, the value is
+        first coerced to a number, and the resulting value is then compared
+        against NaN.
+      </li>
+      <li>
+        This behavior of isNaN() for non-numeric arguments can be confusing! For
+        example, an empty string is coerced to 0, while a boolean is coerced to
+        0 or 1; both values are intuitively "not numbers", but they don't
+        evaluate to NaN, so isNaN() returns false. Therefore, isNaN() answers
+        neither the question "is the input the floating point NaN value" nor the
+        question "is the input not a number".
+      </li>
+      <li>
+        Number.isNaN() is a more reliable way to test whether a value is the
+        number value NaN or not. Alternatively, the expression x !== x can be
+        used, and neither of the solutions is subject to the false positives
+        that make the global isNaN() unreliable. To test if a value is a number,
+        use typeof x === "number".
+      </li>
+      <li>
+        The isNaN() function answers the question "is the input functionally
+        equivalent to NaN when used in a number context". If isNaN(x) returns
+        false, you can use x in an arithmetic expression as if it's a valid
+        number that's not NaN. If isNaN(x) returns true, x will get coerced to
+        NaN and make most arithmetic expressions return NaN (because NaN
+        propagates). You can use this, for example, to test whether an argument
+        to a function is arithmetically processable (usable "like" a number),
+        and handle values that are not number-like by throwing an error,
+        providing a default value, etc. This way, you can have a function that
+        makes use of the full versatility JavaScript provides by implicitly
+        converting values depending on context.
+      </li>
+    </ul>
+    <h3>Examples</h3>
+    <p>
+      Note how isNaN() returns true for values that are not the value NaN but
+      are not numbers either: JS
+    </p>
+    <div>
+      isNaN(NaN); // true <br />
+      isNaN(undefined); // true <br />
+      isNaN({}); // true <br />
+      <br />
+
+      isNaN(true); // false <br />
+      isNaN(null); // false <br />
+      isNaN(37); // false <br />
+      <br />
+
+      // Strings <br /><br />
+      isNaN("37"); // false: "37" is converted to the number 37 which is not NaN
+      <br />
+      isNaN("37.37"); // false: "37.37" is converted to the number 37.37 which
+      is not NaN <br />
+      isNaN("37,5"); // true <br />
+      isNaN("123ABC"); // true: Number("123ABC") is NaN <br />
+      isNaN(""); // false: the empty string is converted to 0 which is not NaN
+      <br />
+      isNaN(" "); // false: a string with spaces is converted to 0 which is not
+      NaN <br />
+      <br />
+
+      // Dates <br />
+      <br />
+      isNaN(new Date()); // false; Date objects can be converted to a number
+      (timestamp) <br />
+      isNaN(new Date().toString()); // true; the string representation of a Date
+      object cannot be parsed as a number <br />
+      <br />
+      // Arrays <br /><br />
+      isNaN([]); // false; the primitive representation is "", which coverts to
+      the number 0 <br />
+      isNaN([1]); // false; the primitive representation is "1" <br />
+      isNaN([1, 2]); // true; the primitive representation is "1,2", which
+      cannot be parsed as number <br />
+    </div>
+  </body>
+</html>

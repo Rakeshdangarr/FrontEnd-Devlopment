@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Module-06 Qus-20</title>
+    <style>
+      tr,
+      th,
+      td {
+        border: 2px solid black;
+      }
+      div {
+        padding: 10px;
+        margin: 10px;
+        background-color: lightblue;
+        border: 2px solid darkgreen;
+        font-size: large;
+      }
+    </style>
+  </head>
+  <body>
+    <b>Qus:</b>What is the difference between && and || in JavaScript?
+    <br />
+
+    <b>Ans:</b>
+    <div>
+      <table cellspacing="5px" cellpading="5px">
+        <tr>
+          <th>Logical AND (&&)</th>
+
+          <th>Logical OR (||)</th>
+        </tr>
+        <tr>
+          <td>
+            <ul>
+              <li>
+                The logical AND (&&) (logical conjunction) operator for a set of
+                boolean operands will be true if and only if all the operands
+                are true. Otherwise it will be false.More generally, the
+                operator returns the value of the first falsy operand
+                encountered when evaluating from left to right, or the value of
+                the last operand if they are all truthy.
+              </li>
+
+              <li>
+                <b>Syntax</b>
+                <p>x && y</p>
+                <ul>
+                  <li>
+                    Logical AND (&&) evaluates operands from left to right,
+                    returning immediately with the value of the first falsy
+                    operand it encounters; if all values are truthy, the value
+                    of the last operand is returned.
+                  </li>
+                  <li>
+                    If a value can be converted to true, the value is so-called
+                    truthy. If a value can be converted to false, the value is
+                    so-called falsy.
+                  </li>
+                </ul>
+              </li>
+
+              <li>
+                Examples of expressions that can be converted to false are:
+                <ul>
+                  <li>false;</li>
+                  <li>null;</li>
+                  <li>NaN;</li>
+                  <li>0;</li>
+                  <li>empty string ("" or '' or ``);</li>
+                  <li>undefined.</li>
+                </ul>
+              </li>
+            </ul>
+          </td>
+          <td>
+            <ul>
+              <li>
+                The logical OR (||) (logical disjunction) operator for a set of
+                operands is true if and only if one or more of its operands is
+                true. It is typically used with boolean (logical) values. When
+                it is, it returns a Boolean value. However, the || operator
+                actually returns the value of one of the specified operands, so
+                if this operator is used with non-Boolean values, it will return
+                a non-Boolean value.
+              </li>
+
+              <li>
+                <b>Syntax</b>
+                <p>x || y</p>
+                <ul>
+                  <li>
+                    If x can be converted to true, returns x; else, returns y.
+                  </li>
+                  <li>
+                    If a value can be converted to true, the value is so-called
+                    truthy. If a value can be converted to false, the value is
+                    so-called falsy.
+                  </li>
+                </ul>
+              </li>
+
+              <li>
+                Examples of expressions that can be converted to false are:
+                <ul>
+                  <li>null;</li>
+                  <li>NaN;</li>
+                  <li>0;</li>
+                  <li>empty string ("" or '' or ``);</li>
+                  <li>undefined.</li>
+                </ul>
+              </li>
+            </ul>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>

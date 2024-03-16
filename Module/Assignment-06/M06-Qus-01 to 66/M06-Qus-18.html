@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Module-06 Qus-18</title>
+    <style>
+      div {
+        padding: 10px;
+        margin: 10px;
+        background-color: lightblue;
+        border: 2px solid darkgreen;
+        font-size: large;
+      }
+    </style>
+  </head>
+  <body>
+    <b>Qus:</b> What is a Loop and Switch Case in JavaScript define that ?
+    <br />
+
+    <b>Ans:</b>
+    <h1>JavaScript Loops</h1>
+    <p>
+      JavaScript Loops are powerful tools for performing repetitive tasks
+      efficiently. Loops in JavaScript execute a block of code again and again
+      while the condition is true.
+    </p>
+    <p>
+      For example, suppose we want to print “Hello World” 5 times. This can be
+      done using JS Loop easily. In Loop, the statement needs to be written only
+      once and the loop will be executed 5 times as shown below:
+    </p>
+    <div>
+      &lt;script &gt;
+      <br />
+      for (let i = 0; i < 5; i++) { <br />
+      console.log("Hello World!"); } <br />
+      &lt;/script &gt; <br />
+      <br />
+      <b>Output</b> <br />
+      Hello World! <br />
+      Hello World! <br />
+      Hello World! <br />
+      Hello World! <br />
+      Hello World! <br />
+    </div>
+    <h2>types of loops</h2>
+    <ul>
+      <li>for Loop</li>
+      <li>while Loop</li>
+      <li>do-while Loop</li>
+      <li>for-in Loop</li>
+      <li>for-of Loop</li>
+      <li>Labeled Statement</li>
+      <li>Break Statement</li>
+      <li>Continue Statement</li>
+      <li>Infinite Loop (Loop Error)</li>
+    </ul>
+    <h1>JavaScript for Loop</h1>
+    <p>
+      The JS for loop provides a concise way of writing the loop structure. The
+      for loop contains initialization, condition, and increment/decrement in
+      one line thereby providing a shorter, easy-to-debug structure of looping.
+    </p>
+    <div>
+      <b>Syntax</b> <br />
+      for (initialization; testing condition; increment/decrement) { <br />
+      statement(s) <br />
+      } <br />
+
+      <b>Flowchart</b> <br />
+      <img
+        src="https://media.geeksforgeeks.org/wp-content/uploads/loop2.png"
+        alt="loop example"
+      />
+    </div>
+    <ul>
+      <li>
+        Initialization condition: It initializes the variable and mark the start
+        of a for loop. An already declared variable can be used or a variable
+        can be declared, local to loop only.
+      </li>
+      <li>
+        Test Condition: It is used for testing the exit condition of a for loop.
+        It must return a boolean value. It is also an Entry Control Loop as the
+        condition is checked prior to the execution of the loop statements.
+      </li>
+      <li>
+        Statement execution: Once the condition is evaluated to be true, the
+        statements in the loop body are executed.
+      </li>
+      <li>
+        Increment/ Decrement: It is used for updating the variable for the next
+        iteration.
+      </li>
+      <li>
+        Loop termination: When the condition becomes false, the loop terminates
+        marking the end of its life cycle.
+      </li>
+    </ul>
+    <div>
+      <b>Example</b> <br />
+
+      // JavaScript program to illustrate for loop <br />
+      let x; <br />
+
+      // for loop begins when x = 2 <br />
+      // and runs till x <= 4 <br />
+      for (x = 2; x <= 4; x++) { <br />
+      console.log("Value of x: " + x); <br />
+      } <br />
+
+      <b>Output</b> <br />
+      Value of x: 2 <br />
+      Value of x: 3 <br />
+      Value of x: 4 <br />
+    </div>
+    <h1>JavaScript while Loop</h1>
+    <p>
+      The JS while loop is a control flow statement that allows code to be
+      executed repeatedly based on a given Boolean condition. The while loop can
+      be thought of as a repeating if statement.
+    </p>
+    <div>
+      <b>Syntax</b> <br />
+      <p>
+        while (boolean condition) { <br />
+        loop statements... <br />
+        } <br />
+        <b>Flowchart</b> <br />
+        <img
+          src="https://media.geeksforgeeks.org/wp-content/uploads/Loop1.png"
+          alt=""
+        />
+      </p>
+    </div>
+    <ul>
+      <li>
+        While loop starts with checking the condition. If it is evaluated to be
+        true, then the loop body statements are executed otherwise first
+        statement following the loop is executed. For this reason, it is also
+        called the Entry control loop
+      </li>
+      <li>
+        Once the condition is evaluated to be true, the statements in the loop
+        body are executed. Normally the statements contain an updated value for
+        the variable being processed for the next iteration.
+      </li>
+      <li>
+        When the condition becomes false, the loop terminates which marks the
+        end of its life cycle.
+      </li>
+    </ul>
+
+    <div>
+      <b>example</b> <br />
+
+      // JavaScript code to use while loop <br />
+      let val = 1; <br />
+      <br />
+
+      while (val < 6) { <br />
+      console.log(val); <br />
+      val += 1; <br />
+      } <br />
+
+      <b>Output</b> <br />
+      1 <br />
+      2 <br />
+      3 <br />
+      4 <br />
+      5 <br />
+    </div>
+    <h1>JavaScript do-while Loop</h1>
+    <p>
+      The JS do-while loop is similar to the while loop with the only difference
+      is that it checks for the condition after executing the statements, and
+      therefore is an example of an Exit Control Loop. It executes loop content
+      at least once event the condition is false.
+    </p>
+    <div>
+      <b>Syntax</b> <br />
+      <p>
+        do { <br />
+        Statements... <br />
+        } <br />
+        while (condition); <br />
+      </p>
+      <b>Flowchart</b> <br />
+      <img
+        src="https://media.geeksforgeeks.org/wp-content/uploads/loop3.png"
+        alt=""
+      />
+    </div>
+    <ul>
+      <li>
+        The do-while loop starts with the execution of the statement(s). There
+        is no checking of any condition for the first time.
+      </li>
+      <li>
+        After the execution of the statements and update of the variable value,
+        the condition is checked for a true or false value. If it is evaluated
+        to be true, the next iteration of the loop starts.
+      </li>
+      <li>
+        When the condition becomes false, the loop terminates which marks the
+        end of its life cycle.
+      </li>
+      <li>
+        It is important to note that the do-while loop will execute its
+        statements at least once before any condition is checked and therefore
+        is an example of the exit control loop.
+      </li>
+    </ul>
+    <div>
+      <b>Example</b><br />
+      let test = 1; <br />
+
+      do { <br />
+      console.log(test); <br />
+      test++; <br />
+      } while(test <= 5) <br />
+
+      <b>Output</b> <br />
+      <p>
+        1 <br />
+        2 <br />
+        3 <br />
+        4 <br />
+        5 <br />
+      </p>
+    </div>
+    <h1>JavaScript for-in Loop</h1>
+    <p>
+      JS for-in loop is used to iterate over the properties of an object. The
+      for-in loop iterates only over those keys of an object which have their
+      enumerable property set to “true”.
+    </p>
+    <div>
+      <b>Syntax</b> <br />
+      for(let variable_name in object_name) { <br />
+      // Statement <br />
+      } <br />
+      <b>Example: This example shows the use of for-in loop.</b>
+      <p>
+        let myObj = { x: 1, y: 2, z: 3 }; <br />
+        for (let key in myObj) { <br />
+        console.log(key, myObj[key]); <br />
+        }<br />
+      </p>
+      <b>Output</b> <br />
+      <p>
+        x 1 <br />
+        y 2 <br />
+        z 3 <br />
+      </p>
+    </div>
+    <h1>JavaScript for-of Loop</h1>
+    <p>
+      JS for-of loop is used to iterate the iterable objects for example –
+      array, object, set and map. It directly iterate the value of the given
+      iterable object and has more concise syntax than for loop.
+    </p>
+    <div>
+      <b>Syntax:</b> <br />
+      <p>
+        for(let variable_name of object_name) { <br />
+        // Statement <br />
+        }<br />
+      </p>
+      <b>Example: This example shows the use of for-of loop.</b> <br />
+      <p>
+        let arr = [1, 2, 3, 4, 5]; <br />
+        for (let value of arr) { <br />
+        console.log(value); <br />
+        } <br />
+      </p>
+      <b>Output</b> <br />
+      <p>
+        1 <br />
+        2<br />
+        3<br />
+        4<br />
+        5<br />
+      </p>
+    </div>
+    <h1>JavaScript Labeled Statement</h1>
+    <p>
+      JS label keyword does not include a goto keyword. Users can use the
+      continue keyword with the label statement. Furthermore, users can use the
+      break keyword to terminate the loop/block. You can also use the break
+      keyword without defining the label but it terminates only the parent
+      loop/block. To terminate the outer loop from the inner loop using the
+      break keyword, users need to define the label.
+    </p>
+    <div>
+      <b>Syntax</b> <br />
+      <p>
+        Label: <br />
+        statement (loop or block of code) <br />
+      </p>
+      <b>Example</b> <br />
+      <p>
+        let sum = 0, a = 1; <br />
+
+        // Label for outer loop <br />
+        outerloop: while (true) { <br />
+        a = 1; <br /><br />
+
+        // Label for inner loop <br />
+        innerloop: while (a < 3) { <br />
+        sum += a; <br />
+        if (sum > 12) { <br /><br />
+
+        // Break outer loop from inner loop <br />
+        break outerloop; <br />
+        } <br />
+        console.log("sum = " + sum); <br />
+        a++; <br />
+        } <br />
+        }<br />
+      </p>
+      <b>Output</b> <br />
+      <p>
+        sum = 1<br />
+        sum = 3<br />
+        sum = 4<br />
+        sum = 6<br />
+        sum = 7<br />
+        sum = 9<br />
+        sum = 10<br />
+        sum = 12<br />
+      </p>
+    </div>
+    <h1>JavaScript Break Statement</h1>
+    <p>
+      JS break statement is used to terminate the execution of the loop or
+      switch statement when the condition is true.
+    </p>
+    <div>
+      <b>syntax</b><br />
+      <p>break;</p>
+      <b>Example</b> <br />
+      <p>
+        for (let i = 1; i < 6; i++) { <br />
+        if (i == 4) <br />
+        break; <br /><br />
+
+        console.log(i); <br />
+        }<br />
+      </p>
+      <b>Output</b> <br />
+      <p>
+        1 <br />
+        2 <br />
+        3 <br />
+      </p>
+    </div>
+    <h1>JavaScript Continue Statement</h1>
+    <p>
+      JS continue statement is used to break the iteration of the loop and
+      follow with the next iteration. The break in iteration is possible only
+      when the specified condition going to occur. The major difference between
+      the continue and break statement is that the break statement breaks out of
+      the loop completely while continue is used to break one statement and
+      iterate to the next statement.
+    </p>
+    <div>
+      <b>syntax</b> <br />
+      <p>continue;</p>
+      <b>Example</b> <br />
+      <p>
+        for (let i = 0; i < 11; i++) { <br />
+        if (i % 2 == 0) <br />
+        continue; <br /><br />
+
+        console.log(i); <br />
+        } <br />
+      </p>
+      <b>Output</b> <br />
+      <p>
+        1 <br />
+        3 <br />
+        5 <br />
+        7 <br />
+        9 <br />
+      </p>
+    </div>
+    <h1>JavaScript Infinite Loop (Loop Error)</h1>
+    <p>
+      One of the most common mistakes while implementing any sort of loop is
+      that it may not ever exit, i.e. the loop runs for infinite times. This
+      happens when the condition fails for some reason.
+    </p>
+
+    <div>
+      <b>Example: This example shows an infinite loop.</b> <br />
+      <p>
+        // JavaScript program to illustrate infinite loop <br /><br />
+
+        // Infinite loop because condition is not false <br />
+        // condition should have been i>0. <br />
+        for (let i = 5; i != 0; i -= 2) { <br />
+        console.log(i); <br />
+        } <br /><br />
+
+        let x = 5;<br />
+
+        // Infinite loop because update statement <br />
+        // is not provided <br />
+        while (x == 5) { <br />
+        console.log("In the loop"); <br />
+        }<br />
+      </p>
+    </div>
+
+    <h1>JavaScript switch Statement</h1>
+    <p>
+      JavaScript switch statement provides a way to execute different code
+      blocks based on different conditions. It’s an alternative to using
+      multiple if...else if...else statements when you have multiple conditions
+      to check.
+    </p>
+
+    <div>
+      <b>Syntax</b> <br />
+      <p>
+        switch (expression) { <br />
+        case value1: <br />
+        // code block 1; <br />
+        break; <br />
+        case value2: <br />
+        // code block 2; <br />
+        break; <br />
+        ... <br />
+        default: <br />
+        // default code block; <br />
+        } <br />
+      </p>
+
+      <ul>
+        <li>Expression is the value that you want to compare.</li>
+        <li>
+          Case value1, case value2, etc., represent the possible values of the
+          expression.
+        </li>
+        <li>
+          break statement terminates the switch statement. Without it, execution
+          will continue into the next case.
+        </li>
+        <li>
+          Default specifies the code to run if none of the cases match the
+          expression.
+        </li>
+      </ul>
+      <h2>How Switch Statement Works</h2>
+      <ul>
+        <li>
+          <b>Evaluation: </b>The expression inside the switch statement is
+          evaluated once.
+        </li>
+        <li>
+          <b>Comparison:</b>The value of the expression is compared with each
+          case label (using strict equality ===).
+        </li>
+        <li>
+          <b>Execution:</b>If a match is found, the corresponding code block
+          following the matching case label is executed. If no match is found,
+          the execution jumps to the default case (if present) or continues with
+          the next statement after the switch block.
+        </li>
+        <li>
+          <b>Break Statement:</b>After executing a code block, the break
+          statement terminates the switch statement, preventing execution from
+          falling through to subsequent cases. If break is omitted, execution
+          will continue to the next case (known as “fall-through”).
+        </li>
+        <li>
+          <b>Default Case:</b>The default case is optional. If no match is
+          found, the code block under default is executed.
+        </li>
+      </ul>
+      <h2>Flowchart of Switch Statement</h2>
+      <p>
+        <img
+          src="https://media.geeksforgeeks.org/wp-content/uploads/switch.png"
+          alt=""
+        />
+      </p>
+      <b>Switch Statement Example:</b> <br />
+      <p>Here, we will print the day name on day 3.</p>
+      <p>
+        let day = 3; <br />
+        let dayName; <br />
+        <br />
+        switch (day) { <br />
+        case 1: <br />
+        dayName = "Monday"; <br />
+        break; <br />
+        case 2: <br />
+        dayName = "Tuesday"; <br />
+        break; <br />
+        case 3: <br />
+        dayName = "Wednesday"; <br />
+        break; <br />
+        case 4: <br />
+        dayName = "Thursday"; <br />
+        break; <br />
+        case 5: <br />
+        dayName = "Friday"; <br />
+        break; <br />
+        case 6: <br />
+        dayName = "Saturday"; <br />
+        break; <br />
+        case 7: <br />
+        dayName = "Sunday"; <br />
+        break; <br />
+        default: <br />
+        dayName = "Invalid day"; <br />
+        } <br />
+        <br />
+        console.log(dayName); // Output: Wednesday <br />
+      </p>
+      <b>Output </b> <br />
+      <p>Wednesday</p>
+      <br />
+      <b>Explaintion</b> <br />
+      <ul>
+        <li>Day is set to 3.</li>
+        <li>The switch statement evaluates day.</li>
+        <li>
+          Since day is 3, the case 3 block is executed, assigning "Wednesday" to
+          dayName.
+        </li>
+        <li>
+          The break statement ends the switch statement, preventing execution
+          from continuing into other cases.
+        </li>
+      </ul>
+      <h3>Break Keyword</h3>
+      <p>
+        The break keyword is used to terminate the execution of a loop or a
+        switch statement.
+      </p>
+      <h3>default Keyword</h3>
+      <p>
+        The default keyword is used within a switch statement as a fallback
+        option when none of the case expressions match the value being
+        evaluated. It acts similar to the else statement in an if...else chain,
+        providing a default action to take when no other specific cases match.
+      </p>
+    </div>
+  </body>
+</html>

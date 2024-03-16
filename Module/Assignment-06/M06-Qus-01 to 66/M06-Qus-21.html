@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Module-06 Qus-21</title>
+    <style>
+      div {
+        padding: 10px;
+        margin: 10px;
+        background-color: lightblue;
+        border: 2px solid darkgreen;
+        font-size: large;
+      }
+    </style>
+  </head>
+  <body>
+    <b>Qus:</b>What is the use of Void (0)?
+    <br />
+
+    <b>Ans:</b>
+
+    <p>
+      You might have occasionally came across “javascript:void(0)” in an HTML
+      Document. It is often used when inserting an expression in a web page
+      might produce some unwanted effect. To remove this effect,
+      “javascript:void(0)” is used. This expression returns undefined primitive
+      value. This is often used with hyperlinks. Sometimes, you will decide to
+      call some JavaScript from inside a link. Normally, when you click a link,
+      the browser loads a brand new page or refreshes the same page (depending
+      on the URL specified). But you most likely don’t desire this to happen if
+      you have hooked up some JavaScript thereto link. To prevent the page from
+      refreshing, you could use void(0).
+    </p>
+    <p>
+      <b>Using “#” in anchor tag:</b> When writing the following code in the
+      editor, the web page is refreshed after the alert message is shown.
+    </p>
+    <div>
+      <b>Example</b>
+      &lt;h1 style="color:green"&gt;GeeksforGeeks&lt;/h1&gt; <br />
+      &lt;h3&gt;without JavaScript:void(0)&lt;/h3&gt; <br />
+      &lt;a href="#" ondblclick="alert('Welcome to Geeks for Geeks')"&gt; <br />
+      Double click on me &lt;/a&gt; <br />
+      &lt;a href="#" ondblclick="geeks()"&gt; <br />
+      Double click on me <br />
+      &lt;/a&gt; <br />
+      &lt;script&gt; <br />
+      function geeks(){ <br />
+      document.getElementById("gfg") <br />
+      .innerHTML='Welcome to GeeksforGeeks'; <br />
+      } <br />
+      &lt;/script&gt; <br />
+      &lt;p id="gfg"&gt;&lt;/p&gt; <br />
+      <b>Output</b> <br />
+      <img
+        src="https://media.geeksforgeeks.org/wp-content/uploads/20230120132346/gfg.gif"
+        alt=""
+      />
+      <p>
+        Using “javascript:void(0);” in anchor tag: Writing “javascript:void(0);”
+        in anchor tag can prevent the page to reload and JavaScript functions
+        can be called on single or double clicks easily.
+      </p>
+    </div>
+    <div>
+      <b>Example</b> <br />
+      <p>
+        &lt;h1 style="color:green"&gt;GeeksforGeeks&lt;/h1&gt; <br />
+        &lt;h3&gt;JavaScript:void(0)&lt;/h3&gt; <br />
+        &lt;a href="javascript:void(0);" ondblclick="geek()"&gt; <br />
+        Double click on me &lt;/a&lt; <br />
+        &lt;p id="gfg"&gt; <br />
+        &lt;/p&gt; <br />
+        &lt;script&gt; <br />
+        function geek() { <br />
+        document.getElementById("gfg").innerHTML = "Welcome to GeeksforGeeks";
+        <br />
+        } <br />
+        &lt;/script&gt; <br />
+      </p>
+      <b>Output</b><br />
+      <img
+        src="https://media.geeksforgeeks.org/wp-content/uploads/20230120133046/gfg.gif"
+        alt=""
+      />
+    </div>
+  </body>
+</html>
