@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Module-06 Qus-42</title>
+    <style>
+      div {
+        padding: 10px;
+        margin: 10px;
+        background-color: lightblue;
+        border: 2px solid darkgreen;
+        font-size: large;
+      }
+    </style>
+  </head>
+  <body>
+    <b>Qus:</b>Write a JavaScript program to compare two objects?
+    <br />
+
+    <b>Ans:</b>
+    <div>
+      <h1>
+        a JavaScript program to compare two objects(Strict equality using ===)
+      </h1>
+      const num = 0; <br />
+      const obj = new String("0"); <br />
+      const str = "0"; <br />
+      <br />
+      console.log(num === num); // true <br />
+      console.log(obj === obj); // true <br />
+      console.log(str === str); // true <br />
+      <br />
+      console.log(num === obj); // false <br />
+      console.log(num === str); // false <br />
+      console.log(obj === str); // false <br />
+      console.log(null === undefined); // false <br />
+      console.log(obj === null); // false <br />
+      console.log(obj === undefined); // false <br />
+      <br />
+
+      <h1>
+        a JavaScript program to compare two objects (Loose equality using ==)
+      </h1>
+      <br />
+      const num = 0; <br />
+      const big = 0n; <br />
+      const str = "0"; <br />
+      const obj = new String("0"); <br />
+      <br />
+      console.log(num == str); // true <br />
+      console.log(big == num); // true <br />
+      console.log(str == big); // true <br />
+      <br />
+      console.log(num == obj); // true <br />
+      console.log(big == obj); // true <br />
+      console.log(str == obj); // true <br />
+    </div>
+
+    <script>
+      const num = 0;
+      const obj = new String("0");
+      const str = "0";
+
+      console.log(num === num); // true
+      console.log(obj === obj); // true
+      console.log(str === str); // true
+
+      console.log(num === obj); // false
+      console.log(num === str); // false
+      console.log(obj === str); // false
+      console.log(null === undefined); // false
+      console.log(obj === null); // false
+      console.log(obj === undefined); // false
+
+      const big = 0n;
+      // const num = 0;
+      // const str = "0";
+      // const obj = new String("0");
+
+      console.log(num == str); // true
+      console.log(big == num); // true
+      console.log(str == big); // true
+
+      console.log(num == obj); // true
+      console.log(big == obj); // true
+      console.log(str == obj); // true
+    </script>
+  </body>
+</html>

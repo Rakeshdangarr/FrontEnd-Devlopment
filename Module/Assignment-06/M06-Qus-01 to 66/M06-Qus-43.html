@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Module-06 Qus-43</title>
+    <style>
+      div {
+        padding: 10px;
+        margin: 10px;
+        background-color: lightblue;
+        border: 2px solid darkgreen;
+        font-size: large;
+      }
+    </style>
+  </head>
+  <body>
+    <b>Qus:</b> Write a JavaScript program to convert an array of objects into
+    CSV string?
+    <br />
+
+    <b>Ans:</b> <br />
+    <div>
+      &lt;script&gt; <br />
+      var arr = new Array("Java", "PHP", "python"); <br />
+      var str = arr.join(); <br />
+      document.write("str : " + str); <br />
+      <br />
+      var str = arr.join(", "); <br />
+      document.write("<br />str : " + str); <br />
+      &lt;/script&gt;
+    </div>
+    <div>
+      <b>Output</b> <br />
+      <script>
+        var arr = new Array("Java", "PHP", "python");
+        var str = arr.join();
+        document.write("str : " + str);
+
+        var str = arr.join(", ");
+        document.write("<br />str : " + str);
+      </script>
+    </div>
+  </body>
+</html>

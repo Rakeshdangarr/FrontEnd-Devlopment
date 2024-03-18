@@ -19,5 +19,49 @@
     <br />
 
     <b>Ans:</b>
+
+    <div>
+      &lt;script&gt; <br />
+      function factorial(n) { <br />
+      let answer = 1; <br />
+      if (n == 0 || n == 1) { <br />
+      return answer; <br />
+      } else if (n > 1) { <br />
+      for (var i = n; i >= 1; i--) { <br />
+      answer = answer * i; <br />
+      } <br />
+      return answer; <br />
+      } else { <br />
+      return "number has to be positive."; <br />
+      } <br />
+      } <br />
+      let n = parseInt(prompt('input digit for factorial')); <br />
+      answer = factorial(n); <br />
+      console.log("Factorial of " + n + " : " + answer); <br />
+      &lt;/script&gt; <br />
+      <form action="">
+        <input type="text" id="outputBtn" />
+      </form>
+    </div>
+
+    <script>
+      function factorial(n) {
+        let answer = 1;
+        if (n == 0 || n == 1) {
+          return answer;
+        } else if (n > 1) {
+          for (var i = n; i >= 1; i--) {
+            answer = answer * i;
+          }
+          return answer;
+        } else {
+          return "number has to be positive.";
+        }
+      }
+      let n = parseInt(prompt("input digit for factorial"));
+      answer = factorial(n);
+
+      console.log("Factorial of " + n + " : " + answer);
+    </script>
   </body>
 </html>
