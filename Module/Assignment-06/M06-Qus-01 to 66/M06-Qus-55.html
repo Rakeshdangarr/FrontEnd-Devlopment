@@ -6,11 +6,36 @@
     <title>Module-06 Qus-55</title>
     <style>
       div {
+        width: 40%;
         padding: 10px;
         margin: 10px;
         background-color: lightblue;
         border: 2px solid darkgreen;
         font-size: large;
+        align-items: center;
+        align-content: center;
+        text-align: center;
+      }
+      input[type="Submit"] {
+        margin: 10px auto;
+        display: block;
+        width: 15%;
+        height: 40px;
+        border: 1px solid;
+        border-radius: 25px;
+        font-size: 15px;
+        cursor: pointer;
+      }
+
+      input[type="Submit"]:hover {
+        background: #26eb26bb;
+        color: #e9f4fb;
+        transition: 0.5s;
+      }
+      h1 {
+        color: brown;
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
       }
     </style>
   </head>
@@ -19,5 +44,52 @@
     <br />
 
     <b>Ans:</b>
+    <div>
+      <form action="">
+        <h1>Form Validation</h1>
+        <label for="email">Email</label>
+        <input type="email" placeholder="Enter your email" /> <br />
+        <br />
+        <label for="number">number</label>
+        <input type="number" placeholder="enter your number" /> <br />
+        <br />
+        <label for="password">password</label>
+        <input type="password" placeholder="enter your password" /> <br />
+        <br />
+        <input name="submit" type="Submit" value="Submit" />
+      </form>
+    </div>
+
+    <script>
+      const submitBtn = document.getElementsByTagName("button")[0];
+      const password = document.getElementsByTagName("input")[0];
+
+      submitBtn.addEventListener("click", function (e) {
+        e.preventDefault();
+        let emailValue = password.value;
+
+        let emailResult = checkEmail(emailValue);
+        let passwordResult = checkpassword(emailValue);
+      });
+
+      function checkPassword(passwordVal){
+        let specialCharacters= "~!#$%^&*()_-";
+        let isCapitalCharPresent = false;
+        let isLowerCharPresent = false;
+        let isSpecialCharPresent = false;
+        let passwordArray = Array.from(passwordVal);
+
+        for (i = 0; i < passwordArray.length; i++) {
+          if(emailValue[i].toUpperCase() == emailValue[i])
+        isCapitalCharPresent = true;
+      if (emailValue[i].toLowerCase() == emailValue[i])
+      isLowerCharPresent = true;
+
+      console.log(isCapitalCharPresent && isLowerCharPresent);
+
+
+
+        }
+    </script>
   </body>
 </html>
