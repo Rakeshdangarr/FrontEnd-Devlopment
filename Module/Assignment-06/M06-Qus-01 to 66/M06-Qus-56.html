@@ -19,5 +19,49 @@
     <br />
 
     <b>Ans:</b>
+    <p>
+      Forms are an integral part of many websites. They are used to gather user
+      information, feedback, and more. With JavaScript, it is possible to create
+      form fields dynamically, allowing developers to add, remove, and
+      manipulate form elements in real-time. This can be particularly useful for
+      users who need to input multiple pieces of information, as well as for
+      developers who want to create more dynamic and interactive forms.
+    </p>
+    <p>
+      In this article, we will explore the process of creating form fields
+      dynamically with JavaScript. We will cover the basics of creating form
+      elements and manipulating them with JavaScript, as well as some more
+      advanced techniques for making your forms even more dynamic and engaging.
+    </p>
+    <p>
+      To create Fields dynamically using JavaScript, we can use the
+      document.createElement method to create the element. Then we can use the
+      setAttribute method to set the element attributes and finally we can use
+      the appendChild method to append the elements into the parent element.
+    </p>
+
+    <h2>HTML Code:</h2>
+    <p>The first thing we need to do is create our HTML File. I've only included three fields, two of them (Name and Email) are static and I make another Field dynamic, on which we will be performing the actions.</p>
+    <p>After creating the files just paste the below HTML codes into your file. Make sure to save your HTML document with a .html extension, so that it can be properly viewed in a web browser.</p>
+    <p>
+      This is the basic structure of our dynamically form fields using HTML, and now we can move on to styling it using CSS.</p>
+      <div>
+        &lt;h1&gt;Dynamic Form Validation&lt;/h1&gt; <br>
+        &lt;div class="container"&gt; <br>
+        &lt;form action="" method="POST"&gt; <br>
+          &lt;div id="formfield"&gt; <br>
+            &lt;input type="text" name="text" class="text" size="50" placeholder="Name" required&gt; <br>
+            &lt;input type="text" name="text" class="text" size="50" placeholder="Email" required&gt; <br>
+            &lt;input type="text" name="text" class="text" size="50" placeholder="Optional Field"&gt; <br>
+          &lt;/div&gt; <br>
+          &lt;input name="submit" type="Submit" value="Submit"&gt; <br>
+          &lt;/form&gt; <br>
+          &lt;div class="controls"&gt; <br>
+          &lt;button class="add" onclick="add()"&gt;&lt;i class="fa fa-plus"&gt;&lt;/i>Add&lt;/button&gt; <br>
+          &lt;button class="remove" onclick="remove()"&gt;&lt;i class="fa fa-minus"&gt;&lt;/i&gt;Remove&lt;/button&gt; <br>
+          &lt;/div&gt; <br>
+        </div>
+    
+      </div>
   </body>
 </html>

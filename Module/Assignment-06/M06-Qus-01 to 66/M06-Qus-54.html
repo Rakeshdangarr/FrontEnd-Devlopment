@@ -19,5 +19,258 @@
     <br />
 
     <b>Ans:</b>
+
+    <h1>form Validtion</h1>
+    <p>
+      Go to any popular site with a registration form, and you will notice that
+      they provide feedback when you don't enter your data in the format they
+      are expecting. You'll get messages such as:
+    </p>
+    <ul>
+      <li>"This field is required" (You can't leave this field blank).</li>
+      <li>
+        "Please enter your phone number in the format xxx-xxxx" (A specific data
+        format is required for it to be considered valid).
+      </li>
+      <li>
+        "Please enter a valid email address" (the data you entered is not in the
+        right format).
+      </li>
+      <li>
+        "Your password needs to be between 8 and 30 characters long and contain
+        one uppercase letter, one symbol, and a number." (A very specific data
+        format is required for your data).
+      </li>
+    </ul>
+    <p>
+      This is called form validation. When you enter data, the browser and/or
+      the web server will check to see that the data is in the correct format
+      and within the constraints set by the application. Validation done in the
+      browser is called client-side validation, while validation done on the
+      server is called server-side validation. In this chapter we are focusing
+      on client-side validation.
+    </p>
+    <p>
+      If the information is correctly formatted, the application allows the data
+      to be submitted to the server and (usually) saved in a database; if the
+      information isn't correctly formatted, it gives the user an error message
+      explaining what needs to be corrected, and lets them try again.
+    </p>
+    <br />
+    <p>
+      We want to make filling out web forms as easy as possible. So why do we
+      insist on validating our forms? There are three main reasons:
+    </p>
+    <ul>
+      <li>
+        <b>We want to get the right data, in the right format.</b> Our
+        applications won't work properly if our users' data is stored in the
+        wrong format, is incorrect, or is omitted altogether.
+      </li>
+      <li>
+        <b>We want to protect our users' data.</b>Forcing our users to enter
+        secure passwords makes it easier to protect their account information.
+      </li>
+      <li>
+        <b>We want to protect ourselves. </b>There are many ways that malicious
+        users can misuse unprotected forms to damage the application.
+      </li>
+    </ul>
+    <h2>Validating forms using JavaScript</h2>
+    <p>
+      You must use JavaScript if you want to take control over the look and feel
+      of native error messages. In this section we will look at the different
+      ways to do this.
+    </p>
+    <h3>The Constraint Validation API</h3>
+    <p>
+      The Constraint Validation API consists of a set of methods and properties
+      available on the following form element DOM interfaces:
+    </p>
+    <ul>
+      <li>HTMLButtonElement (represents a &lt;button&gt; element)</li>
+      <li>HTMLFieldSetElement (represents a &lt;fieldset&gt; element)</li>
+      <li>HTMLInputElement (represents an &lt;input&gt; element)</li>
+      <li>HTMLOutputElement (represents an &lt;output&gt; element)</li>
+      <li>HTMLSelectElement (represents a &lt;select&gt; element)</li>
+      <li>HTMLTextAreaElement (represents a &lt;textarea&gt; element)</li>
+    </ul>
+    <p>
+      The Constraint Validation API makes the following properties available on
+      the above elements.
+    </p>
+    <ul>
+      <li>
+        validationMessage: Returns a localized message describing the validation
+        constraints that the control doesn't satisfy (if any). If the control is
+        not a candidate for constraint validation (willValidate is false) or the
+        element's value satisfies its constraints (is valid), this will return
+        an empty string.
+      </li>
+      <li>
+        validity: Returns a ValidityState object that contains several
+        properties describing the validity state of the element. You can find
+        full details of all the available properties in the ValidityState
+        reference page; below is listed a few of the more common ones:
+      </li>
+      <li>
+        patternMismatch: Returns true if the value does not match the specified
+        pattern, and false if it does match. If true, the element matches the
+        :invalid CSS pseudo-class.
+      </li>
+      <li>
+        tooLong: Returns true if the value is longer than the maximum length
+        specified by the maxlength attribute, or false if it is shorter than or
+        equal to the maximum. If true, the element matches the :invalid CSS
+        pseudo-class.
+      </li>
+      <li>
+        tooShort: Returns true if the value is shorter than the minimum length
+        specified by the minlength attribute, or false if it is greater than or
+        equal to the minimum. If true, the element matches the :invalid CSS
+        pseudo-class.
+      </li>
+      <li>
+        rangeOverflow: Returns true if the value is greater than the maximum
+        specified by the max attribute, or false if it is less than or equal to
+        the maximum. If true, the element matches the :invalid and :out-of-range
+        CSS pseudo-classes.
+      </li>
+      <li>
+        rangeUnderflow: Returns true if the value is less than the minimum
+        specified by the min attribute, or false if it is greater than or equal
+        to the minimum. If true, the element matches the :invalid and
+        :out-of-range CSS pseudo-classes.
+      </li>
+      <li>
+        typeMismatch: Returns true if the value is not in the required syntax
+        (when type is email or url), or false if the syntax is correct. If true,
+        the element matches the :invalid CSS pseudo-class.
+      </li>
+      <li>
+        valid: Returns true if the element meets all its validation constraints,
+        and is therefore considered to be valid, or false if it fails any
+        constraint. If true, the element matches the :valid CSS pseudo-class;
+        the :invalid CSS pseudo-class otherwise.
+      </li>
+      <li>
+        valueMissing: Returns true if the element has a required attribute, but
+        no value, or false otherwise. If true, the element matches the :invalid
+        CSS pseudo-class.
+      </li>
+      <li>
+        willValidate: Returns true if the element will be validated when the
+        form is submitted; false otherwise.
+      </li>
+    </ul>
+    <p>
+      The Constraint Validation API also makes the following methods available
+      on the above elements and the form element.
+    </p>
+    <ul>
+      <li>
+        checkValidity(): Returns true if the element's value has no validity
+        problems; false otherwise. If the element is invalid, this method also
+        fires an invalid event on the element.
+      </li>
+      <li>
+        reportValidity(): Reports invalid field(s) using events. This method is
+        useful in combination with preventDefault() in an onSubmit event
+        handler.
+      </li>
+      <li>
+        setCustomValidity(message): Adds a custom error message to the element;
+        if you set a custom error message, the element is considered to be
+        invalid, and the specified error is displayed. This lets you use
+        JavaScript code to establish a validation failure other than those
+        offered by the standard HTML validation constraints. The message is
+        shown to the user when reporting the problem.
+      </li>
+    </ul>
+    <b>Implementing a customized error message</b> <br />
+    <p>
+      As you saw in the HTML validation constraint examples earlier, each time a
+      user tries to submit an invalid form, the browser displays an error
+      message. The way this message is displayed depends on the browser.
+    </p>
+    <b>These automated messages have two drawbacks:</b> <br />
+    <ul>
+      <li>There is no standard way to change their look and feel with CSS.</li>
+      <li>
+        They depend on the browser locale, which means that you can have a page
+        in one language but an error message displayed in another language, as
+        seen in the following Firefox screenshot.
+      </li>
+    </ul>
+    <img
+      src="https://developer.mozilla.org/en-US/docs/Learn/Forms/Form_validation/error-firefox-win7.png"
+      alt=""
+    />
+    <p>
+      Customizing these error messages is one of the most common use cases of
+      the Constraint Validation API. Let's work through a simple example of how
+      to do this.
+    </p>
+    <div>
+      &lt;form&gt; <br />
+      &lt;label for="mail"&gt; <br />
+      I would like you to provide me with an email address: <br />
+      &lt;/label&gt; <br />
+      &lt;input type="email" id="mail" name="mail" /&gt; <br />
+      &lt;button&gt;Submit&lt;/button&gt; &lt;/form&gt; <br />
+    </div>
+    <b>And add the following JavaScript to the page:</b>
+    <div>
+      const email = document.getElementById("mail"); <br />
+      <br />
+      email.addEventListener("input", (event) => { <br />
+      if (email.validity.typeMismatch) { <br />
+      email.setCustomValidity("I am expecting an email address!"); <br />
+      } else { <br />
+      email.setCustomValidity(""); <br />
+      } <br />
+      }); <br />
+    </div>
+    <p>
+      Here we store a reference to the email input, then add an event listener
+      to it that runs the contained code each time the value inside the input is
+      changed.
+    </p>
+    <p>
+      Inside the contained code, we check whether the email input's
+      validity.typeMismatch property returns true, meaning that the contained
+      value doesn't match the pattern for a well-formed email address. If so, we
+      call the setCustomValidity() method with a custom message. This renders
+      the input invalid, so that when you try to submit the form, submission
+      fails and the custom error message is displayed.
+    </p>
+    <p>
+      If the validity.typeMismatch property returns false, we call the
+      setCustomValidity() method with an empty string. This renders the input
+      valid, so the form will submit.
+    </p>
+    <div>
+      <h1>Output</h1>
+      <p>You can try it out below:</p>
+      <form>
+        <label for="mail">
+          I would like you to provide me with an email address:
+        </label>
+        <input type="email" id="mail" name="mail" />
+        <button>Submit</button>
+      </form>
+    </div>
+
+    <script>
+      const email = document.getElementById("mail");
+
+      email.addEventListener("input", (event) => {
+        if (email.validity.typeMismatch) {
+          email.setCustomValidity("I am expecting an email address!");
+        } else {
+          email.setCustomValidity("");
+        }
+      });
+    </script>
   </body>
 </html>
