@@ -32,17 +32,23 @@
       &lt;/script&gt;<br />
       <h2>
         you will get your Maximum number among as per you input three values in
-        prompt box
+        prompt box bellow
       </h2>
     </div>
 
     <script>
-      let input1 = parseFloat(prompt("Enter first number"));
-      let input2 = parseFloat(prompt("Enter Secon number"));
-      let input3 = parseFloat(prompt("Enter third number"));
+      let input1 = parseFloat(
+        prompt("Enter first number for find maximum number among 3 numbers")
+      );
+      let input2 = parseFloat(
+        prompt("Enter Secon number for find maximum number among 3 numbers")
+      );
+      let input3 = parseFloat(
+        prompt("Enter third number for find maximum number among 3 numbers")
+      );
       let largestNumber = Math.max(input1, input2, input3);
 
-      console.log("the maximum number is " + largestNumber);
+      document.write"the maximum number is " + largestNumber);
     </script>
   </body>
 </html>
