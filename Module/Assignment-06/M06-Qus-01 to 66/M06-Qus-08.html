@@ -11,7 +11,7 @@
         background-color: lightblue;
         border: 2px solid darkgreen;
         font-size: large;
-        text-align: center;
+        /* text-align: center; */
       }
     </style>
   </head>
@@ -21,24 +21,26 @@
 
     <b>Ans:</b>
     <div>
-      Tringle Area (A = 1/2 × b × h) <br />
+      <h1>Tringle Area (A = (h x b) / 2 ) <br /></h1>
       <br />
-      <p>1/2</p>
-      <p>x</p>
-      <label for="text" id="b">(b=base)</label> <br />
-      <input type="text" /> <br />
-      <p>x</p>
-      <label for="number" id="h"> (h=height)</label> <br />
-      <input type="text" /> <br />
+      &lt;script&gt; <br />
+      <br />
+      h = 10; <br />
+      b = 20; <br />
       <br />
 
-      <button onclick="cal()">Calculate Area</button>
+      result = (h * b) / 2; <br />
       <br />
+      document.write(result); <br />
       <br />
-      <label for="number">Area of tringle</label>
-      <input type="text" />
+      &lt;/script&gt; <br />
     </div>
+    <script>
+      h = 10;
+      b = 20;
 
-    <script></script>
+      result = (h * b) / 2;
+      document.write(result);
+    </script>
   </body>
 </html>

@@ -11,45 +11,26 @@
     <br />
 
     <b>Ans:</b>
-
     <script>
-      let month=
-      // get current date
-      let currentDate = new Date().getDate();
-      console.log(currentDate);
-      get current month
-      let currentMonth = new Date().getMonth() + 1;
-      console.log(currentMonth);
+      let today = new Date();
 
-      switch (month) {
-        case 0:
-          31;
-        case 1:
-          29;
-        case 2:
-          31;
-        case 3:
-          30;
-        case 4:
-          31;
-        case 5:
-          30;
-        case 6:
-          31;
-        case 7:
-          31;
-        case 8:
-          30;
-        case 9:
-          31;
-        case 10:
-          30;
-        case 11:
-          31;
+      let christmasYear = today.getFullYear();
+
+      if (today.getMonth() == 11 && today.getDate() > 25) {
+        christmasYear = christmasYear + 1;
       }
 
-      daysLeftInCurrentMonth = currentMonthDay - currentDate;
-      console.log(daysLeftInCurrentMonth);
+      let christmasDate = new Date(christmasYear, 11, 25);
+
+      let dayMilliseconds = 1000 * 60 * 60 * 24;
+
+      let remainingDays = Math.ceil(
+        (christmasDate.getTime() - today.getTime()) / dayMilliseconds
+      );
+
+      document.write(
+        "There are " + remainingDays + " days remaining until Christmas."
+      );
     </script>
   </body>
 </html>

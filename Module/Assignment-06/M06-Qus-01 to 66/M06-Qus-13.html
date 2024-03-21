@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Module-06 Qus-</title>
+    <title>Module-06 Qus-13</title>
     <style>
       div {
         padding: 10px;
@@ -20,6 +20,28 @@
     <br />
 
     <b>Ans:</b>
-    (32°F − 32) × 5/9 = 0°C
+    <h1>Celsius = (Fahrenheit - 32) * 5/9</h1>
+    <div>
+      &lt;script&gt; <br />
+      function fahrenheitToCelsius(fahrenheit) { <br />
+      return ((fahrenheit - 32) * 5) / 9; <br />
+      } <br />
+      <br />
+      let fahrenheit = 100; <br />
+      <br />
+      let celsius = fahrenheitToCelsius(fahrenheit); <br />
+      console.log(`${fahrenheit}°F is ${celsius}°C`); <br />
+      &lt;/script&gt; <br />
+    </div>
+    <script>
+      function fahrenheitToCelsius(fahrenheit) {
+        return ((fahrenheit - 32) * 5) / 9;
+      }
+
+      let fahrenheit = 100;
+
+      let celsius = fahrenheitToCelsius(fahrenheit);
+      console.log(`${fahrenheit}°F is ${celsius}°C`);
+    </script>
   </body>
 </html>
