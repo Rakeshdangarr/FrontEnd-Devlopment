@@ -160,17 +160,23 @@
     color: #299cf3;
   }
   .data{
-/* border: 2px solid red; */
 padding: 2%;
-/* margin-top: 5%; */
-    /* display: inline; */
     position: absolute;
     top: 370vh;
     left: 65%;
-    /* border-bottom: 5px; */
+    border-width: 0 0 2px;
+  }
+  input{
+    border-width: 0 0 3px;
+    
+  }
+  textarea{
+    border-width: 0 0 3px;
+    vertical-align: middle; 
   }
   .button{
     position: absolute;
     left: 65%;
     top: 88%;
   }
+
