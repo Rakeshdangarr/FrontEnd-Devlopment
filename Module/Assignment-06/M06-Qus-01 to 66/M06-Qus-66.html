@@ -15,11 +15,30 @@
     </style>
   </head>
   <body>
-    <b>Qus:</b> Find the length of a string without using libraryFunction?
+    <b>Qus:</b> Find the length of a "string without using libraryFunction" ?
     <br />
 
-    <b>Ans:</b>
+    <b>Ans:</b> <b>36</b>
+    <div>
+      &lt;script&gt; <br />
+      str = "string without using libraryFunction"; <br />
+      let counter = 0; <br />
+      <br />
+      for (let i = 0; str[i] != undefined; i++) { <br />
+      counter++; <br />
+      } <br />
+      console.log(counter); <br />
+      &lt;/script&gt; <br />
+    </div>
 
-    <script></script>
+    <script>
+      str = "string without using libraryFunction";
+      let counter = 0;
+
+      for (let i = 0; str[i] != undefined; i++) {
+        counter++;
+      }
+      console.log(counter);
+    </script>
   </body>
 </html>

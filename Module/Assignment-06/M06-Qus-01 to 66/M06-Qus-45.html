@@ -19,5 +19,69 @@
     <br />
 
     <b>Ans:</b>
+    <h2>isArray() method</h2>
+    <p>
+      The Array.isArray() method checks whether the passed variable is array or
+      not. If the variable is an array it displays true else displays false.
+    </p>
+    <h3>Syntax</h3>
+    <p>Array.isArray(variableName)</p>
+    <div>
+      &lt;body&gt; <br />
+      &lt;script type="text/javascript"&gt; <br />
+      arr = [1,2,3,4,5]; <br />
+      str = "i love my india"; <br />
+      document.write( Array.isArray(arr)); <br />
+      <br />
+      document.write( Array.isArray(str)); <br />
+      &lt;/script&gt; <br />
+      &lt;/body&gt; <br />
+      <br />
+      <b>Output</b> <br />
+      true <br />
+      false <br />
+    </div>
+    <h2>instanceof operator</h2>
+    <p>
+      The instanceof operator is used to test whether the prototype property of
+      a constructor appears anywhere in the prototype chain of an object. In the
+      following example the instanceof operator checks whether there exists an
+      array prototype.
+    </p>
+    <h3>Syntax</h3>
+    <p>variable instanceof Array</p>
+    <div>
+      &lt;script type="text/javascript"&gt; <br />
+      arr = [1,2,3,4,5]; <br />
+      str = "i love my india"; <br />
+      document.write(str instanceof Array); <br />
+      <br />
+      document.write(arr instanceof Array); <br />
+      &lt;/script&gt; <br />
+      <br />
+      <b>Output</b> <br />
+      false <br />
+      true <br />
+    </div>
+    <h2>Checking the constructor property of the variable</h2>
+    <p>
+      It displays true when the variable is same as what we specified. Here we
+      specified that the variable should be array. So when the variable is array
+      this method displays true else displays false.
+    </p>
+    <h3>Syntax</h3>
+    <p>variable.constructor === Array</p>
+    <div>
+      &lt;script type="text/javascript"&gt; <br />
+      arr = [1,2,3,4,5]; <br />
+      str = "i love my india"; <br />
+      document.write(str.constructor === Array); <br />
+      <br />
+      document.write(arr.constructor === Array); <br />
+      &lt;/script&gt; <br />
+      <b>Output</b> <br />
+      false <br />
+      true <br />
+    </div>
   </body>
 </html>
