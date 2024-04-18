@@ -11,6 +11,8 @@
     background-size: 100% 100%;
     position: relative;
     padding-top: 7%;
+    font-size: x-large;
+    opacity: 0.9;
 }
 
 .main h2{
@@ -23,6 +25,7 @@
     font-size: 10px;
     color: white;
     padding-top: 1%;
+    font-size: large;
 }
 
 .main svg{
@@ -31,17 +34,19 @@
 }
 
 button{
-    height: 06vh;
-    width: 6vw;
+    height: 10%;
+    width: 06%;
     border: 2px solid orangered;
     border-radius: 50%;
     overflow: hidden;
     position: absolute;
+  
 }
 
 button img{
     height: 100%;
     width: 100%;
+    object-fit: cover;
 
 }
 
