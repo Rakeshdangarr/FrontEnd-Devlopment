@@ -17,17 +17,19 @@
     text-align: right;
     padding: 2%;
     background-color: rgb(71, 70, 70);
+    font-size: xx-large;
     
 }
 
 .main .info h4{
-    font-size: 1em;
+    font-size: xxx-large;
     color: white;
     margin: 20px;
 }
 
 .main .info .item{
     margin: 20px;
+    font-size: xx-large;
 }
 
 .main .info .item h5{
@@ -37,6 +39,7 @@
 .main .info .item p{
     color: white;
     font-size: 8px;
+    font-size: large;
 }
 
 .main .bg{
@@ -54,19 +57,24 @@ button{
     padding: 5px;
     border-color: red;
     position: absolute;
+    height: 80px;
+    width: 80px;
 }
 
 .web{
-    top: 15%;
-    left: 50%;
+    top: 21%;
+    left: 49%;
+    font-size: xx-large;
 }
 
 .print{
-    top: 30%;
-    left: 50%;
+    top: 40%;
+    left: 49%;
+    font-size: xx-large;
 }
 
 .photo{
-    top: 45%;
-    left: 50%;
+    top: 58%;
+    left: 49%;
+    font-size: xx-large;
 }
