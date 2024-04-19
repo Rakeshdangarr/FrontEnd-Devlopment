@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Module-06 Task-01-</title>
+    <style>
+      div {
+        padding: 10px;
+        margin: 10px;
+        background-color: lightblue;
+        border: 2px solid darkgreen;
+        font-size: large;
+        width: fit-content;
+        font-size: x-large;
+      }
+    </style>
+  </head>
+  <body>
+    <b>Qus:</b> Create password field with show hide functionalities
+
+    <br />
+
+    <b>Ans:</b>
+    <div>
+      <form action="">
+        <label for="password">Enter Password:</label>
+        <input type="password" name="" value="" id="pass." /> <br />
+        <input type="checkbox" onclick="visible()" name="" id="" />
+        <label for="text">Show Password</label>
+      </form>
+    </div>
+
+    <script>
+      function visible() {
+        var x = document.getElementById("pass.");
+        if (x.type === "password") {
+          x.type = "text";
+        } else {
+          x.type = "password";
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -22,6 +22,7 @@
     background-size: 100%,80%;
     filter: blur(8px);
     -webkit-filter: blur();
+    
   }
   .background .title {
     height: 390vh;
@@ -34,9 +35,11 @@
     position: absolute;
     background-color: rgb(116, 116, 116);
     color: white;
+    opacity: 0.8;
   }
   .background .title h1{
     margin-top: 30%;
+    
   }
   .background .title ul li {
     list-style-type: none;
@@ -60,10 +63,29 @@
     margin-bottom: 10%;
     color: #299cf3;
   }
+  .social{
+    top: 32%;
+    left: 45%;
+    gap: 20%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    font-size: x-large;
+  }
+  .copyright{
+    font-size: x-large;
+    color: whitesmoke;
+    top: 33%;
+    position: absolute;
+    left: 25%;
+
+  }
+
   .background .title .social i{
     margin-top: 25%;
     margin-right: 5%;
     gap: 10%;
+    display: inline;
     
 
   }
@@ -79,6 +101,9 @@
     padding: 1%;
     left: 28%;
   }
+  .about h1{
+    font-size: xxx-large;
+  }
   .about h2{
     color: #299cf3;
   }
@@ -93,6 +118,9 @@
     padding: 1%;
 
   }
+  .profile h1{
+    font-size: xxx-large;
+  }
   .profile h2{
     color: #299cf3;
   }
@@ -106,8 +134,10 @@
     /* border: 2px solid red; */
     /* position: absolute; */
     display: flex;
-    padding: 29%;
-    left: 4%;
+    padding: 31%;
+    left: 19%;
+    gap: 1%;
+    
   }
   .work h2{
     color:#299cf3 ;
@@ -122,6 +152,7 @@
     margin-top: 5%;
     /* justify-content: right; */
     /* left: 100%; */
+    
   }
   .clients{
     width: 50%;
@@ -146,6 +177,7 @@
     left: 50%;
     padding: 1%;
     gap: 1%;
+    /* border: 1px solid wheat; */
     /* position: absolute; */
   }
   .support{
@@ -179,4 +211,4 @@ padding: 2%;
     left: 65%;
     top: 88%;
   }
-
+  

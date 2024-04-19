@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Module-06 Task-02</title>
+    <style>
+      * {
+        margin: 10px;
+        padding: 10px;
+        box-sizing: border-box;
+      }
+      div {
+        padding: 10px;
+        margin: 10px;
+        background-color: lightblue;
+        border: 2px solid darkgreen;
+        font-size: large;
+        width: fit-content;
+        font-size: large;
+      }
+      h1 {
+        text-align: center;
+        text-decoration: underline darksalmon 4px;
+      }
+      button {
+        font-size: x-large;
+        width: 50px;
+      }
+      label {
+        font-size: x-large;
+      }
+    </style>
+  </head>
+  <body>
+    <b>Qus:</b> Create basic math operation in JS
+
+    <br />
+
+    <b>Ans:</b>
+    <div>
+      <form action="">
+        <h1>Maths operation</h1>
+
+        Enter 1st number :
+        <input type="number" name="" id="value1" /> <br />
+        Enter 2nd number :
+        <input type="number" name="" id="value2" />
+        <br />
+        <input type="button" onclick="pluse()" value="+" />
+        <label for="text">Answer is :</label>
+        <span id="result"></span>
+      </form>
+    </div>
+
+    <script>
+      function pluse(input1, input2) {
+        input1 = document.getElementById("value1").value;
+        input2 = document.getElementById("value2").value;
+        document.getElementById("result").innerHTML = input1 + input2;
+        return input1 + input2;
+      }
+    </script>
+  </body>
+</html>
