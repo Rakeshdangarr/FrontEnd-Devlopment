@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Module-06 Qus-38</title>
+    <style>
+      div {
+        padding: 10px;
+        margin: 10px;
+        background-color: lightblue;
+        border: 2px solid darkgreen;
+        font-size: large;
+      }
+    </style>
+  </head>
+  <body>
+    <b>Qus:</b>Use pattern in console.log in JS?
+
+    <div>
+      1 <br />
+      2 3 <br />
+      4 5 6 <br />
+      7 8 9 10 <br />
+      11 12 13 14 15 <br />
+    </div>
+    <script>
+      let rows = 5;
+      let char = "";
+
+      let count = 1;
+      for (let i = 1; i <= rows; i++) {
+        for (let j = 1; j <= i; j++) {
+          char += count + " ";
+          count++;
+        }
+        char += "\n";
+      }
+      console.log(char);
+    </script>
+  </body>
+</html>
