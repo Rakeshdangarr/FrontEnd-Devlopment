@@ -5,12 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Module-06 Qus-57</title>
     <style>
+      *{
+        font-size: x-large;
+      }
       div {
         padding: 10px;
         margin: 10px;
         background-color: lightblue;
         border: 2px solid darkgreen;
-        font-size: large;
       }
     </style>
   </head>
@@ -38,36 +40,6 @@
         compatibility, creating of a MouseEvent object should be done using the
         MouseEvent() constructor.
       </p>
-      <div>
-        &lt;!-- HTML --&gt; <br />
-        &lt;p&gt; <br />
-        &lt;label&gt;&lt;input type="checkbox" id="checkbox" /&gt;
-        Checked&lt;/label&gt; <br />
-        &lt;/pointing <br />
-        &lt;p&gt; <br />
-        &lt;button id="button"&gt;Click me to send a MouseEvent to the
-        checkbox&lt;/button&gt; &lt;/p&gt; <br />
-        <br />
-        &lt;!-- java script --&gt; <br /><br />
-        function simulateClick() { <br />
-        // Get the element to send a click event <br />
-        const cb = document.getElementById("checkbox");<br />
-        <br />
-        // Create a synthetic click MouseEvent<br />
-        let evt = new MouseEvent("click", {<br />
-        bubbles: true,<br />
-        cancelable: true,<br />
-        view: window,<br />
-        });<br />
-        <br />
-        // Send the event to the checkbox element<br />
-        cb.dispatchEvent(evt);<br />
-        }<br />
-        document.getElementById("button").addEventListener("click",
-        simulateClick);<br />
-      </div>
-      <br />
-
       <h1><li>Keyboard events (e.g., keydown, keyup)</li></h1>
 
       <p>
@@ -77,43 +49,7 @@
         (keydown, keypress, or keyup) identifies what kind of keyboard activity
         occurred.
       </p>
-      <div>
-        document.addEventListener( <br />
-        "keydown", <br />
-        (event) => {<br />
-        const keyName = event.key;<br />
-        <br />
-        if (keyName === "Control") {<br />
-        // do not alert when only Control key is pressed.<br />
-        return;<br />
-        }<br />
-        <br />
-        if (event.ctrlKey) {<br />
-        // Even though event.key is not 'Control' (e.g., 'a' is pressed),<br />
-        // event.ctrlKey may be true if Ctrl key is pressed at the same time.<br />
-        alert(`Combination of ctrlKey + ${keyName}`);<br />
-        } else {<br />
-        alert(`Key pressed ${keyName}`);<br />
-        }<br />
-        },<br />
-        false,<br />
-        );<br />
-        <br />
-        document.addEventListener(<br />
-        "keyup",<br />
-        (event) => {<br />
-        const keyName = event.key;<br />
-        <br />
-        // As the user releases the Ctrl key, the key is no longer active,<br />
-        // so event.ctrlKey is false.<br />
-        if (keyName === "Control") {<br />
-        alert("Control key was released");<br />
-        }<br />
-        },<br />
-        false,<br />
-        );<br />
-      </div>
-
+      
       <h1><li>Form events (e.g., submit, change, focus)</li></h1>
 <p>
   The submit event fires when a <form> is submitted.
@@ -125,83 +61,12 @@
   <li>the user presses Enter while editing a field (e.g. &lt;input type="text"&gt;) in a form,</li>
   <li>a script calls the form.requestSubmit() method</li>
 </ol>
-<div>
-  &lt;!-- HTML --&gt; <br> <br>
-
-  &lt;form id="form&gt; <br>
-  &lt;label&gt;Test field: &lt;input type="text" /&gt;&lt;/label&gt; <br>
-<br>
-&lt;button type="submit"&gt;Submit form&lt;/button&gt; <br>
-&lt;/form&gt; <br>
-&lt;p id="log"&gt;&lt;/p&gt; <br> <br>
-
-&lt;!-- java script --&gt; <br> <br>
-
-
-function logSubmit(event) { <br>
-  log.textContent = `Form Submitted! Timestamp: ${event.timeStamp}`; <br>
-  event.preventDefault(); <br>
-}br
-<br>
-const form = document.getElementById("form"); <br>
-const log = document.getElementById("log"); <br>
-form.addEventListener("submit", logSubmit); <br>
-
-  
-</div>
-
-
-
       <h1><li>Document events (e.g., load, unload)</li></h1>
       <p>The DOMContentLoaded event fires when the HTML document has been completely parsed, and all deferred scripts (&lt;script defer src="…"&gt; and &lt;script type="module"&gt;) have downloaded and executed. It doesn't wait for other things like images, subframes, and async scripts to finish loading.</p>
 <p>DOMContentLoaded does not wait for stylesheets to load, however deferred scripts do wait for stylesheets, and the DOMContentLoaded event is queued after deferred scripts. Also, scripts which aren't deferred or async (e.g. &lt;script&gt;) will wait for already-parsed stylesheets to load.</p>
 <p>A different event, load, should be used only to detect a fully-loaded page. It is a common mistake to use load where DOMContentLoaded would be more appropriate.
 
   This event is not cancelable.</p>
-  <div>
-    &lt;div class="controls"&gt; <br>
-    &lt;button id="reload" type="button"&gt;Reload&lt;/button&gt; <br>
-    &lt;/div&gt; <br>
-    <br>
-    &lt;div class="event-log"&gt; <br>
-    &lt;label for="eventLog">Event log:&lt;/label&gt; <br>
-    &lt;textarea <br>
-        readonly <br>
-        class="event-log-contents" <br>
-        rows="8" <br>
-        cols="30" <br>
-        id="eventLog"&gt;&lt;/textarea&gt; <br>
-        &lt;/div&gt; <br>
-
-        &lt;---java start----&gt; <br>
-
-        const log = document.querySelector(".event-log-contents"); <br>
-const reload = document.querySelector("#reload"); <br>
-<br>
-reload.addEventListener("click", () => {<br>
-  log.textContent = ""; <br>
-  setTimeout(() => { <br>
-    window.location.reload(true); <br>
-  }, 200);<br>
-}); <br>
-<br>
-window.addEventListener("load", (event) => {<br>
-  log.textContent += "load\n";<br>
-});<br>
-<br>
-document.addEventListener("readystatechange", (event) => {<br>
-  log.textContent += `readystate: ${document.readyState}\n`;<br>
-});<br>
-<br>
-document.addEventListener("DOMContentLoaded", (event) => {<br>
-  log.textContent += "DOMContentLoaded\n";<br>
-});<br>
-
-    
-  </div>
-
-
-
       <h1><li>Window events (e.g., resize, scroll)</li></h1>
 
       <p>The read-only Window property event returns the Event which is currently being handled by the site's code. Outside the context of an event handler, the value is always undefined.

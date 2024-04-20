@@ -5,12 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Module-06 Qus-23</title>
     <style>
+      * {
+        font-size: x-large;
+      }
       div {
         padding: 10px;
         margin: 10px;
         background-color: lightblue;
         border: 2px solid darkgreen;
-        font-size: large;
       }
     </style>
   </head>
@@ -21,25 +23,20 @@
     <b>Ans:</b>
 
     <script>
-      char = "a";
+      char = parseInt(prompt("Check Character Is Vowel or Not"));
 
       let vowelList = ["a", "e", "i", "o", "u", "A", "E", "I", "O", "U"];
 
       function checkVowel(char) {
         let result = false;
         for (i = 0; i < 10; i++) {
-          if (vowelList[i] == char) {
+          if (vowelList[i] === char) {
             result = true;
           }
         }
         return result;
       }
       console.log(char);
-      // if ("abcdefghijklmnopqrstuvwxyz".includes(char)) {
-      //   if ("aeiouAEIOU".includes(char)) {
-      //     true;
-      //   }
-      // }
     </script>
   </body>
 </html>

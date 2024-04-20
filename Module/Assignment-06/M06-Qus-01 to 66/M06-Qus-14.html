@@ -5,12 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Module-06 Qus-14</title>
     <style>
+      * {
+        font-size: x-large;
+      }
       div {
         padding: 10px;
         margin: 10px;
         background-color: lightblue;
         border: 2px solid darkgreen;
-        font-size: large;
       }
     </style>
   </head>
@@ -21,17 +23,10 @@
     <b>Ans:</b>
 
     <script>
-      // .pdf
-      // .jpg
-      // .mp4
-      // .txt
-      // .docx
-      // .html
-      // .css
-      // .png
+      let fileType = [".pdf", ".jpg", ".mp4", ".docx", ".html", ".css", ".png"];
 
       fileName = "index.txt";
-      // postionOfDot = fileName.indexof(".");
+      postionOfDot = fileName.indexof(".");
       console.log(fileName.slice(fileName.indexof(".")));
     </script>
   </body>

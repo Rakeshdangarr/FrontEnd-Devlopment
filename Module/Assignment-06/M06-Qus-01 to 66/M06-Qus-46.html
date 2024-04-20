@@ -5,12 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Module-06 Qus-46</title>
     <style>
+      * {
+        font-size: x-large;
+      }
       div {
         padding: 10px;
         margin: 10px;
         background-color: lightblue;
         border: 2px solid darkgreen;
-        font-size: large;
       }
     </style>
   </head>
@@ -62,165 +64,6 @@
     <div>
       const originalArray = [1, 2, 3]; <br />
       const clonedArray = originalArray.slice(); <br />
-      console.log(clonedArray); <br />
-      <b>Output</b> <br />
-      [1, 2, 3 ]
-    </div>
-    <h2>Using the spread Operator</h2>
-    <p>
-      Using the spread operator … is a concise and easy way to clone an array in
-      JavaScript. The spread operator allows you to expand an array into
-      individual elements, which can then be used to create a new array.
-    </p>
-    <p>
-      Example: This example shows the implementation of the above-explained
-      approach.
-    </p>
-    <div>
-      const originalArray = [1, 2, 3]; <br />
-      const clonedArray = [...originalArray]; <br />
-      console.log(clonedArray); <br />
-
-      <b>Output</b> <br />
-      [1, 2, 3 ]
-    </div>
-    <h2>Using the Array.from() Method</h2>
-    <p>
-      Using the Array.from() method is another way to clone an array in
-      JavaScript. This method creates a new array from an existing array, using
-      an optional mapping function to transform the values in the new array.
-    </p>
-    <p>
-      Example: This example shows the implementation of the above-explained
-      approach.
-    </p>
-    <div>
-      const originalArray = [1, 2, 3]; <br />
-      const clonedArray = Array.from(originalArray); <br />
-      console.log(clonedArray); <br />
-
-      <b>Output</b> <br />
-      [1, 2, 3 ]
-    </div>
-    <h2>Using the Array.concat() Method</h2>
-    <p>
-      Using the Array.concat() method is another way to clone an array in
-      JavaScript. This method creates a new array by concatenating two or more
-      arrays together.
-    </p>
-    <p>
-      Example: This example shows the implementation of the above-explained
-      approach.
-    </p>
-    <div>
-      const originalArray = [1, 2, 3]; <br />
-      const clonedArray = [].concat(originalArray); <br />
-      console.log(clonedArray); <br />
-
-      <b>Output</b> <br />
-      [1, 2, 3 ]
-    </div>
-    <h2>Using a for loop</h2>
-    <p>
-      This method involves iterating through each element in the original array
-      and copying each element into a new array.
-    </p>
-    <p>
-      Example: This example shows the implementation of the above-explained
-      approach.
-    </p>
-    <div>
-      const originalArray = [1, 2, 3]; <br />
-      const clonedArray = []; <br />
-      for (let i = 0; i < originalArray.length; i++) { <br />
-      clonedArray.push(originalArray[i]); <br />
-      } <br />
-      console.log(clonedArray); <br />
-      <b>Output</b> <br />
-      [1, 2, 3 ]
-    </div>
-    <h2>Using the Array.map() Method</h2>
-    <p>
-      Using the Array.map() method is another way to clone an array in
-      JavaScript. This method creates a new array by mapping each element from
-      the original array to a new value.
-    </p>
-    <p>
-      Example: This example shows the implementation of the above-explained
-      approach.
-    </p>
-    <div>
-      const originalArray = [1, 2, 3]; <br />
-      const clonedArray = originalArray.map(x => x); <br />
-      console.log(clonedArray); <br />
-
-      <b>Output</b> <br />
-      [1, 2, 3 ]
-    </div>
-    <h2>Using the Array.from() method with a map function</h2>
-    <p>
-      Using the Array.from() method with a map function is another way to clone
-      an array in JavaScript. This method creates a new array by mapping each
-      element from the original array to a new value using a provided function.
-    </p>
-    <p>
-      Example: This example shows the implementation of the above-explained
-      approach.
-    </p>
-    <div>
-      const originalArray = [1, 2, 3]; <br />
-      const clonedArray = Array.from(originalArray, x => x); <br />
-      console.log(clonedArray); <br />
-      <b>Output</b> <br />
-      [1, 2, 3 ]
-    </div>
-    <h2>Using the Array.of() Method</h2>
-    <p>
-      This method creates a new array with the same elements as the original
-      array.
-    </p>
-    <p>
-      Example: This example shows the implementation of the above-explained
-      approach.
-    </p>
-    <div>
-      const originalArray = [1, 2, 3]; <br />
-      const clonedArray = Array.of(...originalArray); <br />
-      console.log(clonedArray); <br />
-      <b>Output</b> <br />
-      [1, 2, 3 ]
-    </div>
-    <h2>Using the JSON.parse() and JSON.stringify() Methods</h2>
-    <p>
-      Using the JSON.parse() and JSON.stringify() methods is another way to
-      clone an array in JavaScript. This method involves converting the original
-      array to a JSON string and then parsing the JSON string to create a new
-      array.
-    </p>
-    <p>
-      Example: This example shows the implementation of the above-explained
-      approach.
-    </p>
-    <div>
-      const originalArray = [1, 2, 3]; <br />
-      const clonedArray = JSON.parse(JSON.stringify(originalArray)); <br />
-      console.log(clonedArray); <br />
-      <b>Output</b> <br />
-      [1, 2, 3 ]
-    </div>
-    <h2>Using the Object.assign() Method</h2>
-    <p>
-      Using the Object.assign() method is another way to clone an array in
-      JavaScript. This method creates a new array by copying the properties of
-      the original array to a new object.
-    </p>
-    <p>
-      Example: This example shows the implementation of the above-explained
-      approach.
-    </p>
-    <div>
-      const originalArray = [1, 2, 3]; <br />
-      const clonedArray = Object.assign([], originalArray); <br />
       console.log(clonedArray); <br />
       <b>Output</b> <br />
       [1, 2, 3 ]
