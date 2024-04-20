@@ -23,9 +23,20 @@
         text-align: center;
         text-decoration: underline darksalmon 4px;
       }
-      button {
+      #plus {
         font-size: x-large;
-        width: 50px;
+      }
+      #sub {
+        font-size: x-large;
+      }
+      #multi {
+        font-size: x-large;
+      }
+      #div {
+        font-size: x-large;
+      }
+      #pers {
+        font-size: x-large;
       }
       label {
         font-size: x-large;
@@ -47,18 +58,61 @@
         Enter 2nd number :
         <input type="number" name="" id="value2" />
         <br />
-        <input type="button" onclick="pluse()" value="+" />
+        <input type="button" value="+" id="plus" />
+        <input type="button" value="-" id="sub" />
+        <input type="button" value="*" id="multi" /> <br />
+        <input type="button" value="/" id="div" />
+        <input type="button" value="%" id="pers" />
+
         <label for="text">Answer is :</label>
         <span id="result"></span>
       </form>
     </div>
 
     <script>
+      document.getElementById("plus").addEventListener("click", () => {
+        input1 = Number(document.getElementById("value1").value);
+        input2 = Number(document.getElementById("value2").value);
+        document.getElementById("result").innerHTML = pluse(input1, input2);
+      });
       function pluse(input1, input2) {
-        input1 = document.getElementById("value1").value;
-        input2 = document.getElementById("value2").value;
-        document.getElementById("result").innerHTML = input1 + input2;
         return input1 + input2;
+      }
+
+      document.getElementById("sub").addEventListener("click", () => {
+        input1 = Number(document.getElementById("value1").value);
+        input2 = Number(document.getElementById("value2").value);
+        document.getElementById("result").innerHTML = sub(input1, input2);
+      });
+      function sub(input1, input2) {
+        return input1 - input2;
+      }
+
+      document.getElementById("multi").addEventListener("click", () => {
+        input1 = Number(document.getElementById("value1").value);
+        input2 = Number(document.getElementById("value2").value);
+        document.getElementById("result").innerHTML = multi(input1, input2);
+      });
+      function multi(input1, input2) {
+        return input1 * input2;
+      }
+
+      document.getElementById("div").addEventListener("click", () => {
+        input1 = Number(document.getElementById("value1").value);
+        input2 = Number(document.getElementById("value2").value);
+        document.getElementById("result").innerHTML = div(input1, input2);
+      });
+      function div(input1, input2) {
+        return input1 / input2;
+      }
+
+      document.getElementById("pers").addEventListener("click", () => {
+        input1 = Number(document.getElementById("value1").value);
+        input2 = Number(document.getElementById("value2").value);
+        document.getElementById("result").innerHTML = pers(input1, input2);
+      });
+      function pers(input1, input2) {
+        return input1 % input2;
       }
     </script>
   </body>
