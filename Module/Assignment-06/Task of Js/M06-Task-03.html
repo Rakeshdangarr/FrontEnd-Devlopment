@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Module-06 Task-03</title>
+    <style>
+      * {
+        margin: 10px;
+        padding: 10px;
+        box-sizing: border-box;
+      }
+      .main {
+        padding: 10px;
+        margin: 10px;
+        background-color: whitesmoke;
+        border: 2px solid darkgreen;
+        width: fit-content;
+        font-size: large;
+        margin-left: 19%;
+        border-radius: 5px;
+      }
+      h2 {
+        text-align: center;
+      }
+      .subject {
+        font-size: x-large;
+        position: absolute;
+        margin-top: 0.3%;
+      }
+      label {
+        font-size: xx-large;
+      }
+      input {
+        justify-content: space-between;
+        margin-left: 100px;
+        display: grid;
+        margin-left: 49%;
+      }
+      button {
+        color: antiquewhite;
+        background-color: black;
+        font-size: large;
+        margin-left: 40%;
+        border-radius: 9%;
+        border: 2px solid whitesmoke;
+      }
+      .pers {
+        font-size: xx-large;
+        justify-content: center;
+        margin-left: 01%;
+      }
+      .Total {
+        margin-left: 05%;
+      }
+    </style>
+  </head>
+  <body>
+    <b>Qus:</b>
+    <h1>Create result</h1>
+
+    <br />
+
+    <b>Ans:</b>
+    <div class="main">
+      <h1>Marksheet for Information Technology</h1>
+      <h2>Enter mark</h2>
+      <label for="text" class="subject">1. C Language</label>
+      <input type="number" id="value1" /> <br />
+      <label for="text" class="subject">2. C++ Language</label>
+      <input type="number" id="value2" /><br />
+      <label for="text" class="subject">3. Database</label>
+      <input type="number" id="value3" /><br />
+      <label for="text" class="subject">4. HTML</label>
+      <input type="number" id="value4" /><br />
+      <label for="text" class="subject">5. CSS</label>
+      <input type="number" id="value5" /><br />
+      <label for="text" class="subject">6. php</label>
+      <input type="number" id="value6" /><br />
+      <label for="text" class="subject">7. Core java</label>
+      <input type="number" id="value7" /><br />
+      <button id="click">Result</button> <br />
+
+      <label for="text" class="Total"
+        >Total is <span id="result"></span>/350</label
+      >
+
+      <label class="pers" for="text"
+        >Percentage is : <span id="percentage"></span>%</label
+      >
+
+      <script>
+        document.getElementById("click").addEventListener("click", () => {
+          input1 = Number(document.getElementById("value1").value);
+          input2 = Number(document.getElementById("value2").value);
+          input3 = Number(document.getElementById("value3").value);
+          input4 = Number(document.getElementById("value4").value);
+          input5 = Number(document.getElementById("value5").value);
+          input6 = Number(document.getElementById("value6").value);
+          input7 = Number(document.getElementById("value7").value);
+
+          let result = finalPercentage(
+            input1,
+            input2,
+            input3,
+            input4,
+            input5,
+            input6,
+            input7
+          );
+          document.getElementById("result").innerText = result[0];
+          document.getElementById("percentage").innerText = result[1];
+          colorDisplay(result[1]);
+        });
+
+        function finalPercentage(
+          input1,
+          input2,
+          input3,
+          input4,
+          input5,
+          input6,
+          input7
+        ) {
+          total = input1 + input2 + input3 + input4 + input5 + input6 + input7;
+          percentage = Math.floor((total * 100) / 350);
+
+          return [total, percentage];
+        }
+
+        function colorDisplay(percentage) {
+          if (percentage < 35) {
+            document.getElementsByClassName("main")[0].style.backgroundColor =
+              "red";
+          } else if (percentage == 35) {
+            document.getElementsByClassName("main")[0].style.backgroundColor =
+              "lightgreen";
+          } else if (percentage > 35) {
+            document.getElementsByClassName("main")[0].style.backgroundColor =
+              "green";
+          }
+        }
+      </script>
+    </div>
+  </body>
+</html>
