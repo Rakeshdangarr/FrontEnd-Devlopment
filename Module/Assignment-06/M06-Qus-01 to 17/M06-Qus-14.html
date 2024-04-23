@@ -5,12 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Module-06 Qus-14</title>
     <style>
+      * {
+        font-size: x-large;
+      }
       div {
         padding: 10px;
         margin: 10px;
         background-color: lightblue;
         border: 2px solid darkgreen;
-        font-size: large;
       }
     </style>
   </head>
@@ -34,139 +36,18 @@
       It is used when a warning message is needed to be produced. When the alert
       box is displayed to the user, the user needs to press ok and proceed.
     </p>
-    <div>
-      <b>syntax</b> <br />
-      <p>alert("your Alert here");</p>
-      <b>Example: This example shows the implementation of the alert box.</b>
-      <br />
-      <p>
-        &lt; head &gt; <br />
-        &lt;title&gt;Pop-up Box type | Alert Box&lt;/title&gt;<br />
-        &lt;style&gt;<br />
-        h1 {<br />
-        color: green;<br />
-        }<br />
-        &lt;/style&gt;<br />
-        &lt;/head&gt;<br />
 
-        &lt;body&gt;<br />
-        &lt;center&gt;<br />
-
-        &lt;h3&gt;Alert Box&lt;/h3&gt;<br />
-        &lt;button onclick="geekAlert()"&gt;Click here for alert
-        box&lt;/button&gt;<br />
-
-        &lt;!-- Alert box function --&gt;<br />
-        &lt;script&gt;<br />
-        function geekAlert() {<br />
-        alert("An Online Computer Science" + "Portal for Geeks");<br />
-        }<br />
-        &lt;/script&gt;<br />
-        &lt;/center&gt;<br />
-        &lt;/body&gt;<br />
-        &lt;/html&gt;<br />
-      </p>
-      <b> Output </b> <br />
-      <img
-        src="https://media.geeksforgeeks.org/wp-content/uploads/20231214110551/ALertBox.gif"
-        alt="Alert box example img"
-      />
-    </div>
     <h1>Prompt Box</h1>
     <p>
       It is a type of pop up box which is used to get the user input for further
       use. After entering the required details user have to click ok to proceed
       next stage else by pressing the cancel button user returns the null value.
     </p>
-    <div>
-      <b>Syntax: </b><br />
-      <p>prompt("your Prompt here");</p>
-      <b>Example: This example shows the implementation of the Prompt box.</b>
-      <p>
-        &lt; head &gt; <br />
-        &lt;title&gt; Pop-up Box type | Prompt Box&lt;/title&gt;<br />
-        &lt;style&gt;<br />
-        h1 {<br />
-        color: green;<br />
-        }<br />
-        &lt;/style&gt;<br />
-        &lt;/head&gt;<br />
 
-        &lt;body&gt;<br />
-        &lt;center&gt;<br />
-        &lt;h3&gt;Prompt Box&lt;/h3&gt;<br />
-
-        &lt;input type="button" onclick="geekPrompt();" <br />
-        value="Click here for Prompt box"/&gt; &lt;!-- Prompt box function
-        --&gt; <br />
-        &lt;script&gt; <br />
-        function geekPrompt() { <br />
-        let x = prompt("Enter your mail here : "); <br />
-        document.write("Your ID : " + x); <br />
-        } <br />
-        &lt;/script&gt; <br />
-        &lt;/center&gt; <br />
-        &lt;/body&gt; <br />
-        &lt;/html&gt; <br />
-      </p>
-      <b>Output</b> <br />
-      <img
-        src="https://media.geeksforgeeks.org/wp-content/uploads/20231214110152/prompt.gif"
-        alt="Promptbox Example img"
-      />
-    </div>
     <h1>Confirm Box</h1>
     <p>
       It is a type of pop-up box that is used to get authorization or permission
       from the user. The user has to press the ok or cancel button to proceed.
     </p>
-    <div>
-      <b>Syntax:</b><br />
-      <p>confirm("your query here");</p>
-      <br />
-      <b>Example: This example shows the implementation of the Confirm box. </b>
-      <p>
-        &lt; head &gt; <br />
-        &lt;title&gt;Pop-up Box type | Confirm Box&lt;/title&gt;<br />
-        &lt;style&gt;<br />
-        h1 {<br />
-        color: green;<br />
-        }<br />
-        &lt;/style&gt;<br />
-        &lt;/head&gt;<br />
-
-        &lt;body&gt;<br />
-        &lt;center&gt;<br />
-        &lt;h3&gt;Confirm Box&lt;/h3&gt;<br />
-
-        &lt;button onclick="geekConfirm()"&gt; <br />
-        Click here for Confirm box <br />
-        &lt;/button&gt; <br />
-
-        &lt;p id="geek"&gt;&lt;/p&gt; <br />
-
-        &lt;!-- Confirm box function --&gt; <br />
-        &lt;script&gt; <br />
-        function geekConfirm() { <br />
-        var x; <br />
-        if (confirm("Press a button!") == true) { <br />
-        x = "OK pressed!"; <br />
-        } else { <br />
-        x = "Cancel!"; <br />
-        } <br />
-        document.getElementById("geek").innerHTML = x; <br />
-        } <br />
-        &lt;/script&gt; <br />
-        &lt;/center&gt; <br />
-        &lt;/body&gt; <br />
-
-        &lt;/html&gt; <br />
-      </p>
-      <b>Output</b>
-      <img
-        src="https://media.geeksforgeeks.org/wp-content/uploads/20231214110405/confirmBox.gif"
-        alt="confirm box Example img"
-      />
-    </div>
   </body>
 </html>

@@ -5,18 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Module-06 Qus-11</title>
     <style>
+      * {
+        font-size: x-large;
+      }
       div {
         padding: 10px;
         margin: 10px;
         background-color: lightblue;
         border: 2px solid darkgreen;
-        font-size: large;
       }
     </style>
   </head>
   <body>
     <b>Qus:</b> What are all the looping structures in JavaScript? <br />
     <b>Ans:</b>
+
     <h1>JavaScript Loops</h1>
     <p>
       JavaScript Loops are powerful tools for performing repetitive tasks
@@ -65,12 +68,6 @@
       for (initialization; testing condition; increment/decrement) { <br />
       statement(s) <br />
       } <br />
-
-      <b>Flowchart</b> <br />
-      <img
-        src="https://media.geeksforgeeks.org/wp-content/uploads/loop2.png"
-        alt="loop example"
-      />
     </div>
     <ul>
       <li>
@@ -112,304 +109,6 @@
       Value of x: 2 <br />
       Value of x: 3 <br />
       Value of x: 4 <br />
-    </div>
-    <h1>JavaScript while Loop</h1>
-    <p>
-      The JS while loop is a control flow statement that allows code to be
-      executed repeatedly based on a given Boolean condition. The while loop can
-      be thought of as a repeating if statement.
-    </p>
-    <div>
-      <b>Syntax</b> <br />
-      <p>
-        while (boolean condition) { <br />
-        loop statements... <br />
-        } <br />
-        <b>Flowchart</b> <br />
-        <img
-          src="https://media.geeksforgeeks.org/wp-content/uploads/Loop1.png"
-          alt=""
-        />
-      </p>
-    </div>
-    <ul>
-      <li>
-        While loop starts with checking the condition. If it is evaluated to be
-        true, then the loop body statements are executed otherwise first
-        statement following the loop is executed. For this reason, it is also
-        called the Entry control loop
-      </li>
-      <li>
-        Once the condition is evaluated to be true, the statements in the loop
-        body are executed. Normally the statements contain an updated value for
-        the variable being processed for the next iteration.
-      </li>
-      <li>
-        When the condition becomes false, the loop terminates which marks the
-        end of its life cycle.
-      </li>
-    </ul>
-
-    <div>
-      <b>example</b> <br />
-
-      // JavaScript code to use while loop <br />
-      let val = 1; <br />
-      <br />
-
-      while (val < 6) { <br />
-      console.log(val); <br />
-      val += 1; <br />
-      } <br />
-
-      <b>Output</b> <br />
-      1 <br />
-      2 <br />
-      3 <br />
-      4 <br />
-      5 <br />
-    </div>
-    <h1>JavaScript do-while Loop</h1>
-    <p>
-      The JS do-while loop is similar to the while loop with the only difference
-      is that it checks for the condition after executing the statements, and
-      therefore is an example of an Exit Control Loop. It executes loop content
-      at least once event the condition is false.
-    </p>
-    <div>
-      <b>Syntax</b> <br />
-      <p>
-        do { <br />
-        Statements... <br />
-        } <br />
-        while (condition); <br />
-      </p>
-      <b>Flowchart</b> <br />
-      <img
-        src="https://media.geeksforgeeks.org/wp-content/uploads/loop3.png"
-        alt=""
-      />
-    </div>
-    <ul>
-      <li>
-        The do-while loop starts with the execution of the statement(s). There
-        is no checking of any condition for the first time.
-      </li>
-      <li>
-        After the execution of the statements and update of the variable value,
-        the condition is checked for a true or false value. If it is evaluated
-        to be true, the next iteration of the loop starts.
-      </li>
-      <li>
-        When the condition becomes false, the loop terminates which marks the
-        end of its life cycle.
-      </li>
-      <li>
-        It is important to note that the do-while loop will execute its
-        statements at least once before any condition is checked and therefore
-        is an example of the exit control loop.
-      </li>
-    </ul>
-    <div>
-      <b>Example</b><br />
-      let test = 1; <br />
-
-      do { <br />
-      console.log(test); <br />
-      test++; <br />
-      } while(test <= 5) <br />
-
-      <b>Output</b> <br />
-      <p>
-        1 <br />
-        2 <br />
-        3 <br />
-        4 <br />
-        5 <br />
-      </p>
-    </div>
-    <h1>JavaScript for-in Loop</h1>
-    <p>
-      JS for-in loop is used to iterate over the properties of an object. The
-      for-in loop iterates only over those keys of an object which have their
-      enumerable property set to “true”.
-    </p>
-    <div>
-      <b>Syntax</b> <br />
-      for(let variable_name in object_name) { <br />
-      // Statement <br />
-      } <br />
-      <b>Example: This example shows the use of for-in loop.</b>
-      <p>
-        let myObj = { x: 1, y: 2, z: 3 }; <br />
-        for (let key in myObj) { <br />
-        console.log(key, myObj[key]); <br />
-        }<br />
-      </p>
-      <b>Output</b> <br />
-      <p>
-        x 1 <br />
-        y 2 <br />
-        z 3 <br />
-      </p>
-    </div>
-    <h1>JavaScript for-of Loop</h1>
-    <p>
-      JS for-of loop is used to iterate the iterable objects for example –
-      array, object, set and map. It directly iterate the value of the given
-      iterable object and has more concise syntax than for loop.
-    </p>
-    <div>
-      <b>Syntax:</b> <br />
-      <p>
-        for(let variable_name of object_name) { <br />
-        // Statement <br />
-        }<br />
-      </p>
-      <b>Example: This example shows the use of for-of loop.</b> <br />
-      <p>
-        let arr = [1, 2, 3, 4, 5]; <br />
-        for (let value of arr) { <br />
-        console.log(value); <br />
-        } <br />
-      </p>
-      <b>Output</b> <br />
-      <p>
-        1 <br />
-        2<br />
-        3<br />
-        4<br />
-        5<br />
-      </p>
-    </div>
-    <h1>JavaScript Labeled Statement</h1>
-    <p>
-      JS label keyword does not include a goto keyword. Users can use the
-      continue keyword with the label statement. Furthermore, users can use the
-      break keyword to terminate the loop/block. You can also use the break
-      keyword without defining the label but it terminates only the parent
-      loop/block. To terminate the outer loop from the inner loop using the
-      break keyword, users need to define the label.
-    </p>
-    <div>
-      <b>Syntax</b> <br />
-      <p>
-        Label: <br />
-        statement (loop or block of code) <br />
-      </p>
-      <b>Example</b> <br />
-      <p>
-        let sum = 0, a = 1; <br />
-
-        // Label for outer loop <br />
-        outerloop: while (true) { <br />
-        a = 1; <br /><br />
-
-        // Label for inner loop <br />
-        innerloop: while (a < 3) { <br />
-        sum += a; <br />
-        if (sum > 12) { <br /><br />
-
-        // Break outer loop from inner loop <br />
-        break outerloop; <br />
-        } <br />
-        console.log("sum = " + sum); <br />
-        a++; <br />
-        } <br />
-        }<br />
-      </p>
-      <b>Output</b> <br />
-      <p>
-        sum = 1<br />
-        sum = 3<br />
-        sum = 4<br />
-        sum = 6<br />
-        sum = 7<br />
-        sum = 9<br />
-        sum = 10<br />
-        sum = 12<br />
-      </p>
-    </div>
-    <h1>JavaScript Break Statement</h1>
-    <p>
-      JS break statement is used to terminate the execution of the loop or
-      switch statement when the condition is true.
-    </p>
-    <div>
-      <b>syntax</b><br />
-      <p>break;</p>
-      <b>Example</b> <br />
-      <p>
-        for (let i = 1; i < 6; i++) { <br />
-        if (i == 4) <br />
-        break; <br /><br />
-
-        console.log(i); <br />
-        }<br />
-      </p>
-      <b>Output</b> <br />
-      <p>
-        1 <br />
-        2 <br />
-        3 <br />
-      </p>
-    </div>
-    <h1>JavaScript Continue Statement</h1>
-    <p>
-      JS continue statement is used to break the iteration of the loop and
-      follow with the next iteration. The break in iteration is possible only
-      when the specified condition going to occur. The major difference between
-      the continue and break statement is that the break statement breaks out of
-      the loop completely while continue is used to break one statement and
-      iterate to the next statement.
-    </p>
-    <div>
-      <b>syntax</b> <br />
-      <p>continue;</p>
-      <b>Example</b> <br />
-      <p>
-        for (let i = 0; i < 11; i++) { <br />
-        if (i % 2 == 0) <br />
-        continue; <br /><br />
-
-        console.log(i); <br />
-        } <br />
-      </p>
-      <b>Output</b> <br />
-      <p>
-        1 <br />
-        3 <br />
-        5 <br />
-        7 <br />
-        9 <br />
-      </p>
-    </div>
-    <h1>JavaScript Infinite Loop (Loop Error)</h1>
-    <p>
-      One of the most common mistakes while implementing any sort of loop is
-      that it may not ever exit, i.e. the loop runs for infinite times. This
-      happens when the condition fails for some reason.
-    </p>
-
-    <div>
-      <b>Example: This example shows an infinite loop.</b> <br />
-      <p>
-        // JavaScript program to illustrate infinite loop <br /><br />
-
-        // Infinite loop because condition is not false <br />
-        // condition should have been i>0. <br />
-        for (let i = 5; i != 0; i -= 2) { <br />
-        console.log(i); <br />
-        } <br /><br />
-
-        let x = 5;<br />
-
-        // Infinite loop because update statement <br />
-        // is not provided <br />
-        while (x == 5) { <br />
-        console.log("In the loop"); <br />
-        }<br />
-      </p>
     </div>
   </body>
 </html>

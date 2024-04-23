@@ -5,12 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Module-06 Qus-02</title>
     <style>
+      * {
+        font-size: x-large;
+      }
       div {
         padding: 10px;
         margin: 10px;
         background-color: lightblue;
         border: 2px solid darkgreen;
-        font-size: large;
       }
     </style>
   </head>
@@ -27,15 +29,6 @@
     </p>
     <h3>Syntax</h3>
     <p>isNaN(value)</p>
-    <h3>Parameters</h3>
-    <b>value</b>
-    <p>The value to be tested.</p>
-
-    <b>Return value</b>
-    <p>
-      <b>true</b> if the given value is <b>NaN</b> after being
-      <b>converted to a number;</b> otherwise, <b>false.</b>
-    </p>
     <h3>Description</h3>
     <ul>
       <li>isNaN() is a function property of the global object.</li>
@@ -95,12 +88,6 @@
       <br />
       isNaN("37.37"); // false: "37.37" is converted to the number 37.37 which
       is not NaN <br />
-      isNaN("37,5"); // true <br />
-      isNaN("123ABC"); // true: Number("123ABC") is NaN <br />
-      isNaN(""); // false: the empty string is converted to 0 which is not NaN
-      <br />
-      isNaN(" "); // false: a string with spaces is converted to 0 which is not
-      NaN <br />
       <br />
 
       // Dates <br />

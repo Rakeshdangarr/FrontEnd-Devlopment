@@ -5,12 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Module-06 Qus-09</title>
     <style>
+      * {
+        font-size: x-large;
+      }
       div {
         padding: 10px;
         margin: 10px;
         background-color: lightblue;
         border: 2px solid darkgreen;
-        font-size: large;
       }
     </style>
   </head>
@@ -20,8 +22,7 @@
     <b>Ans:</b>
     <ul>
       <li>
-        If you want to build a cool website or app then UI plays an important
-        role. We can change, add or remove any CSS property from an HTML element
+         We can change, add or remove any CSS property from an HTML element
         on the occurrence of any event with the help of JavaScript.
       </li>
       <li>
@@ -60,135 +61,13 @@
         argument forces the class to be added or removed.
       </li>
     </ul>
-    <div>
-      <b>Example:</b> In this example, we are using the above-explained
-      approach.
-      <p>
-        &lt;!DOCTYPE html&gt; <br />
-        &lt;html lang="en"&gt; <br />
-
-        &lt;head&gt; <br />
-        &lt;style&gt; <br />
-        .hide { <br />
-        display: none; <br />
-        } <br />
-
-        .blueColor { <br />
-        color: blue; <br />
-        } <br />
-        &lt;/style&gt; <br />
-        &lt;/head&gt; <br />
-        &lt;body&gt; <br />
-        &lt;h1 style="color: green;"&gt; <br />
-        GeeksforGeeks <br />
-        &lt;/h1&gt; <br />
-
-        &lt;h2&gt;<br />
-        How can the style/class of <br />
-        an element be changed? <br />
-        &lt;/h2&gt; <br />
-
-        &lt;h3&gt;Hide and Show the Para&lt;/h3&gt; <br />
-
-        &lt;p&gt; <br />
-        GeeksforGeeks is a computer science portal for geeks. This platform has
-        been designed for every geek wishing to expand their knowledge, share
-        their knowledge, and is ready to grab their dream job. GFG have millions
-        of articles, live as well as online courses, thousands of tutorials and
-        much more just for the geek inside you. &lt;/p&gt; <br />
-
-        &lt;button id="hide"&gt;Hide&lt;/button&gt; <br />
-        &lt;button id="show">Show&lt;/button&gt; <br />
-        &lt;button id="color">Change Color&lt;/button&gt; <br />
-
-        &lt; script&gt; <br />
-        const btn_hide = document.getElementById("hide"); <br />
-        const btn_show = document.getElementById("show"); <br />
-        const btn_color = document.getElementById("color"); <br />
-
-        const para = document.querySelector("p"); <br />
-        btn_hide.addEventListener("click", function () { <br />
-        para.classList.add("hide"); <br />
-        }); <br />
-
-        btn_show.addEventListener("click", function () { <br />
-        para.classList.remove("hide"); <br />
-        }); <br />
-
-        btn_color.addEventListener("click", function () { <br />
-        para.classList.toggle("blueColor"); <br />
-        }); <br />
-        &lt;/script&gt; <br />
-        &lt;/body&gt; <br />
-
-        &lt;/html&gt; <br />
-      </p>
-      <b>Output</b> <br />
-      <img
-        src="https://media.geeksforgeeks.org/wp-content/uploads/20220316201638/changestylecss2.gif"
-        alt=""
-      />
-    </div>
 
     <b>Approach 2: Changing CSS with the help of the style property:</b>
     <div>
       <b>Syntax:</b> <br />
       <b>document.getElementById("id").style.property = new_style </b>
     </div>
-    <b>Example: </b>
-    In this example, we have built a PAN number validator. First, we will take
-    the input value and match it with a regex pattern. If it matches then using
-    JavaScript add an inline style on the &lt;p&gt; tag. Otherwise, add a
-    different style on the &lt;p&gt; tag.
-    <div>
-      <p>
-        &lt;!DOCTYPE html &gt; <br />
-        &lt;html lang="en" &gt; <br />
-
-        &lt;body&gt; <br />
-        &lt;h1 style="color: green;" &gt; <br />
-        GeeksforGeeks <br />
-        &lt;/h1&gt; <br />
-
-        &lt;h2&gt; <br />
-        How can the style/class of an element be changed? &lt;/h2&gt; <br />
-
-        &lt;b&gt;Validate Pan Number&lt;/b&gt; <br />
-
-        &lt;input type="text" id="pan" /&gt; <br />
-        &lt;p&gt;&lt;/p&gt; <br />
-        &lt;button id="submit"&gt;Validate&lt;/button&gt; <br />
-
-        &lt;script&gt; <br />
-        const btn = document.getElementById("submit"); <br />
-        btn.addEventListener("click", function () { <br />
-        const pan = document.getElementById("pan").value; <br />
-        const para = document.querySelector("p"); <br />
-
-        let regex = /([A-Z]){5}([0-9]){4}([A-Z]){1}$/; <br />
-        if (regex.test(pan.toUpperCase())) { <br />
-        para.innerHTML = "Hurrey It's correct"; <br />
-
-        // Inline style <br />
-        para.style.color = "green"; <br />
-        } else { <br />
-        para.innerHTML = "OOps It's wrong!"; <br />
-
-        // Inline style <br />
-        para.style.color = "red";<br />
-        }<br />
-        });<br />
-        &lt;/script&gt; <br />
-        &lt;/body&gt; <br />
-
-        &lt;/html&gt; <br />
-      </p>
-
-      <h2>Output</h2>
-      <img
-        src="https://media.geeksforgeeks.org/wp-content/uploads/20220316201239/changestylecss1.gif"
-        alt="example output image"
-      />
+  
     </div>
   </body>
 </html>

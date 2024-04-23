@@ -5,12 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Module-06 Qus-16</title>
     <style>
+      * {
+        font-size: x-large;
+      }
       div {
         padding: 10px;
         margin: 10px;
         background-color: lightblue;
         border: 2px solid darkgreen;
-        font-size: large;
       }
     </style>
   </head>
@@ -33,45 +35,14 @@
       <li>Using window.location.replace</li>
       <li>Using window.location.assign Property</li>
     </ul>
+    <div>
     <h1>Using window.location.replace</h1>
     <p>
       The replace function is used to navigate to a new URL without adding a new
       record to the history.
     </p>
-
-    <div>
-      <b>Syntax</b> <br />
-      <p>
-        // Redirect to another page using replace <br />
-        window.location.replace('https://www.example.com'); <br />
-        <br />
-      </p>
-      <b>Example:</b> This example shows the use of the window.location.replace
-      which is used to load another page in JavaScript.
-      <p>
-        &lt;!DOCTYPE html&gt; <br />
-        &lt;html&gt; <br />
-        &lt;body&gt; <br />
-        &lt;button onclick="replaceLocation()"&gt; <br />
-        Replace current webpage <br />
-        &lt;/button &gt; <br />
-        &lt;script&gt; <br />
-        function replaceLocation() { <br />
-
-        // Replace the current location <br />
-        // with new location <br />
-        let newloc = "https://www.geeksforgeeks.org/";<br />
-        window.location.replace(newloc); <br />
-        } &lt;/script&gt; <br />
-        &lt;/body&gt; <br />
-        &lt;/html&gt;<br />
-      </p>
-      <b>Output</b> <br />
-      <img
-        src="https://media.geeksforgeeks.org/wp-content/uploads/20210616160733/windowlocation2.gif"
-        alt=""
-      />
     </div>
+    <div>
     <h1>Using window.location.assign Property</h1>
     <ul>
       <li>
@@ -88,35 +59,6 @@
         return to the current page).
       </li>
     </ul>
-    <div>
-      <b>Syntax</b> <br />
-      <p>window.location.assign("https://geeksforgeeks.org/")</p>
-      <b>Example: </b>
-      <p>This example shows the use of the window.location.assign property.</p>
-      <p>
-        &lt;!DOCTYPE html&gt;<br />
-        &lt;html&gt; <br />
-        &lt;body&gt; <br />
-        &lt;button onclick="assignLocation()"&gt; <br />
-        Go to new webpage <br />
-        &lt;/button&gt; <br />
-
-        &lt;script&gt;<br />
-        function assignLocation() {<br />
-
-        // Go to another webpage (geeksforgeeks)<br />
-        let newloc = "https://www.geeksforgeeks.org/";<br />
-        window.location.assign(newloc);<br />
-        }<br />
-        &lt;/script&gt; <br />
-        &lt;/body&gt; <br />
-        &lt;/html&gt; <br />
-      </p>
-      <b>Output</b> <br />
-      <img
-        src="https://media.geeksforgeeks.org/wp-content/uploads/20210616160813/windowocation3.gif"
-        alt=""
-      />
-    </div>
+    
   </body>
 </html>
