@@ -6,7 +6,7 @@
 
 
   .background {
-    height: 1000px;
+    height: 80vh;
     width: 89%;
     /* border: 2px solid red; */
     display: flex;
@@ -25,7 +25,7 @@
     
   }
   .background .title {
-    height: 390vh;
+    height: 270vh;
     width: 25%;
     /* border: 2px solid red; */
     margin 10%;
@@ -38,7 +38,7 @@
     opacity: 0.8;
   }
   .background .title h1{
-    margin-top: 30%;
+    margin-top: 5%;
     
   }
   .background .title ul li {
@@ -64,7 +64,7 @@
     color: #299cf3;
   }
   .social{
-    top: 32%;
+    top: 24%;
     left: 45%;
     gap: 20%;
     position: absolute;
@@ -75,7 +75,7 @@
   .copyright{
     font-size: x-large;
     color: whitesmoke;
-    top: 33%;
+    top: 25 %;
     position: absolute;
     left: 25%;
 
@@ -134,7 +134,7 @@
     /* border: 2px solid red; */
     /* position: absolute; */
     display: flex;
-    padding: 31%;
+    padding: 28%;
     left: 19%;
     gap: 1%;
     
@@ -160,13 +160,14 @@
     /* display: flex; */
     position: absolute;
     left: 30%;
-    top: 299vh;
+    top: 200%;
   }
   .clients h2{
     color:#299cf3 ;
   }
   .custmer{
     position: absolute;
+    top: 220%;
     left: 25%;
   }
   .custmer img{
@@ -184,7 +185,7 @@
     width: 30%;
     /* border: 2px solid red; */
     position: absolute;
-    top: 370vh;
+    top: 250%;
     left: 28%;
     padding: 2%;
   }
@@ -194,7 +195,7 @@
   .data{
 padding: 2%;
     position: absolute;
-    top: 370vh;
+    top: 270;
     left: 65%;
     border-width: 0 0 2px;
   }
