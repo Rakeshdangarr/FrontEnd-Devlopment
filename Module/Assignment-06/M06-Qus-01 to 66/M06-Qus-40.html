@@ -24,45 +24,43 @@
 
     <b>Ans:</b>
     <script>
-      currentDate = new Date().getDate();
-      currentMonth = new Date().getMonth() + 1;
-      currentYear = new Date().getFullYear();
-      currentDay = new Date().getDay();
-      currentHour = new Date().getHours();
-      currentMinute = new Date().getMinutes();
+      today = new Date();
+      day = today.getDay();
+      dayList = [
+        "sunday",
+        "monday",
+        "tuesday",
+        "wendesday",
+        "thusday",
+        "friday",
+        "satureday",
+      ];
 
-      switch (currentDate) {
-        case 0:
-          day = "Sunday";
-          break;
-        case 1:
-          day = "Monday";
-          break;
-        case 2:
-          day = "Tuesday";
-          break;
-        case 3:
-          day = "Wednesday";
-          break;
-        case 4:
-          day = "Thursday";
-          break;
-        case 5:
-          day = "Friday";
-          break;
-        case 6:
-          day = "Saturday";
+      console.log("Today is " + dayList[day] + ".");
+
+      hour = today.getHours();
+
+      minute = today.getMinutes();
+      second = today.getSeconds();
+
+      let module;
+
+      if (hour <= 12) {
+        module = "AM";
+      } else {
+        module = "PM";
       }
 
-      console.log(currentDate);
-      console.log(currentMonth);
-      console.log(currentYear);
-      console.log(currentDay);
-      console.log(currentHour);
-      console.log(currentMinute);
-
       console.log(
-        `Today is ${currentDay}. Current time is ${currentHour}:${currentHour}:${currentMinute}`
+        "Current time is " +
+          hour +
+          module +
+          ":" +
+          hour +
+          ":" +
+          minute +
+          ":" +
+          second
       );
     </script>
   </body>

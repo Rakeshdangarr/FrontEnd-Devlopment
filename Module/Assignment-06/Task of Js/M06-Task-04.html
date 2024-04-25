@@ -26,72 +26,64 @@
       body {
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        /* justify-content: center; */
         align-items: center;
         height: 100vh;
       }
       .main {
         width: 600px;
         height: 300px;
-        background-color: lightsalmon;
+        background-color: black;
+        align-self: center;
+        text-align: center;
+        color: white;
+      }
+      .main h2 {
+        color: rgb(97, 97, 97);
+      }
+      .parent {
+        width: 600px;
+        height: 300px;
+        background-color: black;
         display: flex;
         justify-content: center;
         gap: 30px;
         padding: 30px;
         position: relative;
         overflow: hidden;
-        border-radius: 20px;
       }
 
-      .box {
+      .child {
+        scale: 1.2;
         height: 100px;
         width: 100px;
         background-color: cornflowerblue;
         border: 1px solid;
-        border-radius: 8px;
         display: flex;
         justify-content: center;
         align-items: center;
         border: 2px solid black;
       }
-      .btns {
-        background-color: darkturquoise;
-        border: 2px solid black;
-        color: lightcoral;
-        padding: 10px 10px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 20px;
+
+      .left-btn {
+        display: flex;
+        font-size: 25px;
+        margin: 10px;
+        padding: 10px;
         position: absolute;
-        top: 400px;
-        border-radius: 20px;
+        top: 50%;
+        left: 42%;
+        color: white;
+        background-color: black;
       }
-      .left {
-        border: 2px solid darkred;
-        text-decoration: none;
+      .right-btn {
+        top: 50%;
+        position: absolute;
+background-color: black;
         font-size: 25px;
         margin: 10px;
         padding: 10px;
-        color: black;
-        background-color: darkgrey;
-        border-radius: 20px;
-      }
-      .right {
-        border: 2px solid darkred;
-        text-decoration: none;
-        font-size: 25px;
-        margin: 10px;
-        padding: 10px;
-        color: black;
-        background-color: darkgray;
-        border-radius: 20px;
-      }
-      .qus {
-        background-color: lightpink;
-        font-size: large;
-        padding: 10px;
-        border-radius: 20px;
+        color: white;
       }
     </style>
   </head>
@@ -106,18 +98,54 @@
     <div class="main">
       <h1>Simple javascript slider</h1>
       <h2>Created by Dropinks</h2>
-      <div class="child1"></div>
-      <div class="child2"></div>
-      <div class="child3"></div>
-      <div class="child4"></div>
-      <div class="child5"></div>
-
-      <button class="left">
-        <i class="fa-solid fa-arrow-left" style="color: white"></i>
-      </button>
-      <button class="Right">
-        <i class="fa-solid fa-arrow-right" style="color: white"></i>
-      </button>
+      <div class="parent">
+        <div class="child" style="background-color: yellow"></div>
+        <div class="child" style="background-color: red"></div>
+        <div class="child" style="background-color: purple"></div>
+        <div class="child"  style="background-color: rgb(19, 128, 19)"></div>
+        <div class="child" style="background-color: skyblue"></div>
+      </div>
+      <button class="left-btn"><i
+        class="fa-solid fa-arrow-left"
+      ></i></button>
+      <button class="right-btn"><i
+        class="fa-solid fa-arrow-right"
+      ></i></button>s
+      </div>
     </div>
+
+    <script>
+      parent = document.getElementsByClassName('parent')[0];
+      let leftBtn = document.getElementsByClassName('left-btn')[0];
+      let rightBtn = document.getElementsByClassName('right-btn')[0];
+
+      children = parent.children;
+      let leftCounter = 1;
+      let rightCounter = 1;
+      leftBtn.addEventListener('click', () => {
+        if (leftCounter == 2) {
+          leftBtn.setAttribute('disabled', '');
+        }
+        rightBtn.removeAttribute('disabled');
+        if (leftCounter < 3) {
+          for (i = 0; i < children.length; i++) {
+            children[i].style.transform = `translateX(-${leftCounter * 50}px)`;
+          }
+          leftCounter++;
+        }
+      });
+      rightBtn.addEventListener('click', () => {
+        if (rightCounter == 2) {
+          rightBtn.setAttribute('disabled', '');
+        }
+        leftBtn.removeAttribute('disabled');
+        if (rightCounter < 3) {
+          for (i = 0; i < children.length; i++) {
+            children[i].style.transform = `translateX(${rightCounter * 50}px)`;
+          }
+          rightCounter++;
+        }
+      });
+    </script>
   </body>
 </html>

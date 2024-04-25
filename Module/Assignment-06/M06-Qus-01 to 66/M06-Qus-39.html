@@ -23,5 +23,16 @@
     <br />
 
     <b>Ans:</b>
+
+    <script>
+      function palindromeCheck(num) {
+        let numStr = num.toString();
+        let result = numStr.split("").reverse().join("");
+        return numStr === result;
+      }
+
+      console.log(palindromeCheck(12321));
+      console.log(palindromeCheck(123));
+    </script>
   </body>
 </html>
