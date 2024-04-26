@@ -4,12 +4,85 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Module-07 Qus-04</title>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <style>
+      * {
+        margin: 10%;
+        padding: 0;
+        box-sizing: border-box;
+        font-size: x-large;
+      }
+      .parent {
+        background-color: lightcoral;
+        text-align: center;
+        width: 80%;
+        height: 80vh;
+        border: 2px solid red;
+        border-radius: 5px;
+      }
+      .child {
+        border-radius: 5px;
+        background-color: lightgoldenrodyellow;
+        height: 60vh;
+        margin-top: 06%;
+        margin-left: 20%;
+        border: 2px solid red;
+        width: 60%;
+        text-align: center;
+      }
+      .sub-child {
+        border-radius: 5px;
+
+        background-color: lightgreen;
+        margin-top: 6%;
+        margin-left: 30%;
+        border: 2px solid red;
+        height: 40vh;
+        width: 40%;
+        text-align: center;
+      }
+    </style>
   </head>
   <body>
-    <b>Qus:</b>Event bubbling tickling example
+    <b>Qus:</b>
+    <h1>Event bubbling tickling example</h1>
 
     <br />
 
     <b>Ans:</b>
+    <div class="parent">
+      parent
+      <div class="child">
+        child
+        <div class="sub-child">sub-child</div>
+      </div>
+    </div>
+
+    <script>
+      $(".parent").click(() => {
+        console.log("parent click");
+      });
+      $(".child").click(() => {
+        console.log("child click");
+      });
+      $(".sub-child").click(() => {
+        console.log("sub-child click");
+      });
+
+      $(".parent").click(() => {
+        alert("parent");
+      });
+      $(".child").click(() => {
+        alert("child");
+      });
+      $(".sub-child").click(() => {
+        alert("sub-child");
+      });
+    </script>
   </body>
 </html>
