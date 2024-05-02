@@ -27,42 +27,15 @@
       The MUL function is a miniature of the multiplication function. In this
       function, we call the function that required an argument as a first
       number, and that function calls another function that required another
-      argument and this step goes on.
+      argument.
     </p>
-    <p>
-      The first function’s argument is x, the second function`s argument is y
-      and the third is z, so the return value will be xyz.
-    </p>
-    <div>
-      <b>Syntax</b>
-      <p>
-        function mul(x) { <br />
-        return function (y) { <br />
-        return function (z) { <br />
-        return x * y * z; <br />
-        }; <br />
-        }; <br />
-        } <br />
-      </p>
-      <b
-        >Example: Below example illustrates the MUL() function in JavaScript.
-      </b>
-      <p>
-        function mul(x) { <br />
-        return function(y) {<br />
-        return function(z) { <br />
-        return x*y*z; <br />
-        }; <br />
-        } <br />
-        } <br />
+    <script>
+      multiplication(20, 20);
 
-        console.log(mul(2)(3)(5)); <br />
-        console.log(mul(2)(3)(4)); <br />
-      </p>
-
-      <b> Output</b> <br />
-      30 <br />
-      24 <br />
-    </div>
+      function multiplication(value1, value2) {
+        result = value1 * value2;
+      }
+      console.log(result);
+    </script>
   </body>
 </html>
