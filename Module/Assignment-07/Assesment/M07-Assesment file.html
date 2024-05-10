@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Registration Form</title>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <style>
       * {
         font-size: large;
@@ -54,21 +60,21 @@
     </style>
   </head>
   <body>
-    <form action="">
+    <form id="form">
       <label for="text">First Name:</label>
       <input
         type="text"
-        name=""
-        id="userName"
+        name="firstName"
         placeholder="Enter your First Name"
         minlength="3"
         maxlength="6"
         pattern="[a-zA-Z]+"
       />
+
       <label for="text">Last Name:</label>
-      <input type="text" placeholder="Enter your Last Name" />
+      <input type="text" name="lastName" placeholder="Enter your Last Name" />
       <label for="email">Email:</label>
-      <input type="email" placeholder="it should contain @" />
+      <input type="email" name="email" placeholder="it should contain @" />
       <label for="number">Mobile:</label>
       <input
         type="text"
@@ -109,9 +115,7 @@
 
       <label for="password">password</label>
       <input type="password" name="" id="" />
-      <button>Registered</button>
+      <button id="submit">Registered</button>
     </form>
-
-    <script></script>
   </body>
 </html>

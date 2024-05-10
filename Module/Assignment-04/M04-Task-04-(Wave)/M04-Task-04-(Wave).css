@@ -50,22 +50,71 @@ button img{
 
 }
 
-.i1{
+.item-i1{
     left: 20%;
-    top: 40%;
+    top: 58%;
 }
 
-.i2{
+.item-i2{
     left: 40%;
-    top: 54%;
+    top: 73%;
 }
 
-.i3{
+.item-i3{
     left: 64%;
-    top: 69%;
+    top: 87%;
 }
 
-.i4{
-    left: 84%;
-    top: 55%;
+.item-i4{
+    left: 87%;
+    top: 70%;
+}
+.text{
+    text-align: center;
+}
+#i1 {
+    padding: 20px;
+    display: none;
+    position: absolute;
+    top: 65%;
+    left: 15%;
+    color: wheat;
+}
+.item-i1:hover + #i1 {
+    display: block;
+    
+  }
+
+.item-i2:hover + #i2{
+    display: block;
+}
+#i2 {
+    padding: 10px;
+    display: none;
+    position: absolute;
+    top: 81%;
+    left: 30%;
+    color: wheat;
+}
+#i3 {
+    padding: 10px;
+    display: none;
+    position: absolute;
+    top: 89%;
+    left: 52%;
+    color: wheat;
+}
+.item-i3:hover + #i3{
+    display: block;
+}
+#i4 {
+    padding: 10px;
+    display: none;
+    position: absolute;
+    top: 81%;
+    left: 81%;
+    color: wheat;
+}
+.item-i4:hover + #i4{
+    display: block;
 }
