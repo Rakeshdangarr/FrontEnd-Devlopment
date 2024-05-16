@@ -4,6 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Module-08 Qus-03</title>
+    <style>
+      * {
+        font-size: x-large;
+      }
+      div {
+        padding: 10px;
+        margin: 10px;
+        background-color: lightblue;
+        border: 2px solid darkgreen;
+      }
+    </style>
   </head>
   <body>
     <b>Qus:</b>
@@ -12,6 +23,35 @@
     <br />
 
     <b>Ans:</b>
-    <p>Bootstrap 5 uses a default font-size of 1rem (16px by default)</p>
+    <div>
+      <b>The default text settings for Bootstrap 4 and Bootstrap 5 are:</b>
+      <div style="width: max-content">
+        <ul style="list-style-type: circle">
+          <li>Font size: 16px</li>
+          <li>Line height: 1.5</li>
+          <li>Margin top: 0</li>
+          <li>Margin bottom: 1rem (16px)</li>
+          <li>Font family: "Helvetica Neue", Helvetica, Arial, sans-serif</li>
+        </ul>
+      </div>
+
+      <ul style="list-style-type: square">
+        <li>
+          Bootstrap uses the browser's default root font size for a more
+          accessible type scale. You can use the following attributes to set
+          typographic base styles for the &lt;body&gt;: $font-family-base,
+          $font-size-base, and $line-height-base.
+        </li>
+        <li>
+          You can also use the following classes to customize headings: .h1
+          through .h6, .text-muted, and .display-1 through .display-4
+        </li>
+        <li>
+          To enable responsive font sizes, you can change the
+          $enable-responsive-font-sizes Sass variable to true and recompile
+          Bootstrap.
+        </li>
+      </ul>
+    </div>
   </body>
 </html>
