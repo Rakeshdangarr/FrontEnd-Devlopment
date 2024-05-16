@@ -17,7 +17,7 @@
         box-sizing: border-box;
         font-size: x-large;
       }
-      .parent {
+      #parent {
         background-color: lightcoral;
         text-align: center;
         width: 80%;
@@ -25,7 +25,7 @@
         border: 2px solid red;
         border-radius: 5px;
       }
-      .child {
+      #child {
         border-radius: 5px;
         background-color: lightgoldenrodyellow;
         height: 60vh;
@@ -35,7 +35,7 @@
         width: 60%;
         text-align: center;
       }
-      .sub-child {
+      #sub-child {
         border-radius: 5px;
 
         background-color: lightgreen;
@@ -55,34 +55,81 @@
     <br />
 
     <b>Ans:</b>
-    <div class="parent">
+    <div id="parent">
       parent
-      <div class="child">
+      <div id="child">
         child
-        <div class="sub-child">sub-child</div>
+        <div id="sub-child">sub-child</div>
       </div>
     </div>
 
     <script>
-      $(".parent").click(() => {
-        console.log("parent click");
-      });
-      $(".child").click(() => {
-        console.log("child click");
-      });
-      $(".sub-child").click(() => {
-        console.log("sub-child click");
-      });
+      const Parent = document.getElementById("parent");
+      const parent = document.getElementById("child");
+      const subchild = document.getElementById("sub-child");
 
-      $(".parent").click(() => {
-        alert("parent");
-      });
-      $(".child").click(() => {
-        alert("child");
-      });
-      $(".sub-child").click(() => {
-        alert("sub-child");
-      });
+      document.addEventListener(
+        "click",
+        (e) => {
+          console.log("Document capturing");
+        },
+        { capture: true }
+      );
+
+      Parent.addEventListener(
+        "click",
+        (e) => {
+          console.log("parent capturing");
+        },
+        { capture: true }
+      );
+
+      child.addEventListener(
+        "click",
+        (e) => {
+          console.log("child capturing");
+        },
+        { capture: true }
+      );
+
+      subchild.addEventListener(
+        "click",
+        (e) => {
+          console.log("sub-child capturing");
+        },
+        { capture: true }
+      );
+      document.addEventListener(
+        "click",
+        (e) => {
+          console.log("Document bubbling");
+        },
+        { capture: false }
+      );
+
+      Parent.addEventListener(
+        "click",
+        (e) => {
+          console.log("parent bubbling");
+        },
+        { capture: false }
+      );
+
+      child.addEventListener(
+        "click",
+        (e) => {
+          console.log("child bubbling");
+        },
+        { capture: false }
+      );
+
+      subchild.addEventListener(
+        "click",
+        (e) => {
+          console.log("sub-child bubbling");
+        },
+        { capture: false }
+      );
     </script>
   </body>
 </html>
