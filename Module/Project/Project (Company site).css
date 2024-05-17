@@ -1,0 +1,137 @@
+
+/*Horizontal Menu1 start */
+
+.menubar1 {
+  margin: 1%;
+  text-align: center;
+  padding: 5px;
+background-color: black;
+position: relative;
+
+}
+.menubar1 a{
+  margin-left: 1%;
+  color: rgb(134, 132, 132);
+  font-weight: 100;
+  font-size: x-large;
+  text-decoration: none;
+}
+
+/* Horizontal Menu1 end */
+
+/* Horizontal Menu2 start */
+
+/* logo */
+
+.logo {
+  background-color: black;
+  font-size: xx-large;
+  margin-top: 0px;
+  position: relative;
+  height: 25vh;
+}
+.logo span{
+  display: flex;
+  left: 20%;
+}
+.logo i{
+  position: absolute;
+  left: 7%;
+  top: 25%;
+}
+.logo p{
+margin-left: 10%;
+  display: flex;
+  color: white;
+  -webkit-box-reflect: below 8px -webkit-gradient(linear, right top, right bottom, from(transparent), to(rgba(255, 255, 255, 0.4)));
+  
+}
+#name{
+  position: absolute;
+  top: 3%;
+  left: 10%;
+  -webkit-box-reflect: below 8px -webkit-gradient(linear, right top, right bottom, from(transparent), to(rgba(255, 255, 255, 0.4)));
+}
+
+/* buttons */
+
+
+.button{
+  width: 2%;
+  position: absolute;
+  top: 73%;
+  left: 43%;
+  display: flex;
+}
+.button button {
+  border-radius: 8px;
+  margin-left: 40%;
+  padding: 20%;
+  width: 40em;
+  font-size: medium;
+  font-size: x-large;
+  background-color: rgb(199, 197, 197);
+}
+
+/* search */
+
+.search i{
+  height: 30px;
+  padding: 4px;
+  border-radius: 5px;
+  text-align: center;
+  width: 50px;
+color: aliceblue;
+background-color: blueviolet;
+position: absolute;
+left: 70%;
+top: 10%;
+}
+.search input{
+  height: 40px;
+  position: absolute;
+  top: 09%;
+  left: 74.1%;
+  border-radius: 8px;
+  text-align: center;
+  font-size: x-large;
+}
+/* Horizontal Menu2 end */
+
+/* content bar start */
+
+/* div 1  */
+.moreService{
+  background-image: url("https://img.freepik.com/free-vector/paper-style-wavy-red-background_52683-74121.jpg");
+  border: 2px solid rgb(136, 0, 0);
+  width: 20vw;
+  position: absolute;
+  top: 38%;
+  left: 2%;
+  color: white;
+  border-radius: 5px;
+  box-shadow: 06px -2px 4px 4px rgb(36, 36, 36);
+}
+.service{
+  height: 35vh;
+  background-color: darkorange;
+  padding: 0%;
+  text-align: center;
+}
+.title b{
+  justify-content: center;
+  color: rgb(71, 245, 71);
+  display: flex;
+  font-size: x-large;
+}
+
+/* div 2 */
+.content{
+  font-size: large;
+  width: 60vw;
+  position: absolute;
+  left: 150%;
+  top: -5%;
+  text-align: start;
+  color: white;}
+
