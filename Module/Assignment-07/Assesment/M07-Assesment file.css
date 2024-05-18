@@ -1,0 +1,108 @@
+
+      * {
+        font-size: large;
+        box-sizing: border-box;
+      }
+      body {
+        background-color: rgb(214, 212, 212);
+        margin-top: 2%;
+        margin-left: 2%;
+      }
+
+      form {
+        display: grid;
+        grid-template-columns: 200px 400px;
+      }
+      label {
+        padding: 1%;
+        margin-left: 1%;
+      }
+      input {
+        position: relative;
+        top: 5%;
+      }
+      input[type="checkbox"] {
+        vertical-align: middle;
+      }
+      input[type="radio"] {
+        vertical-align: middle;
+      }
+      #firstName + .feedback {
+        display: none;
+        position: absolute;
+        left: 47%;
+        top: 5%;
+      }
+      #lastName + .feedback {
+        display: none;
+        position: absolute;
+        left: 47%;
+        top: 10%;
+      }
+      #email + .feedback {
+        display: none;
+        position: absolute;
+        left: 47%;
+        top: 14%;
+      }
+      #number + .feedback {
+        display: none;
+        position: absolute;
+        left: 47%;
+        top: 19%;
+      }
+      #dob + .feedback {
+        display: none;
+        position: absolute;
+        left: 47%;
+        top: 27%;
+      }
+      #address + .feedback {
+        display: none;
+        position: absolute;
+        left: 47%;
+        top: 36%;
+      }
+      #cityName + .feedback {
+        display: none;
+        position: absolute;
+        left: 47%;
+        top: 48%;
+      }
+      #pincode + .feedback {
+        display: none;
+        position: absolute;
+        left: 47%;
+        top: 52%;
+      }
+      #stateName + .feedback {
+        display: none;
+        position: absolute;
+        left: 47%;
+        top: 56%;
+      }
+      #quali + .feedback {
+        display: none;
+        position: absolute;
+        left: 47%;
+        top: 60%;
+      }
+      #pass + .feedback {
+        display: none;
+        position: absolute;
+        left: 47%;
+        top: 84%;
+      }
+      button {
+        background-color: rgb(6, 247, 6);
+        border-radius: 5px;
+        width: 100px;
+        color: white;
+        font-size: small;
+      }
+
+      .spec-wrapper {
+        display: grid;
+        grid-template-columns: 1fr;
+      }
+  

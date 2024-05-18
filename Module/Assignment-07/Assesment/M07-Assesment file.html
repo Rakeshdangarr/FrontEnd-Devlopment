@@ -10,96 +10,101 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
-    <style>
-      * {
-        font-size: large;
-        box-sizing: border-box;
-      }
-      body {
-        background-color: rgb(214, 212, 212);
-        margin-top: 2%;
-        margin-left: 2%;
-      }
-
-      form {
-        display: grid;
-        grid-template-columns: 200px 400px;
-        /* grid-template-rows: repeat(10, 50px); */
-      }
-      label {
-        padding: 1%;
-        /* display: flex; */
-        margin-left: 4%;
-      }
-      input {
-        /* margin-left: 20%; */
-        /* display: flex; */
-        top: 5%;
-      }
-      input[type="checkbox"] {
-        vertical-align: middle;
-        /* margin-left: 18%; */
-      }
-      input[type="radio"] {
-        vertical-align: middle;
-        /* margin-left: 18%; */
-      }
-
-      button {
-        background-color: rgb(6, 247, 6);
-        border-radius: 5px;
-        width: 100px;
-        color: white;
-        font-size: small;
-      }
-
-      .spec-wrapper {
-        display: grid;
-        grid-template-columns: 1fr;
-      }
-    </style>
+    <link rel="stylesheet" href="M07-Assesment file.css" />
+    <link rel="stylesheet" href="M07-Assesment file.js" />
   </head>
   <body>
     <form id="form">
       <label for="text">First Name:</label>
       <input
         type="text"
-        name="firstName"
+        id="firstName"
         placeholder="Enter your First Name"
         minlength="3"
         maxlength="6"
         pattern="[a-zA-Z]+"
+        required
       />
-
+      <div class="feedback"></div>
       <label for="text">Last Name:</label>
-      <input type="text" name="lastName" placeholder="Enter your Last Name" />
+      <input
+        type="text"
+        id="lastName"
+        placeholder="Enter your Last Name"
+        required
+      />
+      <div class="feedback"></div>
       <label for="email">Email:</label>
-      <input type="email" name="email" placeholder="it should contain @" />
+      <input
+        type="email"
+        id="email"
+        placeholder="it should contain @"
+        required
+      />
+      <div class="feedback"></div>
       <label for="number">Mobile:</label>
       <input
         type="text"
+        id="number"
         minlength="10"
         maxlength="10"
         placeholder="Only 10 digit are allowed"
+        required
       />
+      <div class="feedback"></div>
+
       <label for="Gender">Gender</label>
       <div class="gender-wrapper">
-        <label><input type="radio" />Male</label>
-        <label> <input type="radio" />Female</label>
+        <label
+          ><input
+            type="radio"
+            id="male"
+            name="gender"
+            value="male"
+            checked
+          />Male</label
+        >
+        <label>
+          <input
+            type="radio"
+            id="female"
+            name="gender"
+            value="female"
+            checked
+          />Female</label
+        >
       </div>
 
       <label for="DateOfBirth">Date Of Birth:</label>
-      <input type="date" name="" id="" />
+      <input type="date" name="birtDate" id="dob" required />
+      <div class="feedback"></div>
       <label for="address:">Address</label>
-      <input type="text" />
+      <textarea
+        type="text"
+        id="address"
+        minlength="20"
+        required
+        rows="5"
+        cols="25"
+      ></textarea>
+      <div class="feedback"></div>
+
       <label for="text">City:</label>
-      <input type="text" name="" id="" />
+      <input type="text" name="" id="cityName" required />
+      <div class="feedback"></div>
+
       <label for="pincode">Area PIN:</label>
-      <input type="number" />
+      <input type="number" id="pincode" required />
+      <div class="feedback"></div>
+
       <label for="text">State:</label>
-      <input type="text" />
+      <input type="text" id="stateName" required />
+      <div class="feedback"></div>
+
       <label for="text">Qualification:</label>
-      <input type="text" />
+      <input type="text" id="quali" required />
+      <div class="feedback"></div>
+
       <label for="text">Specialization:</label>
 
       <div class="spec-wrapper">
@@ -114,8 +119,140 @@
       </div>
 
       <label for="password">password</label>
-      <input type="password" name="" id="" />
-      <button id="submit">Registered</button>
+      <input type="password" name="" id="pass" required />
+      <div class="feedback"></div>
+
+      <button>Registered</button>
     </form>
+    <script>
+      $("button").click((e) => {
+        e.preventDefault();
+
+        let firstName = document.getElementById("firstName");
+        let lastName = document.getElementById("lastName");
+        let email = document.getElementById("email");
+        let number = document.getElementById("number");
+        let dob = document.getElementById("dob");
+        let cityName = document.getElementById("cityName");
+        let pincode = document.getElementById("pincode");
+        let stateName = document.getElementById("stateName");
+        let quali = document.getElementById("quali");
+        let pass = document.getElementById("pass");
+
+        if (firstName.checkValidity()) {
+          $("#firstName + .feedback").css("display", "inline");
+          $("#firstName + .feedback").css("color", "green");
+          $("#firstName + .feedback").text("valid Input");
+        } else {
+          $("#firstName + .feedback").css("display", "inline");
+          $("#firstName + .feedback").css("color", "red");
+          $("#firstName + .feedback").text("Please Enter your First name");
+        }
+
+        if (lastName.checkValidity()) {
+          $("#lastName + .feedback").css("display", "inline");
+          $("#lastName + .feedback").css("color", "green");
+          $("#lastName + .feedback").text("valid Input");
+        } else {
+          $("#lastName + .feedback").css("display", "inline");
+          $("#lastName + .feedback").css("color", "red");
+          $("#lastName + .feedback").text("Please Enter your last name");
+        }
+
+        if (email.checkValidity()) {
+          $("#email + .feedback").css("display", "inline");
+          $("#email + .feedback").css("color", "green");
+          $("#email + .feedback").text("valid Input");
+        } else {
+          $("#email + .feedback").css("display", "inline");
+          $("#email + .feedback").css("color", "red");
+          $("#email + .feedback").text("Please Enter your valid email");
+        }
+
+        if (number.checkValidity()) {
+          $("#number + .feedback").css("display", "inline");
+          $("#number + .feedback").css("color", "green");
+          $("#number + .feedback").text("valid Input");
+        } else {
+          $("#number + .feedback").css("display", "inline");
+          $("#number + .feedback").css("color", "red");
+          $("#number + .feedback").text(
+            "Please Enter your valid mobile number"
+          );
+        }
+
+        if (dob.checkValidity()) {
+          $("#dob + .feedback").css("display", "inline");
+          $("#dob + .feedback").css("color", "green");
+          $("#dob + .feedback").text("valid Input");
+        } else {
+          $("#dob + .feedback").css("display", "inline");
+          $("#dob + .feedback").css("color", "red");
+          $("#dob + .feedback").text(
+            "Please Enter/choose your valid date of birth"
+          );
+        }
+
+        if (address.checkValidity()) {
+          $("#address + .feedback").css("display", "inline");
+          $("#address + .feedback").css("color", "green");
+          $("#address + .feedback").text("valid Input");
+        } else {
+          $("#address + .feedback").css("display", "inline");
+          $("#address + .feedback").css("color", "red");
+          $("#address + .feedback").text("Please Enter your proper address");
+        }
+
+        if (cityName.checkValidity()) {
+          $("#cityName + .feedback").css("display", "inline");
+          $("#cityName + .feedback").css("color", "green");
+          $("#cityName + .feedback").text("valid Input");
+        } else {
+          $("#cityName + .feedback").css("display", "inline");
+          $("#cityName + .feedback").css("color", "red");
+          $("#cityName + .feedback").text("Please Enter your city name");
+        }
+
+        if (pincode.checkValidity()) {
+          $("#pincode + .feedback").css("display", "inline");
+          $("#pincode + .feedback").css("color", "green");
+          $("#pincode + .feedback").text("valid Input");
+        } else {
+          $("#pincode + .feedback").css("display", "inline");
+          $("#pincode + .feedback").css("color", "red");
+          $("#pincode + .feedback").text("Please Enter your Pincode");
+        }
+
+        if (stateName.checkValidity()) {
+          $("#stateName + .feedback").css("display", "inline");
+          $("#stateName + .feedback").css("color", "green");
+          $("#stateName + .feedback").text("valid Input");
+        } else {
+          $("#stateName + .feedback").css("display", "inline");
+          $("#stateName + .feedback").css("color", "red");
+          $("#stateName + .feedback").text("Please Enter your State name");
+        }
+
+        if (quali.checkValidity()) {
+          $("#quali + .feedback").css("display", "inline");
+          $("#quali + .feedback").css("color", "green");
+          $("#quali + .feedback").text("valid Input");
+        } else {
+          $("#quali + .feedback").css("display", "inline");
+          $("#quali + .feedback").css("color", "red");
+          $("#quali + .feedback").text("Please Enter your Qualification");
+        }
+
+        if (pass.checkValidity()) {
+          $("#pass + .feedback").css("display", "inline");
+          $("#pass + .feedback").css("color", "green");
+          $("#pass + .feedback").text("valid Input");
+        } else {
+          $("#pass + .feedback").css("display", "inline");
+          $("#pass + .feedback").css("color", "red");
+          $("#pass + .feedback").text("Please Enter your valid Password");
+        }
+      });
+    </script>
   </body>
 </html>

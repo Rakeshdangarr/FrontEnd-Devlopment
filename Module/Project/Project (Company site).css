@@ -2,10 +2,9 @@
 /*Horizontal Menu1 start */
 
 .menubar1 {
-  margin: 1%;
+  height: 5vh;
   text-align: center;
-  padding: 5px;
-background-color: black;
+background-color: rgb(43, 42, 42);
 position: relative;
 
 }
@@ -26,7 +25,6 @@ position: relative;
 .logo {
   background-color: black;
   font-size: xx-large;
-  margin-top: 0px;
   position: relative;
   height: 25vh;
 }
@@ -135,3 +133,6 @@ top: 10%;
   text-align: start;
   color: white;}
 
+.button button:nth-child(1):hover .service .moreService{
+background-color: red;
+}

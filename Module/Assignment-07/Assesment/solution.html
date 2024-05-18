@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #name + .feedback,
+      #password + .feedback {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="" novalidate>
+      <div class="input-div">
+        <input
+          type="text"
+          name=""
+          id="name"
+          placeholder="User"
+          required
+          maxlength="6"
+          minlength="3"
+        />
+        <div class="feedback"></div>
+      </div>
+
+      <div class="input-div">
+        <input
+          type="password"
+          name=""
+          id="pass"
+          placeholder="password"
+          required
+          minlength="6"
+          maxlength="20"
+        />
+        <div class="feedback"></div>
+      </div>
+
+      <div class="input-div">
+        <input
+          type="number"
+          name=""
+          id="number"
+          placeholder="Phone number"
+          required
+          pattern="[0-9]{10}"
+        />
+        <div class="feedback"></div>
+      </div>
+
+      <button>Submit</button>
+    </form>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      $('button').click((e) => {
+        e.preventDefault();
+        // let name = $('#name').val();
+        let name = document.getElementById('name');
+        let pass = document.getElementById('pass');
+        let number = document.getElementById('number');
+        // console.log(name);
+
+        // console.log(name.checkValidity());
+        console.log(number.checkValidity());
+
+        if (name.value.length == 0 || pass.value.length == 0) {
+          alert('Please enter details');
+        }
+        if (name.checkValidity()) {
+          $('#name + .feedback').css('display', 'inline');
+          $('#name + .feedback').css('color', 'green');
+          $('#name + .feedback').text('Valid Input');
+        } else {
+          $('#name + .feedback').css('display', 'inline');
+          $('#name + .feedback').css('color', 'red');
+          $('#name + .feedback').text('In-Valid Input');
+        }
+        if (name.checkValidity()) {
+          $('#password + .feedback').css('display', 'inline');
+          $('#password + .feedback').css('color', 'green');
+          $('#password + .feedback').text('Valid Input');
+          alert('Valid password');
+        } else {
+          $('#password + .feedback').css('display', 'inline');
+          $('#password + .feedback').css('color', 'red');
+          $('#password + .feedback').text('In-Valid Input');
+        }
+      });
+    </script>
+  </body>
+</html>
