@@ -8,12 +8,6 @@
       * {
         font-size: x-large;
       }
-      div {
-        padding: 10px;
-        margin: 10px;
-        background-color: lightblue;
-        border: 2px solid darkgreen;
-      }
     </style>
   </head>
   <body>
@@ -23,34 +17,13 @@
 
     <b>Ans:</b>
 
-    <div>
-      &lt;script&gt; <br />
-      let input1 = parseFloat(prompt("Enter first number"));<br />
-      let input2 = parseFloat(prompt("Enter Secon number"));<br />
-      let input3 = parseFloat(prompt("Enter third number"));<br />
-      let largestNumber = Math.max(input1, input2, input3);<br />
-      <br />
-      console.log("the maximum number is " + largestNumber);<br />
-      &lt;/script&gt;<br />
-      <h2>
-        you will get your Maximum number among as per you input three values in
-        prompt box bellow
-      </h2>
-    </div>
-
     <script>
-      let input1 = parseFloat(
-        prompt("Enter first number for find maximum number among 3 numbers")
-      );
-      let input2 = parseFloat(
-        prompt("Enter Secon number for find maximum number among 3 numbers")
-      );
-      let input3 = parseFloat(
-        prompt("Enter third number for find maximum number among 3 numbers")
-      );
-      let largestNumber = Math.max(input1, input2, input3);
+      function findMax(a, b, c) {
+        return a > b ? (a > c ? a : c) : b > c ? b : c;
+      }
+      const max = findMax(80, 40, 20);
 
-      document.write("the maximum number is " + largestNumber);
+      console.log("the maximum number of among 3 is: ", max);
     </script>
   </body>
 </html>

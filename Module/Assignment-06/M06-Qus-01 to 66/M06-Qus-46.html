@@ -27,41 +27,8 @@
       when you want to create a new array that has the same elements as an
       existing array, without modifying the original array.
     </p>
-    <h2>When to clone array?</h2>
-    <p>
-      If you want to perform some operations on an array, such as sorting,
-      filtering, or mapping, but you don’t want to modify the original array,
-      you can create a clone of the original array and perform the operations on
-      the clone instead.
-    </p>
-    <ul>
-      <li>
-        When passing an array to a function as an argument, you may want to
-        ensure that the function does not modify the original array. In this
-        case, you can pass a clone of the array instead.
-      </li>
-      <li>
-        If you want to preserve the original array for future reference, you can
-        create a clone of the original array and use the clone for further
-        processing or manipulation.
-      </li>
-      <li>
-        If you have an array that contains objects or arrays as elements, and
-        you want to avoid modifying the original objects or arrays, you can
-        create a clone of the array to work with, so that changes to the objects
-        or arrays in the clone do not affect the original objects or arrays.
-      </li>
-    </ul>
-    <h2>Using the Array.slice() Method</h2>
-    <p>
-      We use the slice method to create a shallow copy of an array. This method
-      creates a new array with a subset of the elements from the original array.
-    </p>
-    <p>
-      Example: This example shows the implementation of the above-explained
-      approach.
-    </p>
     <div>
+      <b>Example:</b> <br />
       const originalArray = [1, 2, 3]; <br />
       const clonedArray = originalArray.slice(); <br />
       console.log(clonedArray); <br />

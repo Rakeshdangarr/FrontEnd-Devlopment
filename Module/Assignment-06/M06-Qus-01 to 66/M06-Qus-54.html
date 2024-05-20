@@ -21,63 +21,25 @@
     <br />
 
     <b>Ans:</b>
-
-    <h1>form Validtion</h1>
-    <ul>
-      <li>"This field is required" (You can't leave this field blank).</li>
-      <li>
-        "Please enter your phone number in the format xxx-xxxx" (A specific data
-        format is required for it to be considered valid).
-      </li>
-      <li>
-        "Please enter a valid email address" (the data you entered is not in the
-        right format).
-      </li>
-      <li>
-        "Your password needs to be between 8 and 30 characters long and contain
-        one uppercase letter, one symbol, and a number." (A very specific data
-        format is required for your data).
-      </li>
-    </ul>
-    <p>
-      This is called form validation. When you enter data, the browser and/or
-      the web server will check to see that the data is in the correct format
-      and within the constraints set by the application. Validation done in the
-      browser is called client-side validation, while validation done on the
-      server is called server-side validation. In this chapter we are focusing
-      on client-side validation.
-    </p>
-    <p>
-      If the information is correctly formatted, the application allows the data
-      to be submitted to the server and (usually) saved in a database; if the
-      information isn't correctly formatted, it gives the user an error message
-      explaining what needs to be corrected, and lets them try again.
-    </p>
-    <br />
-    <p>
-      We want to make filling out web forms as easy as possible. So why do we
-      insist on validating our forms? There are three main reasons:
-    </p>
-    <ul>
-      <li>
-        <b>We want to get the right data, in the right format.</b> Our
-        applications won't work properly if our users' data is stored in the
-        wrong format, is incorrect, or is omitted altogether.
-      </li>
-      <li>
-        <b>We want to protect our users' data.</b>Forcing our users to enter
-        secure passwords makes it easier to protect their account information.
-      </li>
-      <li>
-        <b>We want to protect ourselves. </b>There are many ways that malicious
-        users can misuse unprotected forms to damage the application.
-      </li>
-    </ul>
-    <h2>Validating forms using JavaScript</h2>
-    <p>
-      You must use JavaScript if you want to take control over the look and feel
-      of native error messages. In this section we will look at the different
-      ways to do this.
-    </p>
+    <div>
+      <p>
+        HTML form validation can be done by JavaScript. If a form field (fname)
+        is empty, this function alerts a message, and returns false, to prevent
+        the form from being submitted:
+      </p>
+      <form name="myForm" onsubmit="return validateForm()" method="post">
+        Name: <input type="text" name="fname" />
+        <input type="submit" value="Submit" />
+      </form>
+      <script>
+        function validateForm() {
+          let x = document.forms["myForm"]["fname"].value;
+          if (x == "") {
+            alert("Name must be filled out");
+            return false;
+          }
+        }
+      </script>
+    </div>
   </body>
 </html>
