@@ -12,6 +12,7 @@
       href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,900"
       rel="stylesheet"
     />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <link
       rel="stylesheet"
       type="text/css"
@@ -47,10 +48,10 @@
           <p id="name" style="color: green">Name</p>
         </span>
         <div class="button">
-          <button>Web&nbsp;Layout</button>
-          <button>Logo</button>
-          <button>Banner</button>
-          <button>Flayer</button>
+          <button id="webLayout"><a href="#">Web&nbsp;Layout</a></button>
+          <button id="logo"><a href="#">Logo</a></button>
+          <button id="banner"><a href="#">Banner</a></button>
+          <button id="flayerbtn"><a href="#">Flayer</a></button>
         </div>
         <div action="" class="search">
           <label for=""><i class="fa-solid fa-magnifying-glass"></i></label>
@@ -59,6 +60,9 @@
       </div>
 
       <!-- Horizontal Menu2 end -->
+
+      <!-- hover service  -->
+
       <div class="service">
         <div class="moreService">
           <div class="title">
@@ -85,7 +89,84 @@
             </p>
           </div>
         </div>
+
+        <!-- logo -->
+
+        <div class="logoDetail"></div>
+
+        <!-- banner -->
+
+        <div class="bannerDetail"></div>
+
+        <!-- flayer -->
+
+        <div class="flayer">
+          <h2>Flayer</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta iusto
+            nobis voluptatem necessitatibus recusandae, atque adipisci ab velit,
+            beatae ex ullam incidunt maxime animi, dolor consequatur sapiente
+            quasi et ut delectus fugit error? Eligendi sapiente accu Lorem ipsum
+            dolor sit amet consectetur adipisicing elit. Sit, iure. Lorem ipsum,
+            dolor sit amet consectetur adipisicing elit. Expedita, ipsa?
+          </p>
+        </div>
       </div>
     </div>
+
+    <!-- Horizontal Menu2 start -->
+
+    <script>
+      // script hover on menu button start //////
+
+      $("#webLayout").mouseenter(function () {
+        $(".moreService").stop().fadeIn(0);
+      });
+
+      $("#webLayout").mouseleave(function () {
+        $(".moreService").stop().delay(500).fadeOut(500);
+      });
+
+      $("#webLayout").mouseenter(function () {
+        $(".moreService").stop();
+      });
+
+      $("#logo").mouseenter(function () {
+        $(".logoDetail").stop().fadeIn(0);
+      });
+
+      $("#logo").mouseleave(function () {
+        $(".logoDetail").stop().delay(500).fadeOut(500);
+      });
+
+      $("#logo").mouseenter(function () {
+        $(".logoDetail").stop();
+      });
+
+      $("#banner").mouseenter(function () {
+        $(".bannerDetail").stop().fadeIn(0);
+      });
+
+      $("#banner").mouseleave(function () {
+        $(".bannerDetail").stop().delay(500).fadeOut(500);
+      });
+
+      $("#banner").mouseenter(function () {
+        $(".bannerDetail").stop();
+      });
+
+      $("#flayerbtn").mouseenter(function () {
+        $(".flayer").stop().fadeIn(0);
+      });
+
+      $("#flayerbtn").mouseleave(function () {
+        $(".flayer").stop().delay(500).fadeOut(500);
+      });
+
+      $("#flayerbtn").mouseenter(function () {
+        $(".flayer").stop();
+      });
+      // script hover on menu button end //////
+    </script>
   </body>
 </html>

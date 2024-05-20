@@ -37,61 +37,58 @@
         display: none;
         position: absolute;
         left: 47%;
-        top: 10%;
+        top: 09%;
       }
       #email + .feedback {
         display: none;
         position: absolute;
         left: 47%;
-        top: 14%;
+        top: 13%;
       }
       #number + .feedback {
         display: none;
         position: absolute;
         left: 47%;
-        top: 19%;
+        top: 18%;
       }
       #dob + .feedback {
         display: none;
-        position: absolute;
-        left: 47%;
-        top: 27%;
       }
       #address + .feedback {
         display: none;
         position: absolute;
         left: 47%;
-        top: 36%;
+        top: 33%;
       }
       #cityName + .feedback {
         display: none;
         position: absolute;
         left: 47%;
-        top: 48%;
+        top: 46%;
       }
       #pincode + .feedback {
         display: none;
         position: absolute;
         left: 47%;
-        top: 52%;
+        top: 50%;
       }
       #stateName + .feedback {
         display: none;
         position: absolute;
         left: 47%;
-        top: 56%;
+        top: 54%;
       }
       #quali + .feedback {
         display: none;
         position: absolute;
         left: 47%;
-        top: 60%;
+        top: 58%;
       }
       #pass + .feedback {
         display: none;
         position: absolute;
         left: 47%;
-        top: 84%;
+        top: 81%;
       }
       button {
         background-color: rgb(6, 247, 6);
