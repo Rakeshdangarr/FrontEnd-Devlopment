@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact us</title>
+    <style>
+      * {
+        font-size: large;
+      }
+      body {
+        background-color: lightyellow;
+        background-image: url(https://cdn3.vectorstock.com/i/1000x1000/16/77/summer-green-nature-background-vector-33291677.jpg);
+      }
+      .data h1 {
+        text-align: center;
+        font-weight: 1000;
+        font-size: xx-large;
+        color: darkorange;
+        background-color: rgb(186, 233, 248);
+      }
+      span {
+        color: green;
+        font-weight: 1000;
+        font-size: xx-large;
+      }
+      .data {
+        border: 8px solid orange;
+        width: 40vw;
+        background-image: url(https://t4.ftcdn.net/jpg/04/82/20/61/360_F_482206198_jVHPnUmO9sR86vs5rukAlGVNMHn50w85.jpg);
+        padding: 2%;
+        position: absolute;
+        top: 10%;
+        left: 28%;
+        border-width: 0 0 2px;
+        filter: drop-shadow(rgb(92, 245, 92) 1rem 1rem 10px);
+      }
+      input {
+        opacity: 0.7;
+        border-width: 0 0 3px;
+      }
+      textarea {
+        opacity: 0.7;
+        border-width: 0 0 3px;
+        vertical-align: middle;
+      }
+      .button {
+        width: 150px;
+        background-color: darkorange;
+        color: darkgreen;
+        font-weight: 1000;
+        position: absolute;
+        left: 62%;
+        top: 88%;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="data">
+      <h1>Contact <span> us</span></h1>
+      <input type="text" id="name" name="nm" placeholder="Your Name" /> <br />
+      <input type="email" id="mail" name="mail" placeholder="Your Email" />
+      <br />
+      <textarea
+        name="message"
+        id="message"
+        cols="30"
+        rows="7"
+        placeholder="message..."
+      ></textarea>
+
+      <button class="button">Send</button>
+    </div>
+  </body>
+</html>

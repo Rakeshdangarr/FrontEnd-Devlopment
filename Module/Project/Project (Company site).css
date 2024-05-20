@@ -99,7 +99,7 @@ top: 10%;
 }
 /* Horizontal Menu2 end */
 
-/* content bar start */
+/* hover serives start */
 
 /* div 1  */
 .moreService{
@@ -190,4 +190,92 @@ background-color: red;
   display: none;
   color: white;}
   
+/* hover serivce start */
 
+/* containt start */
+
+.site{
+  width: 55vw;
+  height: 100vh;
+  /* border: 2px solid red; */
+  position: absolute;
+}
+.site h1{
+  text-decoration: underline;
+}
+
+.banner{
+  background-color: darkorange;
+  width: 40vw;
+  height: 95vh;
+  border-radius: 5px;
+  margin: 0;
+  padding: 0;
+}
+.project{
+  position: absolute;
+  left: 58%;
+  top: 65%;
+  margin: 0;
+  padding: 0;
+}
+.img1 img{
+  width: 60%;
+  height: 50vh;
+  position: absolute;
+  left: 20%;
+}
+
+.img2 h3{
+  position: absolute;
+top: 65%;
+
+}
+.img2 img{
+  height: 30vh;
+  width: 90%;
+  position: absolute;
+  left: 10%;
+top: 72%;
+}
+
+/* containt end */
+
+/* footer start */
+.footer{
+  width: 98vw;
+  height: 20vh;
+  background-color: rgb(73, 71, 71);
+  position: absolute  ;
+  text-align: center;
+  top: 175%;
+  font-size: x-large;
+  color: rgb(167, 166, 166);
+}
+.link a{
+  margin-left: 1%;
+  color: rgb(167, 166, 166);
+  font-weight: 100;
+  text-decoration: none;
+}
+.link2{
+  position: absolute;
+  top: 16%;
+  left: 9%;
+  width: 80vw;
+}
+.link2 a{
+  margin-left: 1%;
+  color: rgb(167, 166, 166);
+  font-weight: 100;
+  text-decoration: none;
+  margin-top: 0;
+}
+.text{
+  font-size: medium;
+  position: absolute;
+  top: 49%;
+  width: 40vw;
+  left: 30%;
+}
+/* footer end */
