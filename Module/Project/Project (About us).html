@@ -4,6 +4,28 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About us</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway:400,500i,700,800"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,900"
+      rel="stylesheet"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="Project (Company site).css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <style>
       body {
         background-color: darkorange;
@@ -24,7 +46,7 @@
         width: 37%;
         position: absolute;
         left: 62%;
-        top: 72%;
+        top: 89%;
         text-wrap: ;
       }
 
@@ -32,10 +54,109 @@
         font-size: 32px;
         color: rgb(102, 102, 102);
       }
+      /*Horizontal Menu1 start */
+
+      .menubar1 {
+        height: 5vh;
+        text-align: center;
+        background-color: rgb(43, 42, 42);
+        position: relative;
+      }
+      .menubar1 a {
+        margin-left: 1%;
+        color: rgb(134, 132, 132);
+        font-weight: 100;
+        font-size: x-large;
+        text-decoration: none;
+      }
+
+      /* Horizontal Menu1 end */
+      /* Horizontal Menu2 start */
+
+/* logo */
+
+.logo {
+  background-color: black;
+  font-size: xx-large;
+  position: relative;
+  height: 25vh;
+}
+.logo span{
+  display: flex;
+  left: 20%;
+}
+.logo i{
+  position: absolute;
+  left: 7%;
+  top: 25%;
+}
+.logo p{
+margin-left: 10%;
+  display: flex;
+  color: white;
+  -webkit-box-reflect: below 8px -webkit-gradient(linear, right top, right bottom, from(transparent), to(rgba(255, 255, 255, 0.4)));
+  
+}
+#name{
+  position: absolute;
+  top: 3%;
+  left: 10%;
+  -webkit-box-reflect: below 8px -webkit-gradient(linear, right top, right bottom, from(transparent), to(rgba(255, 255, 255, 0.4)));
+}
+
+/* search */
+
+.search i{
+  height: 30px;
+  padding: 4px;
+  border-radius: 5px;
+  text-align: center;
+  width: 50px;
+color: aliceblue;
+background-color: blueviolet;
+position: absolute;
+left: 70%;
+top: 10%;
+}
+.search input{
+  height: 40px;
+  position: absolute;
+  top: 09%;
+  left: 74.1%;
+  border-radius: 8px;
+  text-align: center;
+  font-size: x-large;
+}
+/* Horizontal Menu2 end */
     </style>
   </head>
 
   <body>
+    <!-- Horizontal Menu1 start -->
+
+    <div class="menubar1">
+      <a href="index.html">Home &nbsp;|</a>
+      <a href="Project (About us).html">About us &nbsp; |</a>
+      <a href="Project (Contact us).html">Contact us</a>
+    </div>
+
+    <!-- Horizontal Menu1 end -->
+     <!-- Horizontal Menu2 start -->
+     <div class="menubar2">
+      <div class="logo">
+        <span>
+          <i class="fa-solid fa-recycle" style="color: green"></i>
+          <p>Company</p>
+          <p id="name" style="color: green">Name</p>
+        </span>
+        <div action="" class="search">
+          <label for=""><i class="fa-solid fa-magnifying-glass"></i></label>
+          <input type="search" placeholder="serach..." />
+        </div>
+      </div>
+
+      <!-- Horizontal Menu2 end -->
+
     <div class="missiom">
       <img
         class="mainImg"
