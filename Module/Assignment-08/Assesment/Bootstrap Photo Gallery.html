@@ -43,6 +43,9 @@ hr {
   display:flex;
   flex-wrap: wrap;
 }
+#blankDiv{
+	margin-top: 50px;
+}
 
 </style>
 
@@ -91,18 +94,16 @@ hr {
 			</div>
 		</div>
 	</div>
-<div id="blankDiv" class="modal fade" tabindex="-1"role="dialog'>
-	<div class="modal-dialog">
+<div id="blankDiv" class="modal fade" tabindex="-1"role="dialog" >
+	<div class="dialog">
 		<div class ="content">
 			<div class="header">
-				<button type="button" class="close" data-dismiss="cancel"><i class="fa fa-times"></i>
+				<button type="button" class="close" data-dismiss="modal"><i class="fa fa-times"></i>
 				</button>
+			</div>
 		</div>
-		<div class="emptyDiv"></div>
+			<div class="emptyDiv"></div>
 	</div>
-	
-</div>
-</div>
 </div>
 <script>
 	 $('.images').click(function(){
