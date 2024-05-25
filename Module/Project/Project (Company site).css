@@ -1,6 +1,10 @@
 
 /*Horizontal Menu1 start */
-
+.main{
+  margin: 20px;
+  width: 90%;
+  justify-content: center;  
+}
 .menubar1 {
   height: 5vh;
   text-align: center;
@@ -129,12 +133,12 @@ top: 10%;
 
 /* div 2 */
 .content{
+  margin-left: 100px;
   font-size: large;
-  width: 60vw;
+  width: 40vw;
   position: absolute;
-  left: 150%;
   top: -5%;
-  text-align: start;
+  /* text-align: start; */
   color: white;}
 
 .button button:nth-child(1):hover .service .moreService{
@@ -201,8 +205,23 @@ background-color: red;
   position: absolute;
 }
 .site h1{
-  text-decoration: underline;
+  /* text-decoration: underline; */
+  margin-left: 50px;
+  margin-bottom: 0;
 }
+hr {
+	border: 0;
+    height: 3px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+  margin-left: 40px;
+
+    
+}
+.description p{
+  margin-left: 30px;
+  width: 80%;
+
+} 
 
 .banner{
   background-color: darkorange;
@@ -214,7 +233,7 @@ background-color: red;
 }
 .project{
   position: absolute;
-  left: 58%;
+  left: 50%;
   top: 65%;
   margin: 0;
   padding: 0;
@@ -243,7 +262,7 @@ top: 72%;
 
 /* footer start */
 .footer{
-  width: 98vw;
+  width: 88vw;
   height: 20vh;
   background-color: rgb(73, 71, 71);
   position: absolute  ;

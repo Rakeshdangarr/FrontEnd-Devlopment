@@ -1,0 +1,109 @@
+*{
+  box-sizing: border-box;
+  font-family: Papyrus, fantasy;
+
+}
+/* header start */
+.header{
+  position: relative;
+  background-color: blanchedalmond;
+  text-align: start;
+  margin: 50px;
+  margin-top: 20px;
+  font-family: Papyrus, fantasy;
+  display: flex;
+}
+.title{
+  text-shadow:5px 4px 5px cornflowerblue;
+}
+.title h1{
+  margin-bottom: 0;
+  margin: 30px;
+}
+.title h3{
+  text-align: center;
+}
+.menubar1{
+  background-color: blanchedalmond;
+  position: absolute;
+  top: 30%;
+  left: 45%;
+
+}
+.menubar1 a{
+  text-decoration: none;
+  padding: 30px;
+  font-size: x-large;
+  color: black;
+  font-weight: 700;
+}
+/* header end */
+/* content start */
+.mainContent{
+  top: 55%;
+  width: 90vw;
+  height: fit-content;
+  position: absolute;
+  margin: 50px;
+  margin-top: 0px;
+  background-color: rgb(252, 202, 78);
+  display: flex;
+}
+.description h1{
+  margin-left: 50px;
+  margin-bottom: 0px;
+}
+hr{
+  border: 0;
+  width: 90%;
+  height: 3px;
+  background-image: linear-gradient(to right, rgba(4, 139, 34, 0.75), rgba(89, 230, 34, 0.75), rgba(2, 150, 64, 0));
+  margin-left: 40px;  
+}
+.text ul li{
+  padding: 10px;
+  margin-left: 80px;
+  list-style-type: '🏹';
+
+}
+
+.banner{
+  background-color: lightgreen;
+  text-align: center;
+  width: 30%;
+  position: absolute;
+  margin-top: 8px;
+  margin-right: 5px;
+  left: 69%;
+  border: 2px solid lightgreen;
+  border-radius: 8px;
+  box-shadow: 5px 5px 10px lightgreen;
+  animation: mymove 5s infinite;
+
+}
+
+@keyframes mymove {
+  60% {box-shadow: 10px 20px 30px darkorange;}
+}
+.banner img{
+  width: fit-content;
+  height: fit-content;
+}
+/* content end */
+/* footer start */
+.footer{
+  color: white;
+  position: absolute;
+  background-color: black;
+  width: 90vw;
+  top: 129vh;
+  margin: 50px;
+  text-align: center;
+}
+.link a{
+  text-decoration: none;
+  font-size: large;
+  color: whitesmoke;
+  font-weight: 400;
+  padding: 10px;
+}
