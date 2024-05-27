@@ -12,9 +12,15 @@
   margin-top: 20px;
   font-family: Papyrus, fantasy;
   display: flex;
+  border: 2px solid;
+  padding: 5px;
 }
 .title{
   text-shadow:5px 4px 5px cornflowerblue;
+  border: 2px solid ;
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px cornflowerblue;
+  margin-left: 5px;
 }
 .title h1{
   margin-bottom: 0;
@@ -24,6 +30,9 @@
   text-align: center;
 }
 .menubar1{
+  border: 2px solid ;
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px cornflowerblue;
   background-color: blanchedalmond;
   position: absolute;
   top: 30%;
