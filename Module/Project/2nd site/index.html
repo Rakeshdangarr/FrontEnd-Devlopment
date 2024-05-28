@@ -44,91 +44,32 @@
     </div>
     <!-- header end -->
     <!-- slider start -->
-    <div class="slider">
-      <div class="slide1">
-        <a href="#"
-          ><img
-            src="https://istarmax.com/wp-content/uploads/2022/02/30000-e1652326284309-1024x585.jpg"
-            alt=""
-        /></a>
+    <div class="sliderContainer">
+      <img
+        src="https://istarmax.com/wp-content/uploads/2022/02/30000-e1652326284309-1024x585.jpg"
+        alt="grass"
+      />
+      <img
+        src="https://gadgetsandwearables.com/wp-content/uploads/2020/05/oppo-watch-vs-mi-watch-vs-realme-watch-what-the-difference.jpg"
+        alt="flowers"
+      />
+      <img
+        src="https://www.beyoung.in/blog/wp-content/uploads/2023/05/header-final.jpg"
+        alt="golden sun"
+      />
+      <img
+        src="https://imgeng.jagran.com/images/2023/apr/best%20smartwatches%20brands%20in%20India1681989574570.jpg"
+        alt="fruits"
+      />
+      <div class="nextCircle">
+        <i class="fa fa-arrow-right next" aria-hidden="true"></i>
       </div>
-      <div class="slide2">
-        <a href="#"
-          ><img
-            src="https://gadgetsandwearables.com/wp-content/uploads/2020/05/oppo-watch-vs-mi-watch-vs-realme-watch-what-the-difference.jpg"
-            alt=""
-        /></a>
-      </div>
-      <div class="slide3">
-        <a href="#"
-          ><img
-            src="https://www.beyoung.in/blog/wp-content/uploads/2023/05/header-final.jpg"
-            alt=""
-        /></a>
-      </div>
-      <div class="slide4">
-        <a href="#"
-          ><img
-            src="https://imgeng.jagran.com/images/2023/apr/best%20smartwatches%20brands%20in%20India1681989574570.jpg"
-            alt=""
-        /></a>
+      <div class="prevCircle">
+        <i class="fa fa-arrow-left previous" aria-hidden="true"></i>
       </div>
     </div>
-
     <!-- content start -->
-    <div class="mainContent">
-      <div class="description">
-        <h1>Content Heading</h1>
-        <hr />
-        <div class="text">
-          <ul>
-            <li>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Cupiditate, officia.
-            </li>
-            <li>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Suscipit, nobis.
-            </li>
-            <li>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Assumenda, debitis!
-            </li>
-            <li>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Cupiditate, officia.
-            </li>
-            <li>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Suscipit, nobis.
-            </li>
-            <li>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Assumenda, debitis!
-            </li>
-            <li>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Cupiditate, officia.
-            </li>
-            <li>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Suscipit, nobis.
-            </li>
-            <li>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Assumenda, debitis!
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="banner">
-        <h1>banner titile</h1>
-        <img
-          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAllPFjGNTDIw12Rr426PsDF1ZjIqveIBcUKS5Mh_uAQ&s"
-          alt=""
-        />
-      </div>
-    </div>
+
     <!-- content end -->
     <!-- footer start -->
     <div class="footer">
@@ -146,5 +87,43 @@
         </p>
       </div>
     </div>
+
+    <!-- script for slider start -->
+    <script>
+      $(function () {
+        var i = 0;
+        $(".next").on("click", function () {
+          i = i + 1;
+          if (i == $("img").length) {
+            i = 0;
+          }
+          var currentImg = $("img").eq(i);
+          var prevImg = $("img").eq(i - 1);
+          animateImage(prevImg, currentImg);
+        });
+        $(".previous").on("click", function () {
+          if (i == 0) {
+            prevImg = $("img").eq(0);
+            i = $("img").length - 1;
+            currentImg = $("img").eq(i);
+          } else {
+            i = i - 1;
+            currentImg = $("img").eq(i);
+            prevImg = $("img").eq(i + 1);
+          }
+          animateImageLeft(prevImg, currentImg);
+        });
+        function animateImageLeft(prevImg, currentImg) {
+          currentImg.css({ left: "100%" });
+          currentImg.animate({ left: "0%" }, 1000);
+          prevImg.animate({ left: "-100%" }, 1000);
+        }
+        function animateImage(prevImg, currentImg) {
+          currentImg.css({ left: "-100%" });
+          currentImg.animate({ left: "0%" }, 1000);
+          prevImg.animate({ left: "100%" }, 1000);
+        }
+      });
+    </script>
   </body>
 </html>
