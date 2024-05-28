@@ -51,6 +51,7 @@
 /* slider start */
 .sliderContainer {
   position: relative;
+  /* display: none; */
   width: 93%;
   height: 90vh;
   margin: 0 auto;
@@ -135,6 +136,8 @@ img {
 /* slider end */
 
 /* content start */
+/* card */
+
   /* content end */
 /* footer start */
 .footer{
