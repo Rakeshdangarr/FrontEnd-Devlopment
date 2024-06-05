@@ -31,10 +31,12 @@ font-size: 18px;
 .user-img img{
     width: 45px !important;
     height: 45px !important;
+
 }
-.navbar-link li 
+
+.navbar-link ul li 
 {
-    display:block !important;
+    display: block;
     padding: 5px 15px;
 }
 .containt{
