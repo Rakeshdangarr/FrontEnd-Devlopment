@@ -23,14 +23,13 @@
     <b>Ans:</b>
 
     <script>
-      char = parseInt(prompt("Check Character Is Vowel or Not"));
-
       let vowelList = ["a", "e", "i", "o", "u", "A", "E", "I", "O", "U"];
 
+      vowel = prompt("Check Character Is Vowel or Not");
       function checkVowel(char) {
         let result = false;
         for (i = 0; i < 10; i++) {
-          if (vowelList[i] === char) {
+          if (vowelList[i] == char) {
             result = true;
           }
         }
