@@ -68,7 +68,7 @@
               type="button"
               id="btn"
               class="btn btn-lg border border-0 bg-white w-100 p-3 shadow fs-4"
-              onclick="return getResult(this.value)"
+              onclick="clr()"
             >
               C
             </button>
@@ -100,9 +100,8 @@
             <button
               type="button"
               id="btn"
-              value="%"
               class="btn btn-lg border border-0 bg-white w-100 p-3 shadow fs-4"
-              onclick="return getResult(this.value)"
+              onclick="sqrResult()"
             >
               x<sup>2</sup>
             </button>
@@ -113,7 +112,7 @@
               id="btn"
               value="2√x"
               class="btn btn-lg border border-0 bg-white w-100 p-3 shadow fs-4"
-              onclick="return getResult(this.value)"
+              onclick="sqrtResult()"
             >
               <sup>2</sup>√x
             </button>
@@ -307,6 +306,7 @@
               type="button"
               id="btn"
               class="btn btn-lg border border-0 bg-primary w-100 p-3 shadow fs-4"
+              onclick="getFinalResult()"
             >
               =
             </button>
