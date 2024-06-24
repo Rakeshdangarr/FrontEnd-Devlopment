@@ -4,6 +4,10 @@
     box-sizing: border-box;
 
 }
+/* anchor tag id direct use */
+html{
+    scroll-behavior: smooth;
+}
 /* header start */
 
 /*header menu start */
