@@ -10,8 +10,12 @@
 .title a img{
     width: 300px;
     height: 120px;
-    margin-left: 39%;   
+    margin-left: 39%;  
+    transition: 0.6s; 
 }
+.title a img:hover {
+    box-shadow: 0 12px 16px 0 rgb(253, 234, 197),0 17px 50px 0 rgb(253, 234, 197);
+  }
 .title{
     box-shadow: 2px 2px 2px wheat;
     margin: 0;
@@ -93,6 +97,9 @@ gap: 10px;
     transition: 0.3s;
     width: 100%;
     height: 20%;
+  }
+  .card:hover {
+    box-shadow: 0 12px 16px 0 rgb(253, 234, 197),0 17px 50px 0 rgb(253, 234, 197);
   }
   
   .container {
@@ -268,3 +275,194 @@ width: auto;
     list-style-type: none;
     margin-right: 2% ;
 }
+.brandImg{
+    margin: auto;
+
+}
+.brandImg img{
+    width: 95%;
+    margin-left: 03%;
+    margin-top: 02%;
+    border-radius: 8px;
+    border: 2px solid orange;
+}
+/* legacy end */
+
+/* WRIST DIARIES start */
+.diaries h1{
+text-align: center;
+margin-top: 2%;
+}
+.diaries-card{
+margin: auto;
+border: 5px double wheat;
+height: 85vh;
+width: 91%;
+background-color: whitesmoke;
+
+}
+.blogCard1 {
+position: absolute;
+left: 6%;
+top: 626vh;
+color: black;
+}
+.blogCard1 img {
+width: 32%;
+}
+.blogCard1 h5 {
+color: lightblue;
+}
+.blogCard1 a {
+text-decoration: none;
+}
+
+.blogCard2 {
+position: absolute;
+left: 33%;
+top: 666vh;
+color: black;
+}
+.blogCard2 img {
+width: 50%;
+}
+.blogCard2 h5 {
+color: lightblue;
+}
+.blogCard2 a {
+text-decoration: none;
+}
+
+
+.blogCard3 {
+position: absolute;
+left: 64%;
+top: 626vh;
+
+color: black;
+}
+.blogCard3 img {
+width: 85%;
+}
+.blogCard3 h5 {
+color: lightblue;
+}
+.blogCard3 a {
+text-decoration: none;
+}
+
+.diaries-card a button{
+border: none;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+      background-color: white;
+      color: black;
+      font-weight: 80px;
+      border: 2px solid #e7e7e7;
+      border-radius: 20px;
+      position: absolute;
+      left: 44%;
+      top: 626vh;
+}
+.diaries-card a button:hover {background-color: wheat}  
+
+/* WRIST DIARIES end */
+
+/* footer start */
+.footer{
+    display: flex;
+    background-image: url(../images/footer\ 2.webp);
+    background-repeat: no-repeat;
+    opacity: 0.8;
+    background-size: 100%;
+    height: 100vh;
+    gap: 15%;
+    padding: 8%;
+    margin-top: 1%;
+    font-size: large;
+    color: white
+}
+.ourWorld ul li a{
+    text-decoration: none;
+    color: wheat;
+}
+
+.ourWorld ul li{
+    margin-bottom:15px ;
+    list-style-type:none ;
+}
+
+.support ul li a{
+    text-decoration: none;
+    color: wheat;
+
+}
+
+.support ul li{
+    margin-bottom:15px ;
+    list-style-type:none ;
+}
+.contact p{
+    color: wheat;
+}
+.subscribe button{
+    background-color: white;
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  border-radius: 8px;
+}
+
+.subscribe button:hover {
+    box-shadow: 0 12px 16px 0 rgb(253, 234, 200),0 17px 50px 0 rgb(253, 234, 197);
+  }
+  .subscribe input{
+    
+    padding: 5px 12px;
+    font-size: 16px;
+    border: 1px solid bisque;
+    border-radius: 6px;
+    outline: none;
+  }
+  .subscribe p{
+color: wheat;
+  }
+
+  .social{
+    position: absolute;
+    top: 758vh;
+    width: 50%;
+    left: 47%;
+  }
+  .social h2{
+    color: white;
+    margin-bottom: 3%;
+  }
+  .social a{
+    margin-top: 2%;
+    text-decoration: none;
+    font-size: xx-large;
+    padding: 1%;
+    transition-duration: 0.4s;
+  border-radius: 8px;
+
+  }
+  .social a:hover {
+    box-shadow: 0 12px 16px 0 rgb(253, 234, 200),0 17px 50px 0 rgb(253, 234, 197);
+  }
+
+  /* footer end */
