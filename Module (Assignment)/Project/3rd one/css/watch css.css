@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
 }
 /* header start */
 
@@ -24,10 +23,10 @@
     box-shadow: 2px 2px 2px wheat;
 }
 .menu ul{
-margin-left: 23%;
-height: 50px;
-margin-top: 25px;
-margin-bottom: 20px;
+    margin-left: 23%;
+    height: 50px;
+    margin-top: 25px;
+    margin-bottom: 20px;
 
 }
 .menu ul li{
@@ -62,32 +61,34 @@ gap: 10px;
 /* banner section start */
 .banner img{
     width: 100%;
-    margin-top: 2%;
 }
 /* banner section start */
 
-/* new arival section start */
+/* Watch section start */
 
-.newArival h1{
+.watchSection h1{
     text-align: center;
-    margin-top: 80px;
-    margin-bottom: 50px;
+    margin-top: 10px;
 
-
+}
+.card img{
+    justify-content: center;
+    width: 80%;
+    height: 100%;
 }
 .wraper1{
-    margin-top: 25px;
+    margin-top: 15px;
     display: flex;
-    margin-bottom: 50px;
 }
 .wraper1 a{
+
     margin: auto;
     text-decoration: none;
     color: black;
-    gap: 10%;
+
 }
 .wraper2{
-    margin-top: 35px;
+    margin-top: 15px;
     display: flex;
 }
 .wraper2 a{
@@ -117,14 +118,11 @@ gap: 10px;
 
   /* category start */
   .category{
-    margin-top: 8%;
-    margin-bottom: 5%;
-
-
+    margin-top: 2%;
   }
   .category h1{
     text-align: center;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 .section{
     margin: auto;
@@ -132,7 +130,7 @@ gap: 10px;
     display: flex;
     width: 91%;
     overflow: hidden;
-    height: 150vh;
+    height: 80vh;
     gap: 10px;
     padding: 10px;
 }
@@ -146,7 +144,7 @@ gap: 10px;
     width: 33%;
     padding: 15px;
     left: 11%;
-    top: 335vh;
+    top: 300vh;
     border-radius: 100px;
 }
 .description1 a button{
@@ -178,7 +176,7 @@ gap: 10px;
     width: 33%;
     padding: 17px;
     left: 57%;
-    top: 335vh;
+    top: 300vh;
     border-radius: 100px;
 
 }
@@ -200,186 +198,7 @@ gap: 10px;
     border-radius: 20px;
   }
 .description2 a button:hover {background-color: lightpink}
-.service{
-   position: absolute; 
-   top: 368vh;
-}
-.service img{
-    width: 80%;
-}
-.description3{
-    height: 33vh;
-    position: absolute;
-    text-align: center;
-    background-color: wheat;
-    width: 40%;
-    padding: 30px;
-    left: 58%;
-    top: 22vh;
-    border-radius: 100px;
-    padding-bottom: 10px;
-
-}
-.description3 a button{
-    border: none;
-    padding: 16px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    transition-duration: 0.4s;
-    cursor: pointer;
-      background-color: white;
-      color: black;
-      font-weight: 80px;
-      border: 2px solid #e7e7e7;
-      border-radius: 20px;
-}
-.description3 a button:hover {background-color: lightgrey}
-
 /* Category end */
-
-/* legacy start */
-.legacy{
-    background-color: wheat;
-    margin-top: 5%;
-    width: 90%;
-    margin: auto;
-    padding: 2%;
-}
-.aboutLegacy{
-    margin: auto;
-    text-align: center;
-}
-.aboutLegacy p{
-    font-size: x-large;
-    text-align: center;
-width: auto;
-}
-.values{
-    text-align: center;
-    margin-top: 3%;
-}
-.values p{
-    font-size: x-large;
-
-}
-.icon{
-    width: 18%;
-    height: 20%;
-    margin-top: 5%;
-    margin-left: 15%;
-    
-
-}
-.icon ul{
-    display: flex;
-    gap: 80%;
-}
-.icon ul li{
-    font-size: x-large;
-    list-style-type: none;
-    margin-right: 2% ;
-}
-.brandImg{
-    margin: auto;
-
-}
-.brandImg img{
-    width: 95%;
-    margin-left: 03%;
-    margin-top: 02%;
-    border-radius: 8px;
-    border: 2px solid orange;
-}
-/* legacy end */
-
-/* WRIST DIARIES start */
-.diaries h1{
-text-align: center;
-margin-top: 2%;
-}
-.diaries-card{
-margin: auto;
-border: 5px double wheat;
-height: 85vh;
-width: 91%;
-background-color: whitesmoke;
-
-}
-.blogCard1 {
-position: absolute;
-left: 6%;
-top: 678vh;
-color: black;
-}
-.blogCard1 img {
-width: 32%;
-}
-.blogCard1 h5 {
-color: lightblue;
-}
-.blogCard1 a {
-text-decoration: none;
-}
-
-.blogCard2 {
-position: absolute;
-left: 33%;
-top: 718vh;
-color: black;
-}
-.blogCard2 img {
-width: 50%;
-}
-.blogCard2 h5 {
-color: lightblue;
-}
-.blogCard2 a {
-text-decoration: none;
-}
-
-
-.blogCard3 {
-position: absolute;
-left: 64%;
-top: 678vh;
-
-color: black;
-}
-.blogCard3 img {
-width: 85%;
-}
-.blogCard3 h5 {
-color: lightblue;
-}
-.blogCard3 a {
-text-decoration: none;
-}
-
-.diaries-card a button{
-border: none;
-    padding: 16px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    transition-duration: 0.4s;
-    cursor: pointer;
-      background-color: white;
-      color: black;
-      font-weight: 80px;
-      border: 2px solid #e7e7e7;
-      border-radius: 20px;
-      position: absolute;
-      left: 44%;
-      top: 686vh;
-}
-.diaries-card a button:hover {background-color: wheat}  
-
-/* WRIST DIARIES end */
 
 /* footer start */
 .footer{
@@ -449,9 +268,9 @@ border: none;
 color: wheat;
   }
 
-  .social{  
+  .social{
     position: absolute;
-    top: 813vh;
+    top: 393vh;
     width: 50%;
     left: 47%;
   }
@@ -465,7 +284,7 @@ color: wheat;
     font-size: xx-large;
     padding: 1%;
     transition-duration: 0.4s;
-  border-radius: 8px;
+    border-radius: 100px;
 
   }
   .social a:hover {
