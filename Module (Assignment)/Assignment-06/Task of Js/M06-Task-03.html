@@ -3,140 +3,151 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Module-06 Task-03</title>
+    <title>Module-06 Task-03 slider</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <style>
       * {
-        margin: 10px;
-        padding: 10px;
+        padding: 0;
+        margin: 0;
         box-sizing: border-box;
       }
+      
+      body {
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+        align-items: center;
+        height: 100vh;
+      }
       .main {
-        padding: 10px;
-        margin: auto;
-        background-color: whitesmoke;
-        border: 2px solid darkgreen;
-        width: fit-content;
-        font-size: large;
-        border-radius: 5px;
-      }
-      h2 {
-        text-align: center;
-      }
-      .subject {
-        position: absolute;
-        margin-top: 0.3%;
-        font-size: xx-large;
-      }
-      input {
-        justify-content: space-between;
-        display: grid;
-        margin-left: 49%;
-      }
-      button {
-        color: antiquewhite;
+        width: 600px;
+        height: 300px;
         background-color: black;
-        font-size: large;
-        margin-left: 40%;
-        border-radius: 9%;
-        border: 2px solid whitesmoke;
+        align-self: center;
+        text-align: center;
+        color: white;
       }
-      .pers {
-        font-size: x-large;
+      .main h2 {
+        color: rgb(97, 97, 97);
+      }
+      .parent {
+        width: 600px;
+        height: 300px;
+        background-color: black;
+        display: flex;
         justify-content: center;
-        margin-left: 01%;
+        gap: 30px;
+        padding: 30px;
+        position: relative;
+        overflow: hidden;
       }
-      .Total {
-        font-size: x-large;
-        margin-left: 05%;
+
+      .child {
+        scale: 1.2;
+        height: 100px;
+        width: 100px;
+        background-color: cornflowerblue;
+        border: 1px solid;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid black;
+      }
+
+      .left-btn {
+        display: flex;
+        font-size: 25px;
+        margin: 10px;
+        padding: 10px;
+        position: absolute;
+        top: 50%;
+        left: 42%;
+        color: white;
+        background-color: black;
+      }
+      .right-btn {
+        top: 50%;
+        position: absolute;
+background-color: black;
+        font-size: 25px;
+        margin: 10px;
+        padding: 10px;
+        color: white;
       }
     </style>
   </head>
   <body>
     <b>Qus:</b>
-    <h1>Create result</h1>
+    <h1>Create a slider using JavaScript</h1>
 
     <br />
 
     <b>Ans:</b>
+
     <div class="main">
-      <h1>Marksheet for Information Technology</h1>
-      <h2>Enter mark</h2>
-      <label for="text" class="subject">1. C Language</label>
-      <input type="number" id="value1" /> <br />
-      <label for="text" class="subject">2. C++ Language</label>
-      <input type="number" id="value2" /><br />
-      <label for="text" class="subject">3. Database</label>
-      <input type="number" id="value3" /><br />
-      <label for="text" class="subject">4. HTML</label>
-      <input type="number" id="value4" /><br />
-      <label for="text" class="subject">5. CSS</label>
-      <input type="number" id="value5" /><br />
-      <label for="text" class="subject">6. php</label>
-      <input type="number" id="value6" /><br />
-      <label for="text" class="subject">7. Core java</label>
-      <input type="number" id="value7" /><br />
-      <button id="click">Result</button> <br />
-
-      <label for="text" class="Total"
-        >Total is <span id="result"></span>/350</label
-      >
-
-      <label class="pers" for="text"
-        >Percentage is : <span id="percentage"></span>%</label
-      >
-
-      <script>
-        document.getElementById("click").addEventListener("click", () => {
-          input1 = Number(document.getElementById("value1").value);
-          input2 = Number(document.getElementById("value2").value);
-          input3 = Number(document.getElementById("value3").value);
-          input4 = Number(document.getElementById("value4").value);
-          input5 = Number(document.getElementById("value5").value);
-          input6 = Number(document.getElementById("value6").value);
-          input7 = Number(document.getElementById("value7").value);
-
-          let result = finalPercentage(
-            input1,
-            input2,
-            input3,
-            input4,
-            input5,
-            input6,
-            input7
-          );
-          document.getElementById("result").innerText = result[0];
-          document.getElementById("percentage").innerText = result[1];
-          colorDisplay(result[1]);
-        });
-
-        function finalPercentage(
-          input1,
-          input2,
-          input3,
-          input4,
-          input5,
-          input6,
-          input7
-        ) {
-          total = input1 + input2 + input3 + input4 + input5 + input6 + input7;
-          percentage = Math.floor((total * 100) / 350);
-
-          return [total, percentage];
-        }
-
-        function colorDisplay(percentage) {
-          if (percentage < 35) {
-            document.getElementsByClassName("main")[0].style.backgroundColor =
-              "red";
-          } else if (percentage == 35) {
-            document.getElementsByClassName("main")[0].style.backgroundColor =
-              "lightgreen";
-          } else if (percentage > 35) {
-            document.getElementsByClassName("main")[0].style.backgroundColor =
-              "green";
-          }
-        }
-      </script>
+      <h1>Simple javascript slider</h1>
+      <h2>Created by Dropinks</h2>
+      <div class="parent">
+        <div class="child" style="background-color: yellow"></div>
+        <div class="child" style="background-color: red"></div>
+        <div class="child" style="background-color: purple"></div>
+        <div class="child"  style="background-color: rgb(19, 128, 19)"></div>
+        <div class="child" style="background-color: skyblue"></div>
+      </div>
+      <button class="left-btn"><i
+        class="fa-solid fa-arrow-left"
+      ></i></button>
+      <button class="right-btn"><i
+        class="fa-solid fa-arrow-right"
+      ></i></button>s
+      </div>
     </div>
+
+    <script>
+
+      parent = document.getElementsByClassName('parent')[0];
+      let leftBtn = document.getElementsByClassName('left-btn')[0];
+      let rightBtn = document.getElementsByClassName('right-btn')[0];
+
+      children = parent.children;
+      let leftCounter = 1;
+      let rightCounter = 1;
+      leftBtn.addEventListener('click', () => {
+        if (leftCounter == 5) {
+          leftBtn.setAttribute('disabled', '');
+        }
+        rightBtn.removeAttribute('disabled');
+        if (leftCounter < 5) {
+          for (i = 0; i < children.length; i++) {
+            children[i].style.transform = `translateX(-${leftCounter * 50}px)`;
+          }
+          leftCounter++;
+        }
+      });
+      rightBtn.addEventListener('click', () => {
+        if (rightCounter == 5) {
+          rightBtn.setAttribute('disabled', '');
+        }
+        leftBtn.removeAttribute('disabled');
+        if (rightCounter < 5) {
+          for (i = 0; i < children.length; i++) {
+            children[i].style.transform = `translateX(${rightCounter * 50}px)`;
+          }
+          rightCounter++;
+        }
+      });
+    </script>
   </body>
 </html>

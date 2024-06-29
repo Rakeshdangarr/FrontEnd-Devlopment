@@ -3,8 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Module-06 Task-01-</title>
+    <title>Module-06 Task-01 simple calculater</title>
     <style>
+      * {
+        margin: 10px;
+        padding: 10px;
+        box-sizing: border-box;
+      }
       div {
         padding: 10px;
         margin: 10px;
@@ -12,34 +17,102 @@
         border: 2px solid darkgreen;
         font-size: large;
         width: fit-content;
+        font-size: large;
+      }
+      h1 {
+        text-align: center;
+        text-decoration: underline darksalmon 4px;
+      }
+      #plus {
         font-size: x-large;
-        margin: auto;
+      }
+      #sub {
+        font-size: x-large;
+      }
+      #multi {
+        font-size: x-large;
+      }
+      #div {
+        font-size: x-large;
+      }
+      #pers {
+        font-size: x-large;
+      }
+      label {
+        font-size: x-large;
       }
     </style>
   </head>
   <body>
-    <b>Qus:</b> Create password field with show hide functionalities
+    <b>Qus:</b> Create basic math operation in JS
 
     <br />
 
     <b>Ans:</b>
     <div>
       <form action="">
-        <label for="password">Enter Password:</label>
-        <input type="password" name="" value="" id="pass." /> <br />
-        <input type="checkbox" onclick="visible()" name="" id="" />
-        <label for="text">Show Password</label>
+        <h1>Maths operation</h1>
+
+        Enter 1st number :
+        <input type="number" name="" id="value1" /> <br />
+        Enter 2nd number :
+        <input type="number" name="" id="value2" />
+        <br />
+        <input type="button" value="+" id="plus" />
+        <input type="button" value="-" id="sub" />
+        <input type="button" value="*" id="multi" /> <br />
+        <input type="button" value="/" id="div" />
+        <input type="button" value="%" id="pers" />
+
+        <label for="text">Answer is :</label>
+        <span id="result"></span>
       </form>
     </div>
 
     <script>
-      function visible() {
-        var x = document.getElementById("pass.");
-        if (x.type === "password") {
-          x.type = "text";
-        } else {
-          x.type = "password";
-        }
+      document.getElementById("plus").addEventListener("click", () => {
+        input1 = Number(document.getElementById("value1").value);
+        input2 = Number(document.getElementById("value2").value);
+        document.getElementById("result").innerHTML = pluse(input1, input2);
+      });
+      function pluse(input1, input2) {
+        return input1 + input2;
+      }
+
+      document.getElementById("sub").addEventListener("click", () => {
+        input1 = Number(document.getElementById("value1").value);
+        input2 = Number(document.getElementById("value2").value);
+        document.getElementById("result").innerHTML = sub(input1, input2);
+      });
+      function sub(input1, input2) {
+        return input1 - input2;
+      }
+
+      document.getElementById("multi").addEventListener("click", () => {
+        input1 = Number(document.getElementById("value1").value);
+        input2 = Number(document.getElementById("value2").value);
+        document.getElementById("result").innerHTML = multi(input1, input2);
+      });
+      function multi(input1, input2) {
+        return input1 * input2;
+      }
+
+      document.getElementById("div").addEventListener("click", () => {
+        input1 = Number(document.getElementById("value1").value);
+        input2 = Number(document.getElementById("value2").value);
+        document.getElementById("result").innerHTML = div(input1, input2);
+      });
+      function div(input1, input2) {
+        return input1 / input2;
+      }
+
+      document.getElementById("pers").addEventListener("click", () => {
+        input1 = Number(document.getElementById("value1").value);
+        input2 = Number(document.getElementById("value2").value);
+        document.getElementById("result").innerHTML = pers(input1, input2);
+      });
+      function pers(input1, input2) {
+        return input1 % input2;
       }
     </script>
   </body>
