@@ -4,38 +4,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Module-06 Qus-23</title>
-    <style>
-      * {
-        font-size: x-large;
-      }
-      div {
-        padding: 10px;
-        margin: 10px;
-        background-color: lightblue;
-        border: 2px solid darkgreen;
-      }
-    </style>
   </head>
   <body>
     <b>Qus:</b>Find the Character Is Vowel or Not ?
     <br />
 
     <b>Ans:</b>
-
+    it will be show true if enter Character is vowel or show false if enter
+    Character is not vowel.
+    <br />
     <script>
-      let vowelList = ["a", "e", "i", "o", "u", "A", "E", "I", "O", "U"];
+      let input = prompt("Please enter any one Character!");
+      let vowels = ["a", "e", "i", "o", "u", "A", "E", "I", "O", "U"];
+      let result = vowels.includes(input);
 
-      vowel = prompt("Check Character Is Vowel or Not");
-      function checkVowel(char) {
-        let result = false;
-        for (i = 0; i < 10; i++) {
-          if (vowelList[i] == char) {
-            result = true;
-          }
-        }
-        return result;
-      }
-      console.log(char);
+      document.write(result);
     </script>
   </body>
 </html>
