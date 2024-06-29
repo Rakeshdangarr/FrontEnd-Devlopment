@@ -9,3 +9,4 @@ const ad=()=>{
     console.log(c)
 }
 ad()
+ 
