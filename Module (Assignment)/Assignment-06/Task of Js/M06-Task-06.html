@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Module-06 Task-06 form validation</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      .main {
+        background-color: white;
+        box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.2),
+          5px 10px 40px 10px rgba(110, 109, 109, 0.19);
+        width: 30%;
+        margin: auto;
+        justify-content: center;
+        height: 95vh;
+        position: relative;
+      }
+      form {
+        position: absolute;
+        top: 10%;
+        left: 5%;
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+      }
+      form h1 {
+        text-align: center;
+      }
+      input {
+        margin-left: 5;
+        margin: 6%;
+        width: 90%;
+      }
+      #btn {
+        width: 25vw;
+      }
+    </style>
+  </head>
+  <body>
+    <b>Qus:</b>
+    <h1>Create a form and apply validations as shown in below example.</h1>
+
+    <br />
+
+    <b>Ans:</b>
+    <div class="main">
+      <form action="post" name="frm">
+        <h1>Sign Up</h1>
+        <br />
+        Username;
+        <input type="text" name="uname" />
+        <span id="uname"></span>
+        Email:
+        <input type="email" name="email" />
+        <span></span>
+        Password:
+        <input type="password" name="password" />
+        <span></span>
+        Confirm Password:
+        <input type="password" name="confirm" />
+        <span></span>
+        <button
+          type="button"
+          id="btn"
+          type="submit"
+          onclick="return valid()"
+          class="btn btn-primary"
+        >
+          SIGN UP
+        </button>
+      </form>
+    </div>
+    <script>
+      let uName = document.getElementsByName("uname")[0];
+      console.log(uName);
+      let pattern = /^[A-Za-z][A-Za-z0-9_]{7,29}$/;
+      function valid() {
+        uNameVal = uName.value;
+        // validation on User name
+        console.log(pattern.test(uNameVal));
+        if (!pattern.test(uNameVal)) {
+          console.log(uName.value);
+          document.getElementById("uname").innerHTML =
+            "Username must be between 3 and 25 characters.";
+          document.frm.uname.focus();
+          return false;
+        }
+      }
+    </script>
+  </body>
+</html>
