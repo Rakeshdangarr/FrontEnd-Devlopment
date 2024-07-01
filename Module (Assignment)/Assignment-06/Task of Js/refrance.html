@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up Form Validation</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+      form {
+        border: 1px solid #ccc;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        width: 300px;
+      }
+      h2 {
+        text-align: center;
+      }
+      label {
+        display: block;
+        margin: 10px 0 5px;
+      }
+      input[type="text"],
+      input[type="email"],
+      input[type="password"] {
+        width: calc(100% - 22px);
+        padding: 10px;
+        margin: 5px 0 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+      input.error {
+        border-color: red;
+      }
+      input.success {
+        border-color: green;
+      }
+      .error-message {
+        color: red;
+        font-size: 12px;
+      }
+      button {
+        width: 100%;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        background-color: blue;
+        color: white;
+        font-size: 16px;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: darkblue;
+      }
+    </style>
+  </head>
+  <body>
+    <form id="signupForm">
+      <h2>Sign Up</h2>
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" />
+      <div id="usernameError" class="error-message"></div>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" />
+      <div id="emailError" class="error-message"></div>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" />
+      <div id="passwordError" class="error-message"></div>
+
+      <label for="confirmPassword">Confirm Password:</label>
+      <input type="password" id="confirmPassword" name="confirmPassword" />
+      <div id="confirmPasswordError" class="error-message"></div>
+
+      <button type="submit">Sign Up</button>
+    </form>
+
+    <script>
+      document
+        .getElementById("signupForm")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+
+          let isValid = true;
+
+          // Username validation
+          const username = document.getElementById("username");
+          const usernameError = document.getElementById("usernameError");
+          if (username.value.length < 3 || username.value.length > 25) {
+            isValid = false;
+            username.classList.add("error");
+            usernameError.textContent =
+              "Username must be between 3 and 25 characters.";
+          } else {
+            username.classList.remove("error");
+            username.classList.add("success");
+            usernameError.textContent = "";
+          }
+
+          // Email validation
+          const email = document.getElementById("email");
+          const emailError = document.getElementById("emailError");
+          const emailPattern =
+            /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+          if (!emailPattern.test(email.value)) {
+            isValid = false;
+            email.classList.add("error");
+            emailError.textContent = "Please enter a valid email address.";
+          } else {
+            email.classList.remove("error");
+            email.classList.add("success");
+            emailError.textContent = "";
+          }
+
+          // Password validation
+          const password = document.getElementById("password");
+          const passwordError = document.getElementById("passwordError");
+          const passwordPattern =
+            /^(?=.[a-z])(?=.[A-Z])(?=.\d)(?=.[@#$%^&+=]).{8,}$/;
+          if (!passwordPattern.test(password.value)) {
+            isValid = false;
+            password.classList.add("error");
+            passwordError.textContent =
+              "Password must be at least 8 characters that include at least 1 lowercase character, 1 uppercase character, 1 number, and 1 special character.";
+          } else {
+            password.classList.remove("error");
+            password.classList.add("success");
+            passwordError.textContent = "";
+          }
+
+          // Confirm Password validation
+          const confirmPassword = document.getElementById("confirmPassword");
+          const confirmPasswordError = document.getElementById(
+            "confirmPasswordError"
+          );
+          if (confirmPassword.value !== password.value) {
+            isValid = false;
+            confirmPassword.classList.add("error");
+            confirmPasswordError.textContent = "Passwords do not match.";
+          } else {
+            confirmPassword.classList.remove("error");
+            confirmPassword.classList.add("success");
+            confirmPasswordError.textContent = "";
+          }
+
+          if (isValid) {
+            alert("Form submitted successfully!");
+            // Optionally, you can submit the form here if all validations pass.
+            // document.getElementById('signupForm').submit();
+          }
+        });
+    </script>
+  </body>
+</html>
