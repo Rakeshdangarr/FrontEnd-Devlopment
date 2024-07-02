@@ -1,0 +1,29 @@
+@media (max-width: 562px){
+    .title a img{
+    width: 150px;
+    height: 70px;
+    margin-left: 02%;
+}
+.menu ul{
+    display: none;
+}
+#dropDown{
+    display: inline;
+    font-size: xx-large;
+    position: absolute;
+    top: 03%;
+    right: 5%;
+    cursor: pointer;
+
+}
+#dropdown a:hover .menu ul li {
+    cursor: auto;
+    /* display: inline;  */
+  }
+   
+.menu ul li a {
+    color: #000;
+    display: block;
+    padding: 5px 20px;
+  }
+}
