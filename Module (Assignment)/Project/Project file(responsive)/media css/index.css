@@ -1,4 +1,4 @@
-@media (max-width: 600px) and (min-width: 400px){
+@media (max-width: 562px){
 
     /* header start */
 
@@ -73,23 +73,24 @@ font-size: medium;
 .section{
     display: flex;
 flex-direction: column;
-height: 190vh;
+height: 240vh;
 padding: 1px;
+border: 2px solid red;
 
 }
 .men img{
     margin-bottom: 30%;
 }
 .description1{
-    top: 530vh;
+    top: 600vh;
     width: 53%;
     left: 37%;
 }
 .women img{
-    margin-bottom: 40%;
+    margin-bottom: 20%;
 }
 .description2{
-    top: 595vh;
+    top: 683vh;
     width: 53%;
     left: 37%;
 }
@@ -99,10 +100,10 @@ padding: 1px;
 }
 .service{
     position: absolute;
-    top: 640vh;   
+    top: 740vh;   
 }
 .description3{
-    top: 18vh;
+    top: 28vh;
     width: 73%;
     left: 15%;
 }
@@ -134,17 +135,17 @@ padding: 1px;
 
 /* WRIST DIARIES start */
 .diaries-card{
-    height: 100vh;
+    height: 120vh;
 }
 .blogCard1{
-    top: 915vh;
+    top: 1045vh;
     left: 08%;
 }
 .blogCard1 img {
     width: 80%;
 }
 .blogCard2{
-    top: 955vh;
+    top: 1100vh;
     left: 08%;
 }
 .blogCard2 img {
@@ -154,24 +155,24 @@ padding: 1px;
     display: none;
 }
 .diaries-card a button{
-    top: 995vh;
+    top: 1145vh;
     left: 35%;
 }
 /* footer start */
 .footer{
     display: flex;
     font-size: small;
-    gap: 05%;
+    gap: 10%;
     padding: 3%;
     margin-left: 0px;
     position: relative;
-    height: 48vh;
+    height: 65vh;
 }
 .subscribe{
     width: 160px;
     padding: 0;
     position: absolute;
-    left: 65%;
+    left: 68%;
     top: 42%;
     margin-bottom: 30%;
 }
@@ -194,8 +195,8 @@ top: 99%;
 .social{  
     font-size: medium;
     position: absolute;
-    top: 1050vh;
-    left: 05%;
+    top: 1215vh;
+    left: 02%;
 }
 .social h2{
     font-size: medium;
