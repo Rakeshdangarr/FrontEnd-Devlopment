@@ -70,18 +70,19 @@ gap: 10px;
 
 /* Watch section start */
 
-.watchSection h1{
+.watchSection{
     text-align: center;
     margin-top: 10px;
-
-}
+    
+  }
 .card img{
 
     justify-content: center;
     width: 100%;
     height: 100%;
-}
-.wraper1{
+  }
+  .wraper1{
+  gap: 2%;
     margin-top: 15px;
     display: flex;
 }
@@ -95,6 +96,8 @@ gap: 10px;
 .wraper2{
     margin-top: 15px;
     display: flex;
+  gap: 2%;
+
 }
 .wraper2 a{
     margin: auto;

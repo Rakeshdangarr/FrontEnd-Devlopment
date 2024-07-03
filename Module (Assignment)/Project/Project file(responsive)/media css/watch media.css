@@ -50,16 +50,97 @@ font-size: medium;
 
 /* Watch section start */
 
-.wraper1{
-  margin-bottom: 10%;
+.none{display: none;}
+
+
+/* Watch section end */
+
+/* category start */
+
+.section{
+  /* border: 2px solid red; */
   display: flex;
-  flex-direction: column;
+flex-direction: column;
+height: 135vh;
+padding: 1px;
+
 }
-.card{
-  margin-bottom: 5%;
-  width: 20%;
+.men img{
+  margin-bottom: 32%;
 }
-.watchSection{
-font-size: medium;
+.description1{
+  top: 205vh;
+  width: 53%;
+  left: 37%;
 }
+.women img{
+  margin-bottom: 40%;
+}
+.description2{
+  top: 272vh;
+  width: 53%;
+  left: 37%;
+}
+.service img{
+  width: 95%;
+
+}
+.service{
+  position: absolute;
+  top: 640vh;   
+}
+.description3{
+  top: 18vh;
+  width: 73%;
+  left: 15%;
+}
+
+/* category end */
+/* footer start */
+.footer{
+  display: flex;
+  font-size: small;
+  gap: 05%;
+  padding: 3%;
+  margin-left: 0px;
+  position: relative;
+  height: 48vh;
+}
+.subscribe{
+  width: 160px;
+  padding: 0;
+  position: absolute;
+  left: 65%;
+  top: 42%;
+  margin-bottom: 30%;
+}
+.subscribe input{
+  width: 150px;
+  font-size: small;
+}
+.subscribe button{
+  font-size: small;
+  width: 200px;
+border-radius: 80px;
+margin-left: 0;
+padding: 10px 22px;
+position: absolute;
+left: -20%;
+top: 90%;
+
+
+}
+.social{  
+  font-size: medium;
+  position: absolute;
+  top: 360vh;
+  left: 05%;
+}
+.social h2{
+  font-size: medium;
+}
+.social a{
+  font-size: medium;
+}
+/* footer end */
 }
