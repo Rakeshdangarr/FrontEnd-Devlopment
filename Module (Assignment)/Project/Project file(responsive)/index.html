@@ -20,8 +20,10 @@
       <div class="title">
         <a href="#"> <img src="images/Samay logo.jpg" alt="company logo" /></a>
       </div>
-      <div class="menu">
+      <button class="dropbtn" onclick="toggleDropdown()">
         <i class="fa-solid fa-list-ul" style="color: black" id="dropDown"></i>
+      </button>
+      <div class="menu" id="dropDownMenu">
         <ul>
           <li><a href="watches.html">WATCHES</a></li>
           <li><a href="#men">MEN</a></li>
@@ -214,21 +216,24 @@
                 class="fa-solid fa-heart-circle-check"
                 style="color: lightcoral"
               ></i>
+              <br />
               Customer Loyality
             </li>
             <li>
               <i
                 class="fa-solid fa-hand-holding-hand"
                 style="color: lightcoral"
-              ></i
-              >Strong After Sales
+              ></i>
+              <br />Strong AfterSales
             </li>
             <li>
               <i class="fa-regular fa-clock" style="color: lightcoral"></i>
-              Strong Brand Portfolio
+              <br />
+              Strong BrandPortfolio
             </li>
             <li>
               <i class="fa-solid fa-people-group" style="color: lightcoral"></i>
+              <br />
               Our People
             </li>
           </ul>
@@ -312,9 +317,9 @@
       </div>
       <div class="subscribe">
         <h3>NEWSLETTER</h3>
-        <br />
+
         <p>
-          Subscribe to stay updated about new products, promotional offers and
+          Subscribe to stay updated about new products promotional offers and
           more.
         </p>
         <br />
@@ -324,8 +329,6 @@
           id="email"
           placeholder="Please Enter Email"
         />
-        <br />
-        <br />
         <button>SUBSCRIBE</button>
       </div>
     </div>
@@ -350,5 +353,14 @@
       </div>
     </div>
     <!-- footer end -->
+
+    <!-- script start -->
+    <script>
+      function toggleDropdown() {
+        var menu = document.getElementById("dropDownMenu");
+        menu.classList.toggle("show");
+        menu.style.transition = "all 2s";
+      }
+    </script>
   </body>
 </html>

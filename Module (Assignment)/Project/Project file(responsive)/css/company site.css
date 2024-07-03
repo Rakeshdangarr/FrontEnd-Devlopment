@@ -38,7 +38,7 @@ margin-bottom: 20px;
 }
 
 .menu ul li{
-    font-size: large;
+font-size: large;
 margin-right: 20px;
 display: inline;
 gap: 10px;
@@ -52,15 +52,15 @@ gap: 10px;
     text-align: center;
     height: 25px;
     position: absolute;
-    right: 09%;
+    right: 04%;
     border: 1px solid wheat;
-    top: 23%;
+    top: 22%;
 }
 .search i{
     align-items: center;
-    right: 90px;
+    right: 20px;
     position: absolute;
-    top: 23vh;
+    top: 22vh;
     font-size: x-large;
 }
 
@@ -134,8 +134,8 @@ gap: 10px;
     margin-top: 10px;
 }
 .section{
-    margin: auto;
     /* border: 2px solid red; */
+    margin: auto;
     display: flex;
     width: 91%;
     overflow: hidden;
@@ -277,17 +277,16 @@ width: auto;
     height: 20%;
     margin-top: 5%;
     margin-left: 15%;
-    
-
 }
 .icon ul{
+    gap: 65%;
     display: flex;
-    gap: 80%;
 }
 .icon ul li{
+    display: inline;
     font-size: x-large;
     list-style-type: none;
-    margin-right: 2% ;
+    margin-right: 5% ;  
 }
 .brandImg{
     margin: auto;

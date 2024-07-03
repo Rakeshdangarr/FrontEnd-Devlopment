@@ -12,20 +12,20 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="css/watch css.css" />
+    <link rel="stylesheet" href="media css/watch media.css">
   </head>
   <body>
     <!-- header start -->
     <div class="header">
       <div class="title">
-        <a href="index.html">
-          <img
-            src="images/Samay logo.jpg"
-            alt="company logo"
-        /></a>
+        <a href="#"> <img src="images/Samay logo.jpg" alt="company logo" /></a>
       </div>
-      <div class="menu">
+      <button class="dropbtn" onclick="toggleDropdown()">
+        <i class="fa-solid fa-list-ul" style="color: black" id="dropDown"></i>
+      </button>
+      <div class="menu" id="dropDownMenu">
         <ul>
-          <li><a href="#">WATCHES</a></li>
+          <li><a href="watches.html">WATCHES</a></li>
           <li><a href="#men">MEN</a></li>
           <li><a href="#women">WOMEN</a></li>
           <li><a href="#service">SERVICE CENTER</a></li>
@@ -334,5 +334,13 @@
       </div>
     </div>
     <!-- footer end -->
+     <!-- script start -->
+    <script>
+      function toggleDropdown() {
+        var menu = document.getElementById("dropDownMenu");
+        menu.classList.toggle("show");
+        menu.style.transition = "all 2s";
+      }
+    </script>
   </body>
 </html>
