@@ -1,0 +1,27 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    overflow-x:hidden;
+    background-color: bisque;
+}
+
+.info{
+    margin: auto;
+    background-color: lightcoral;
+    color: black;
+    padding-top: 25px;
+    transition: 2s all;
+    text-align: center;
+    height: 300px;
+    width: 300px;
+}
+
+.info:hover {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background-color: blue;
+    color: white;
+
+}

@@ -1,0 +1,179 @@
+
+<!-- 
+ 
+what is React js ? 
+
+   React js is a library of javascript
+   React js manage and developed by facebook engineer.
+   React js used to create a UI and web applications just like facebook | instagram | twitter | netflix | snapchat etc.
+   React js is used to create a SPA (single page applications)
+   React js 10x fast load data on broswer 
+   React js is components based.
+   React js components are reusables.
+   React js is based on modules and reused it 
+   React js is used to create a props and state and updated data also.
+   React js is used some libraries and packages to create a web applications.
+   React js is seo friendly 
+   React js used life cycle to create any web applications.
+     
+       React js life cycle
+         a) initializations 
+         b) mounting
+         c) updating
+         d) unmounting
+
+    React js used to load webpage using virtual DOM.
+    
+       Difference b/w DOM and virtual DOM
+
+       a)dom is slow to load content
+       b)virtual dom is faster than DOM to load content
+       c)dom load html content inside of javascript using document.getElementById("id")
+       d)virtual dom is used to load html content in react js using ReactDOM.createRoot(document.getElementById("id"));
+       e)dom is case sensitive and virtual dom is also case sensitive
+
+    React js used to load html in React components using jsx elements.
+    React jsx stands for javascript xml(x-tensible markup language) load a dynamic content of html
+    React jsx is used to access html elements inside of React js.      
+    React js components is a small peace of file i.e saved inside of react using .js or .jsx extension
+    React js components is two types inside of React
+      a) function components
+      b) class components
+
+    Difference b/w npm and npx ? 
+      a) npm stands for node package manager
+      b) npm is a dependency manager of React js 
+      c) npx stands for node package eXecute it meanse it is also create a React js app but it is faster than npm.
+      d) npx is create an execute files of React js app so it is faster than npm.
+      
+
+    React js create any application or install any application with two types 
+     
+      a) using npm(node package manager)
+          step1 :download node js in your systems
+           https://nodejs.org/en/download/prebuilt-installer
+          step2:check version of node js
+                 node -v
+                 npm -v
+                 npx -v
+
+          step3:npx create-react-app app-name
+          step4:cd app-name
+          step5:npm start
+          step6:create a react web server url    
+          
+           http://localhost:3000/
+
+           You can now view demoapp in the browser.
+
+  Local:            http://localhost:3000
+  On Your Network:  http://192.168.29.106:3000
+  
+  Note that the development build is not optimized.
+  To create a production build, use npm run build.
+  webpack compiled successfully
+
+      b) using npm with vite package
+
+      step1: npm create vite@latest
+      step2: Project name: ... hello-world-app
+      step3:select framework
+    Vanilla
+    Vue
+>   React
+    Preact
+    Lit
+    Svelte
+    Solid
+    Qwik
+    Others
+
+    step 4:Select a variant: » - Use arrow-keys. Return to submit.
+    TypeScript
+    TypeScript + SWC
+>   JavaScript
+    JavaScript + SWC
+    Remix ↗
+
+    step5: cd hello-world-app
+    step 6:npm install
+    step7:how to start app using vite
+          npm run dev 
+
+      http://localhost:5173
+
+
+
+      React js directory systems :
+
+      node_modules : node_modules is a package | module | library installer of react js app all packages and modules are installed inside of node_modules. React main module React and React-DOM is comming from node_modules
+          App.jsx
+          import React from 'react';
+          import ReactDOM from 'react-dom/client'
+      
+      
+      public :public is open for assets of your applications 
+                     assets => css | images | js | fonts 
+      src : src is main folders of your applications 
+            src is open for creating all components of your applications    
+            components is a small peace of file that is save as .js or .jsx 
+            .js is a extension of javascript when we create app with npx create-react-app appname we can take extension of components with both way .js and .jsx.
+            when we create any application using via vite we saved any components with using only .jsx 
+            examples :  App.jsx
+                        Services.jsx
+                        About.jsx
+
+
+            examples : Note : we can take components name always first letter should be uppercase 
+                          About.jsx
+                          Services.js
+                          Products.jsx
+                          Cart.js 
+
+
+      what is jsx inside of React js : 
+            jsx stands for javascript xml or javascript execute file 
+            
+             App.jsx => javascript xml 
+                         xml stands for x-tensible markup language 
+                         xml is used to load a dynamic content inside of React js 
+                         
+            jsx is used to access html elements inside of React js components.
+             
+            
+      index.html : index.html is a main web page or landing page that is load on web broswer and it is called inside src=>components=>main.jsx  via Virtual DOM document.getElementById("demo");
+
+        examples : ReactDOM.createRoot(document.getElementById("demo"));
+        
+        Note : index.html is our landing web page and it is created only one times 
+
+      package.json :  package.json is an environment file inside of react js app that is used to registered all basics informations about our applications 
+
+                      React js appname 
+                      React js versions 
+                      React js all module is also registered inside of package.json
+                      
+                       "name": "hello-app",
+                       "react": "^18.3.1",
+                       "react-dom": "^18.3.1"
+                        "@types/react": "^18.3.3",
+
+      package-lock.json :
+      vite.config :
+        import { defineConfig } from 'vite'
+        import react from '@vitejs/plugin-react'
+
+        // https://vitejs.dev/config/
+        export default defineConfig({
+       plugins: [react()],
+      })
+
+
+      README : 
+      gitignore : if user want to uploade app inside of github.com and does not want to upload particular foleder without deleting main folder and want to ignore to upload on github there we used .gitignore
+
+
+
+
+
+-->
