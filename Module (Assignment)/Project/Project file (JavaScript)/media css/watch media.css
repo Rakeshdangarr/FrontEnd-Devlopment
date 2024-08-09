@@ -1,0 +1,146 @@
+@media (max-width: 562px) and (min-width: 400px){
+/* header start */
+
+
+.title a img{
+  width: 150px;
+  height: 70px;
+  margin-left: 02%;
+}
+.menu{
+  display: none;
+  transition: 0.6s;
+  transition: opacity 0.3s ease;
+  transition: all 2s ease;
+}
+.menu.show {
+  display: block; /* Show menu when 'show' class is applied */
+  animation: fadein 0.5s; /* Optional: Add animation */
+}
+.menu ul{
+  margin-left: 2%;
+  gap: 2%;
+  height: 90px;
+  font-size: small;
+  margin-top: 25px;
+}
+#search-box{
+  position: absolute;
+top: 29%;
+left: 03%;
+}
+.search i{
+  position: absolute;
+  top: 30%;
+right: 11%;
+font-size: medium;
+
+}
+#dropDown{
+  display: block;
+  font-size: xx-large;
+  position: absolute;
+  top: 03%;
+  right: 5%;
+  cursor: pointer;
+}
+
+
+/* header end */
+
+/* Watch section start */
+
+.none{display: none;}
+
+
+/* Watch section end */
+
+/* category start */
+
+.section{
+  /* border: 2px solid red; */
+  display: flex;
+flex-direction: column;
+height: 170vh;
+padding: 1px;
+
+}
+.men img{
+  margin-bottom: 25%;
+}
+.description1{
+  top: 245vh;
+  width: 53%;
+  left: 37%;
+}
+.women img{
+  margin-bottom: 40%;
+}
+.description2{
+  top: 323vh;
+  width: 53%;
+  left: 37%;
+}
+.service img{
+  width: 95%;
+
+}
+.service{
+  position: absolute;
+  top: 640vh;   
+}
+.description3{
+  top: 18vh;
+  width: 73%;
+  left: 15%;
+}
+
+/* category end */
+/* footer start */
+.footer{
+  display: flex;
+  font-size: small;
+  gap: 10%;
+  padding: 3%;
+  margin-left: 0px;
+  position: relative;
+  height: 65vh;
+}
+.subscribe{
+  width: 160px;
+  padding: 0;
+  position: absolute;
+  left: 68%;
+  top: 42%;
+  margin-bottom: 30%;
+}
+.subscribe input{
+  width: 150px;
+  font-size: small;
+}
+.subscribe button{
+  font-size: small;
+  width: 200px;
+border-radius: 80px;
+margin-left: 0;
+padding: 10px 22px;
+position: absolute;
+left: -20%;
+top: 99%;
+
+
+}
+.social{  
+  font-size: medium;
+  position: absolute;
+  top: 440vh;
+  left: 02%;
+}
+.social h2{
+  font-size: medium;
+}
+.social a{
+  font-size: medium;
+}
+/* footer end */
+}

@@ -1,0 +1,486 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+/* anchor tag id direct use */
+html{
+    scroll-behavior: smooth;
+}
+/* header start */
+
+/*header menu start */
+.title a img{
+    width: 300px;
+    height: 120px;
+    margin-left: 39%;  
+    transition: 0.6s; 
+}
+.title a img:hover {
+    box-shadow: 0 12px 16px 0 rgb(253, 234, 197),0 17px 50px 0 rgb(253, 234, 197);
+  }
+.title{
+    box-shadow: 2px 2px 2px wheat;
+    margin: 0;
+}
+.menu{
+    box-shadow: 2px 2px 2px wheat;
+}
+#dropDown{
+    display: none;
+}
+.menu ul{
+margin-left: 23%;
+height: 50px;
+margin-top: 25px;
+margin-bottom: 20px;
+}
+
+.menu ul li{
+font-size: large;
+margin-right: 20px;
+display: inline;
+gap: 10px;
+}
+.menu ul li a{
+    text-decoration: none;
+}
+
+/* header serch */
+#search-box{
+    text-align: center;
+    height: 25px;
+    position: absolute;
+    right: 04%;
+    border: 1px solid wheat;
+    top: 22%;
+}
+.search i{
+    align-items: center;
+    right: 20px;
+    position: absolute;
+    top: 22vh;
+    font-size: x-large;
+}
+
+/* header end */
+
+/* banner section start */
+.banner img{
+    width: 100%;
+    margin-top: 2%;
+}
+/* banner section start */
+
+/* new arival section start */
+
+.newArival h1{
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 50px;
+
+
+}
+.wraper1{
+    margin-top: 25px;
+    display: flex;
+    margin-bottom: 50px;
+}
+.wraper1 a{
+    margin: auto;
+    text-decoration: none;
+    color: black;
+    gap: 10%;
+}
+.wraper2{
+    margin-top: 35px;
+    display: flex;
+}
+.wraper2 a{
+    margin: auto;
+    text-decoration: none;
+    color: black;
+    gap: 10%;
+}
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 100%;
+    height: 20%;
+  }
+  .card:hover {
+    box-shadow: 0 12px 16px 0 rgb(253, 234, 197),0 17px 50px 0 rgb(253, 234, 197);
+  }
+  
+  .container {
+    padding: 5px 20px;
+    text-align: center;
+  }
+  .container p{
+    color: darkblue;
+  }
+  /* new arival section end */
+
+  /* category start */
+  .category{
+    margin-top: 8%;
+    margin-bottom: 5%;
+    position: relative;
+
+
+  }
+  .category h1{
+    text-align: center;
+    margin-top: 10px;
+}
+.section{
+    /* border: 2px solid red; */
+    margin: auto;
+    display: flex;
+    width: 91%;
+    overflow: hidden;
+    height: 150vh;
+    gap: 10px;
+    padding: 10px;
+}
+.men img{
+    width: 100%;
+}
+.description1{
+    position: absolute;
+    text-align: center;
+    background-color: wheat;
+    width: 33%;
+    padding: 15px;
+    left: 11%;
+    top: 47vh;
+    border-radius: 100px;
+}
+.description1 a button{
+    border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+    background-color: white;
+    color: black;
+    font-weight: 80px;
+    border: 2px solid #e7e7e7;
+    border-radius: 20px;
+  }
+.description1 a button:hover {background-color: lightskyblue}
+.women img{
+    width: 100%;
+}
+
+.description2{
+    position: absolute;
+    text-align: center;
+    background-color: wheat;
+    width: 33%;
+    padding: 17px;
+    left: 57%;
+    top: 47vh;
+    border-radius: 100px;
+
+}
+.description2 a button{
+    border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+    background-color: white;
+    color: black;
+    font-weight: 80px;
+    border: 2px solid #e7e7e7;
+    border-radius: 20px;
+  }
+.description2 a button:hover {background-color: lightpink}
+.service{
+   position: absolute; 
+   top: 85vh;
+}
+.service img{
+    width: 80%;
+}
+.description3{
+    height: 33vh;
+    position: absolute;
+    text-align: center;
+    background-color: wheat;
+    width: 40%;
+    padding: 30px;
+    left: 58%;
+    top: 25vh;
+    border-radius: 100px;
+    padding-bottom: 10px;
+
+}
+.description3 a button{
+    border: none;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+      background-color: white;
+      color: black;
+      font-weight: 80px;
+      border: 2px solid #e7e7e7;
+      border-radius: 20px;
+}
+.description3 a button:hover {background-color: lightgrey}
+
+/* Category end */
+
+/* legacy start */
+.legacy{
+    background-color: wheat;
+    margin-top: 5%;
+    width: 90%;
+    margin: auto;
+    padding: 2%;
+}
+.aboutLegacy{
+    margin: auto;
+    text-align: center;
+}
+.aboutLegacy p{
+    font-size: x-large;
+    text-align: center;
+width: auto;
+}
+.values{
+    text-align: center;
+    margin-top: 3%;
+}
+.values p{
+    font-size: x-large;
+
+}
+.icon{
+    width: 18%;
+    height: 20%;
+    margin-top: 5%;
+    margin-left: 15%;
+}
+.icon ul{
+    gap: 65%;
+    display: flex;
+}
+.icon ul li{
+    display: inline;
+    font-size: x-large;
+    list-style-type: none;
+    margin-right: 5% ;  
+}
+.brandImg{
+    margin: auto;
+
+}
+.brandImg img{
+    width: 95%;
+    margin-left: 03%;
+    margin-top: 02%;
+    border-radius: 8px;
+    border: 2px solid orange;
+}
+/* legacy end */
+
+/* WRIST DIARIES start */
+.diaries{
+    position: relative;
+}
+.diaries h1{
+text-align: center;
+margin-top: 2%;
+}
+.diaries-card{
+margin: auto;
+border: 5px double wheat;
+height: 85vh;
+width: 91%;
+background-color: whitesmoke;
+
+}
+.blogCard1 {
+position: absolute;
+left: 6%;
+top: 10vh;
+color: black;
+}
+.blogCard1 img {
+width: 32%;
+}
+.blogCard1 h5 {
+color: lightblue;
+}
+.blogCard1 a {
+text-decoration: none;
+}
+
+.blogCard2 {
+position: absolute;
+left: 33%;
+top: 48vh;
+color: black;
+}
+.blogCard2 img {
+width: 50%;
+}
+.blogCard2 h5 {
+color: lightblue;
+}
+.blogCard2 a {
+text-decoration: none;
+}
+
+
+.blogCard3 {
+position: absolute;
+left: 64%;
+top: 10vh;
+
+color: black;
+}
+.blogCard3 img {
+width: 85%;
+}
+.blogCard3 h5 {
+color: lightblue;
+}
+.blogCard3 a {
+text-decoration: none;
+}
+
+.diaries-card a button{
+border: none;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+      background-color: white;
+      color: black;
+      font-weight: 80px;
+      border: 2px solid #e7e7e7;
+      border-radius: 20px;
+      position: absolute;
+      left: 44%;
+      top: 15vh;
+}
+.diaries-card a button:hover {background-color: wheat}  
+
+/* WRIST DIARIES end */
+
+/* footer start */
+.footer{
+    position: relative;
+    display: flex;
+    background-image: url(../images/footer\ 2.webp);
+    background-repeat: no-repeat;
+    opacity: 0.8;
+    background-size: 100%;
+    height: 100vh;
+    gap: 15%;
+    padding: 8%;
+    margin-top: 1%;
+    font-size: large;
+    color: white
+}
+.ourWorld ul li a{
+    text-decoration: none;
+    color: wheat;
+}
+
+.ourWorld ul li{
+    margin-bottom:15px ;
+    list-style-type:none ;
+}
+
+.support ul li a{
+    text-decoration: none;
+    color: wheat;
+
+}
+
+.support ul li{
+    margin-bottom:15px ;
+    list-style-type:none ;
+}
+.contact p{
+    color: wheat;
+}
+.subscribe button{
+    background-color: white;
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  border-radius: 100px;
+}
+
+.subscribe button:hover {
+    box-shadow: 0 12px 16px 0 rgb(253, 234, 200),0 17px 50px 0 rgb(253, 234, 197);
+  }
+  .subscribe input{
+    
+    padding: 5px 12px;
+    font-size: 16px;
+    border: 1px solid bisque;
+    border-radius: 6px;
+    outline: none;
+  }
+  .subscribe p{
+color: wheat;
+  }
+
+  .social{  
+    position: absolute;
+    top: 45vh;
+    width: 50%;
+    left: 47%;
+  }
+  .social h2{
+    color: white;
+    margin-bottom: 3%;
+  }
+  .social a{
+    margin-top: 2%;
+    text-decoration: none;
+    font-size: xx-large;
+    padding: 1%;
+    transition-duration: 0.4s;
+  border-radius: 8px;
+
+  }
+  .social a:hover {
+    box-shadow: 0 12px 16px 0 rgb(253, 234, 200),0 17px 50px 0 rgb(253, 234, 197);
+  }
+
+  /* footer end */

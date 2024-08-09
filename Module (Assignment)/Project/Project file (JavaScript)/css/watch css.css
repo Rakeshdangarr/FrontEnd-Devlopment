@@ -1,0 +1,303 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* header start */
+/* anchor tag id direct use */
+html{
+  scroll-behavior: smooth;
+}
+
+/*header menu start */
+.title a img{
+    width: 300px;
+    height: 120px;
+    margin-left: 39%;  
+    transition: 0.6s; 
+}
+.title a img:hover {
+    box-shadow: 0 12px 16px 0 rgb(253, 234, 197),0 17px 50px 0 rgb(253, 234, 197);
+  }
+.title{
+    box-shadow: 2px 2px 2px wheat;
+    margin: 0;
+}
+.menu{
+    box-shadow: 2px 2px 2px wheat;
+}
+.menu ul{
+    margin-left: 23%;
+    height: 50px;
+    margin-top: 25px;
+    margin-bottom: 20px;
+
+}
+.menu ul li{
+    font-size: large;
+margin-right: 20px;
+display: inline;
+gap: 10px;
+}
+.menu ul li a{
+    text-decoration: none;
+}
+
+/* header serch */
+#search-box{
+    text-align: center;
+    height: 25px;
+    position: absolute;
+    right: 09%;
+    border: 1px solid wheat;
+    top: 23%;
+}
+.search i{
+    align-items: center;
+    right: 90px;
+    position: absolute;
+    top: 23vh;
+    font-size: x-large;
+}
+
+/* header end */
+
+/* banner section start */
+.banner img{
+    width: 100%;
+}
+/* banner section start */
+
+/* Watch section start */
+
+.watchSection{
+    text-align: center;
+    margin-top: 10px;
+    
+  }
+.card img{
+
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+  }
+  .wraper1{
+  gap: 2%;
+    margin-top: 15px;
+    display: flex;
+}
+.wraper1 a{
+
+    margin: auto;
+    text-decoration: none;
+    color: black;
+
+}
+.wraper2{
+    margin-top: 15px;
+    display: flex;
+  gap: 2%;
+
+}
+.wraper2 a{
+    margin: auto;
+    text-decoration: none;
+    color: black;
+    gap: 10%;
+}
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 100%;
+    height: 20%;
+  }
+  .card:hover {
+    box-shadow: 0 12px 16px 0 rgb(253, 234, 197),0 17px 50px 0 rgb(253, 234, 197);
+  }
+  
+  .container {
+    padding: 5px 20px;
+    text-align: center;
+  }
+  .container p{
+    color: darkblue;
+  }
+  /* new arival section end */
+
+  /* category start */
+  .category{
+    margin-top: 2%;
+  }
+  .category h1{
+    text-align: center;
+    margin-top: 20px;
+}
+.section{
+    margin: auto;
+    /* border: 2px solid red; */
+    display: flex;
+    width: 91%;
+    overflow: hidden;
+    height: 80vh;
+    gap: 10px;
+    padding: 10px;
+}
+.men img{
+    width: 100%;
+}
+.description1{
+    position: absolute;
+    text-align: center;
+    background-color: wheat;
+    width: 33%;
+    padding: 15px;
+    left: 11%;
+    top: 300vh;
+    border-radius: 100px;
+}
+.description1 a button{
+    border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+    background-color: white;
+    color: black;
+    font-weight: 80px;
+    border: 2px solid #e7e7e7;
+    border-radius: 20px;
+  }
+.description1 a button:hover {background-color: lightskyblue}
+.women img{
+    width: 100%;
+}
+
+.description2{
+    position: absolute;
+    text-align: center;
+    background-color: wheat;
+    width: 33%;
+    padding: 17px;
+    left: 57%;
+    top: 300vh;
+    border-radius: 100px;
+
+}
+.description2 a button{
+    border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+    background-color: white;
+    color: black;
+    font-weight: 80px;
+    border: 2px solid #e7e7e7;
+    border-radius: 20px;
+  }
+.description2 a button:hover {background-color: lightpink}
+/* Category end */
+
+/* footer start */
+.footer{
+  position: relative;
+  display: flex;
+  background-image: url(../images/footer\ 2.webp);
+  background-repeat: no-repeat;
+  opacity: 0.8;
+  background-size: 100%;
+  height: 100vh;
+  gap: 15%;
+  padding: 8%;
+  margin-top: 1%;
+  font-size: large;
+  color: white
+}
+.ourWorld ul li a{
+  text-decoration: none;
+  color: wheat;
+}
+
+.ourWorld ul li{
+  margin-bottom:15px ;
+  list-style-type:none ;
+}
+
+.support ul li a{
+  text-decoration: none;
+  color: wheat;
+
+}
+
+.support ul li{
+  margin-bottom:15px ;
+  list-style-type:none ;
+}
+.contact p{
+  color: wheat;
+}
+.subscribe button{
+  background-color: white;
+border: none;
+color: black;
+padding: 15px 32px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+margin: 4px 2px;
+cursor: pointer;
+-webkit-transition-duration: 0.4s;
+transition-duration: 0.4s;
+border-radius: 100px;
+}
+
+.subscribe button:hover {
+  box-shadow: 0 12px 16px 0 rgb(253, 234, 200),0 17px 50px 0 rgb(253, 234, 197);
+}
+.subscribe input{
+  
+  padding: 5px 12px;
+  font-size: 16px;
+  border: 1px solid bisque;
+  border-radius: 6px;
+  outline: none;
+}
+.subscribe p{
+color: wheat;
+}
+
+.social{  
+  position: absolute;
+  top: 45vh;
+  width: 50%;
+  left: 47%;
+}
+.social h2{
+  color: white;
+  margin-bottom: 3%;
+}
+.social a{
+  margin-top: 2%;
+  text-decoration: none;
+  font-size: xx-large;
+  padding: 1%;
+  transition-duration: 0.4s;
+border-radius: 8px;
+
+}
+.social a:hover {
+  box-shadow: 0 12px 16px 0 rgb(253, 234, 200),0 17px 50px 0 rgb(253, 234, 197);
+}
+
+/* footer end */
