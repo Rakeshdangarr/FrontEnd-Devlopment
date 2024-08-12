@@ -14,3 +14,12 @@ https://rakeshdangarr.github.io/Email-Validation-Task-04/
 https://rakeshdangarr.github.io/Password-Strength-Checker-Task-05/
 
 06)generate Random quote(Task-06)
+https://rakeshdangarr.github.io/Random-Quote-Generator-Task-06/
+
+08)Export html table to excel(Task-07)
+
+
+09)Export html table to excel(Task-07)
+
+
+10)Export html table to excel(Task-07)
