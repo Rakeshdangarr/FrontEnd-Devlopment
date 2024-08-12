@@ -11,3 +11,6 @@ https://rakeshdangarr.github.io/Drag-and-Drop-Task-03/
 https://rakeshdangarr.github.io/Email-Validation-Task-04/
 
 05)Password Strength checker(Task-05)
+https://rakeshdangarr.github.io/Password-Strength-Checker-Task-05/
+
+06)generate Random quote(Task-06)
