@@ -32,3 +32,6 @@ https://rakeshdangarr.github.io/Achieve-Throttling-Task-10/
 https://rakeshdangarr.github.io/Simple-Alarm-Clock-Task-11/
 
 12)Responsive Light box Gallery(Task-12)
+https://rakeshdangarr.github.io/Responsive-Light-box-Gallery-Task-12/
+
+13)Review Card slider(Task-13)
