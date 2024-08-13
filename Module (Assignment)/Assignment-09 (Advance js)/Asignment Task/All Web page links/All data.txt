@@ -20,6 +20,9 @@ https://rakeshdangarr.github.io/Random-Quote-Generator-Task-06/
 https://rakeshdangarr.github.io/Export-html-table-to-excel-Task-07/
 
 08)Currency converter(Task-08)
-
+https://rakeshdangarr.github.io/Currency-converter-Task-08/
 
 09)Delay function result using debouncing(Task-09)
+https://rakeshdangarr.github.io/Debounce-Example-Task-09/
+
+10)Achieve Throttling(Task-10)
