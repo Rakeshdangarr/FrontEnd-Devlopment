@@ -26,3 +26,9 @@ https://rakeshdangarr.github.io/Currency-converter-Task-08/
 https://rakeshdangarr.github.io/Debounce-Example-Task-09/
 
 10)Achieve Throttling(Task-10)
+https://rakeshdangarr.github.io/Achieve-Throttling-Task-10/
+
+11)Simple Alarm Clock(Task-11)
+https://rakeshdangarr.github.io/Simple-Alarm-Clock-Task-11/
+
+12)Responsive Light box Gallery(Task-12)
