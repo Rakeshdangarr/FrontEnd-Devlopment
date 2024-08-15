@@ -35,7 +35,7 @@ https://rakeshdangarr.github.io/Simple-Alarm-Clock-Task-11/
 https://rakeshdangarr.github.io/Responsive-Light-box-Gallery-Task-12/
 
 13)Review Card slider(Task-13)
-
+https://rakeshdangarr.github.io/Review-Card-slider-Task-13/
 
 14)Login Logout system(Task-14)
 https://rakeshdangarr.github.io/Login-Logout-system-Task-14/
@@ -43,5 +43,5 @@ https://rakeshdangarr.github.io/Login-Logout-system-Task-14/
 15)Image Editor(Task-15)
 https://rakeshdangarr.github.io/Image-Editor-in-JavaScript-Task-15/
 
-16)Image Editor(Task-16)
+16)Perform Localstorage CRUD(Task-16)
 
