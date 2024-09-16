@@ -30,7 +30,7 @@ body
 }
 .logo 
 {
-    animation: 3s infinite fadeIn;
+    animation: 3s infinite pulse;
 }
 .portfolio-slider 
 {
@@ -38,6 +38,11 @@ body
     height: auto;
     background-color: #18bc9c;
 }
+.portfolio-slider img{
+    width: 30%;
+    border-radius:8px ;
+
+  }
 
 .portfolio-name 
 {
@@ -54,4 +59,8 @@ body
     color: #2c3e50 !important;
     font-size: 75px !important;
     font-weight: bolder;
+}
+.portfolio-content .img-fluid{
+    border: 2px double #18bc9c;
+    border-radius:5px ;
 }

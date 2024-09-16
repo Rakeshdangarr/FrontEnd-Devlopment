@@ -1,5 +1,6 @@
 import React from "react";
 import { Container } from "react-bootstrap";
+import portfolio from '../assets/images/portfolio.png'
 
 
 const Content=()=>{
@@ -10,7 +11,7 @@ const Content=()=>{
         {/* portfolio section */}
         <p className="text-center h1 mt-2 text-white portfolio">Portfolio</p>
         <hr className="border border-dark border-5 mx-auto w-25" />
-        {/* <p className="text-center  mt-5"><img src={portfolio} alt="portfolio" className="img-fluid" /></p> */}
+        <p className="text-center  mt-5"><img src={portfolio} alt="portfolio" className="img-fluid" /></p>
 
 
 {/* photoshop sections */}
