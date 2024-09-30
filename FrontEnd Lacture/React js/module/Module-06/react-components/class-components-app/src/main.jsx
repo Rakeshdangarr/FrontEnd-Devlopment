@@ -1,10 +1,13 @@
+
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import App from './App.jsx'
+// import Employee from './components/Employee'
 import './index.css'
+import EmployeeData from './components/EmployeeData'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <App />
+    {/* <Employee /> */}
+    <EmployeeData />
   </StrictMode>,
 )
