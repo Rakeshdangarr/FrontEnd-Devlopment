@@ -63,12 +63,12 @@ class App extends React.Component {
 
                     <form onSubmit={this.handleSubmit}>
                       <div className="form-group">
-                        <input type="text" className="form-control" name="username" required value={this.state.username} onChange={this.handleInputChange} />
-                        <label className="form-control-placeholder">User Name</label>
+                        <input type="text" className="form-control" placeholder="User Name" name="username" required value={this.state.username} onChange={this.handleInputChange} />
+                  
                       </div>
                       <div className="form-group">
-                        <input type="email" className="form-control" name="email" required value={this.state.email} onChange={this.handleInputChange} />
-                        <label className="form-control-placeholder">Email address</label>
+                        <input type="email" placeholder="Email address" className="form-control" name="email" required value={this.state.email} onChange={this.handleInputChange} />
+                        
                       </div>
                       <div className="form-group">
                         <select className="form-control" name="profession" required>
@@ -78,7 +78,7 @@ class App extends React.Component {
                           <option>Professor</option>
                           <option>Others</option>
                         </select>
-                        <label className="form-control-placeholder">Profession</label>
+                      
                       </div>
                       {/* Add other fields as needed */}
                       <div className="text-center">
@@ -104,12 +104,12 @@ class App extends React.Component {
 
                     <form onSubmit={this.handleSubmit}>
                       <div className="form-group">
-                        <input type="email" className="form-control" name="email" required value={this.state.email} onChange={this.handleInputChange} />
-                        <label className="form-control-placeholder">Email address</label>
+                        <input type="email" className="form-control" name="email" placeholder="Email address" required value={this.state.email} onChange={this.handleInputChange} />
+                      
                       </div>
                       <div className="form-group">
-                        <input type="password" className="form-control" name="password" required value={this.state.password} onChange={this.handleInputChange} />
-                        <label className="form-control-placeholder">Password</label>
+                        <input type="password" className="form-control" placeholder="Password" name="password" required value={this.state.password} onChange={this.handleInputChange} />
+  
                       </div>
                       <div className="text-center">
                         <button type="submit" className="btn btn-primary">LOGIN</button>

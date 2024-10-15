@@ -22,6 +22,8 @@
 .close {
   color: #1cd8ad;
   opacity: 0.75;
+  font-size: 3rem;
+  margin-bottom: 10px;
 }
 
 .close:hover, .close:focus {
@@ -49,7 +51,7 @@
 
 .form-control-placeholder {
   position: absolute;
-  top: 0;
+  top: -1;
   padding: 7px 0 0 13px;
   transition: all 200ms;
   opacity: 0.5;
