@@ -1,8 +1,8 @@
 import React from "react";
 
 const sn="Dangar";
-function surname(){
+function Sname(){
     return <h1>and Surname is:{sn}</h1>
 
 }
-export default surname
+export default Sname
